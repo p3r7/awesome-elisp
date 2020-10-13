@@ -1,0 +1,438 @@
+
+
+* libraries
+
+  #+begin_quote
+  NOTE: Traditionally, it was recommanded to not use external libs/dependencies and prefer using standard functions / libs bundled with Emacs.
+  These recommandations are still mostly valid but predated the advent of =package.el=.
+  Some external libs are now considered "standard", as lots of popular packages use them and they can outperform standard implementations while still being simpler to use (e.g. =dash=).
+  #+end_quote
+
+  Some libraries might be listed several times, as they fit in several categories (e.g. =subr-x=, =dash=).
+
+
+** General purpose
+
+**** cl-lib
+
+     Lib extending elisp with functionalities inherited from Common Lisp.
+
+     *standard* (bundled with every Emacs install)
+
+     Just do a =(require 'cl-lib)= to use it.
+
+
+**** subr-x
+
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/subr-x.el][source]]
+
+     *standard* (bundled with every Emacs install)
+
+     Intended as an extension to [[https://github.com/emacs-mirror/emacs/blob/master/lisp/subr.el][subr.el]], the core library of basic functions written in elisp.
+
+     Provides:
+     - threading macros (/a la/ clojure, =thread-first= and =thread-last=)
+     - additional binding helpers (=if-let=, =if-let*=, =when-let=, =when-let*= and =and-let*=)    - hash-table manipulation helper (=hash-table-empty-p=, =hash-table-keys= and =hash-table-values=)
+     - string manipulation helper (=string-empty-p=, =string-blank-p=, =string-join=, =string-trim=, =string-trim-left=, =string-trim-right=, =string-remove-prefix= and =string-remove-suffix=)
+     - region manipulation helpers (=replace-region-contents=)
+
+
+**** el-patch
+
+     [[https://github.com/raxod502/el-patch][source and doc]]
+
+     More perene advices, get notified when they break.
+
+
+**** dash
+
+     [[https://github.com/magnars/dash.el][source & doc]]
+
+     *informal standard* (not bundled with Emacs, but used everywhere)
+
+     Even though this lib revolves primarilly around list manipulation, it also offers for general purpose utils.
+
+     Those are:
+     - [[https://github.com/magnars/dash.el#threading-macros][threading macros]]
+     - [[https://github.com/magnars/dash.el#function-combinators][function combinators]]
+     - [[https://github.com/magnars/dash.el#binding][additional binding helpers]]
+
+     They all seem to be heavily inspired by Clojure.
+
+
+**** anaphora
+
+     [[https://github.com/rolandwalker/anaphora][source & doc]]
+
+     Allows the definition of anaphoric functions (as can be found in Common Lisp, Clojure...).
+
+
+**** signal
+
+     [[https://github.com/Mola-T/signal][source & doc]]
+
+     Reimplementation of hooks, with more advanced features.
+
+
+** Data structure manipulation
+
+*** strings
+
+**** subr-x
+
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/subr-x.el][source]]
+
+     *standard* (bundled with every Emacs install)
+
+     Provide the following helpers: =string-empty-p=, =string-blank-p=, =string-join=, =string-trim=, =string-trim-left=, =string-trim-right=, =string-remove-prefix= and =string-remove-suffix=.
+
+
+**** s
+
+     [[https://github.com/magnars/s.el][source & doc]]
+
+     *informal standard* (not bundled with Emacs, but used everywhere)
+
+     Advanced yet easy to use string manipulation helpers.
+
+
+*** sequences
+
+**** seq
+
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/seq.el][source]]
+     [[https://github.com/NicolasPetton/seq.el][doc]] (on original repo)
+
+     *standard* (bundled with every Emacs install, since version 25)
+
+
+**** dash
+
+     [[https://github.com/magnars/dash.el][source & doc]]
+
+     *informal standard* (not bundled with Emacs, but used everywhere)
+
+     Advanced yet easy to use list manipulation helpers.
+     Lots of them also have alternative anaphoric forms.
+
+
+**** stream
+
+     [[https://github.com/NicolasPetton/stream][source & doc]]
+
+     Allows defining streams of data as data sequences.
+     Compatible w/ seq.el.
+
+*** maps
+
+    (Hash)maps are a special type of sequences that allow representing a list of key / value pairs.
+    In other languages they can also be called associative arrays or dictionaries.
+
+    In elisp, a map can be represented as:
+    - an [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Association-Lists.html][alist]] (association list, preserving element order)
+    - a [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Property-Lists.html][plist]] (property list, more human-readable)
+    - an [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Hash-Tables.html][hash-table]]
+
+    | data structure | human-readability | insert speed | lookup speed         | ordered? |
+    |----------------+-------------------+--------------+----------------------+----------|
+    | alist          | meh               | fastest      | slower as data grows | yes      |
+    | plist          | very good         | ok           | fast                 | no       |
+    | hash-table     | ok                | ok           | very fast            | no       |
+
+
+    The official doc also has [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Plists-and-Alists.html][a nice section comparing plists and alists]].
+
+    tl;dr:
+    - planning on doing lots of inserts and a few lookups (or mostly on recent elements), use an alist
+    - planning on having a big number of elements and lookup speed is critical, use an hash-map
+    - every other case: use a plist
+
+    Older Emacs packages tend to rely mostly on alists, sometimes for no good reason.
+
+    Each data structure has its own APIs to get/insert/update.
+
+    Thanksfully, some libraries provide an abstraction layer that allows having a single API for those 3 types.
+
+    I would recommend sticking with thee default =map.el= library, unless you really enjoy the clojure syntax in which case =a.el= is also a nice choice.
+    If you know for sure that you are dealling with an alist and don't want any abstraction, =asoc.el= is a high quality choice.
+
+
+**** map.el
+
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/map.el][source]]
+
+     *standard* (bundled with every Emacs install, since version 25)
+
+     supports: alists, plists and hash-tables.
+
+     Weirdly enough, plists are called "arrays" in its source/inline docs.
+
+     No documentation other than source.
+
+
+**** a.el
+
+     [[https://github.com/plexus/a.el][source & doc]]
+
+     supports: alists and hash-tables.
+
+     Like =map.el=, but in a more "Clojurey" syntax.
+
+
+**** asoc
+
+     [[https://github.com/troyp/asoc.el][source & doc]]
+
+     supports: only alists.
+
+     Lots of helper functions complementing nicely what comes default.
+
+
+**** ht
+
+     [[https://github.com/Wilfred/ht.el][source & doc]]
+
+     supports: only hash-tables, but allow converting from/to alists and plists.
+
+**** kv
+
+     [[https://github.com/nicferrier/emacs-kv][source & doc]]
+
+     support: mostly alists, but allow converting from/to alists and plists.
+
+
+*** trees
+
+**** hierarchy
+
+     [[https://github.com/DamienCassou/hierarchy][source & doc]] [[https://emacs.cafe/emacs/guest-post/2017/06/26/hierarchy.html][blog post]]
+
+     Allows defining trees as well as diplaying them.
+
+
+**** treepy
+
+     [[https://github.com/volrath/treepy.el][source & doc]]
+
+     Allows defining and traversing trees.
+
+
+**** tree-sitter
+
+     [[https://github.com/ubolonton/emacs-tree-sitter/][source & doc]]
+     [[https://www.reddit.com/r/emacs/comments/chnxzm/dynamic_module_binding_for_treesitter_an/][reddit post]]
+
+     Desqigned for parsing code into an [[https://en.wikipedia.org/wiki/Abstract_syntax_tree][AST]].
+     Implemented as a module, binding with the [[https://tree-sitter.github.io/tree-sitter/][tree-sitter]] parser (writte in Rust).
+
+
+*** Org-mode outlines
+
+    =org-mode= outlines can be considered both a file format and a tree format.
+    =org-element.el= implements the parser used by =org-mode= to convert a text buffer into a tree structure (/parse-tree/).
+
+
+**** org-ml
+
+     [[https://github.com/ndwarshuis/org-ml][source & doc]]
+
+     Functional manipulation of an org parse-tree.
+
+
+**** org-ql
+
+     [[https://github.com/alphapapa/org-ql][source & doc]]
+
+     Query language ([[https://en.wikipedia.org/wiki/Domain-specific_language][DSL]]) for parsing, searching and filtering an org outline.
+
+
+** Concurency / Asynchronicity
+
+   Concurency in elisp / Emacs is a hot topic.
+
+   Due to its single-threaded nature, we wan't do parallel processing unless using some dirty tricks (see [[#async][async]]).
+
+   Emacs 26 added support for [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Threads.html][threads]], but those are not what you might be thinking of coming from other lnaguages.
+
+   For more info on those subject, read:
+   - [[https://www.emacswiki.org/emacs/NoThreading][emacswiki/No Threading]]
+   - [[https://www.emacswiki.org/emacs/NoThreading][emacswiki/Concurrent Emacs]]
+
+
+*** timers
+
+**** timer.el
+
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/timer.el][source]]
+
+     Default timer lib.
+
+
+**** named-timer
+
+     [[https://github.com/DarwinAwardWinner/emacs-named-timer][source & doc]]
+
+     Easier to use timer lib.
+
+
+*** promises
+
+**** promise.el
+
+     [[https://github.com/chuntaro/emacs-promise][source & doc]]
+
+     Reimplementation of the [[https://promisesaplus.com/][Promises/A+]] open standard (originally targetting Javascript).
+
+**** aio
+
+     [[https://github.com/skeeto/emacs-aio][source & doc]] [[https://nullprogram.com/blog/2019/03/10/][blog post]]
+
+     Mostly an async/await lib but implements its own promise system internally.
+
+
+*** async elisp function calls
+
+**** deferred
+
+     [[https://github.com/kiwanami/emacs-deferred][source & doc]]
+
+     Not super-actively maintained, but featureful.
+
+     Achieves concurrency through the use of timers.
+
+     Also allows handling async (sub-)processes and HTTP calls with [[https://github.com/tkf/emacs-request][request.el bindings]].
+
+
+**** async
+
+     [[https://github.com/jwiegley/emacs-async][source & doc]]
+
+     *informal standard* (not bundled with Emacs, but used everywhere)
+
+     Achieves true parallel processing by spawning a child Emacs sub-process.
+     As such, necessary context needs to be passed w/ =async-inject-variables=.
+
+     Suports defining callbacks.
+
+     Offers bindings w/ =dired=, =bytecomp= and =smtp-mail=.
+
+
+**** aio
+
+     [[https://github.com/skeeto/emacs-aio][source & doc]] [[https://nullprogram.com/blog/2019/03/10/][blog post]]
+
+     Short for async-io.
+
+     Allows writting coroutines with the async/await syntax found in Python's [[https://docs.python.org/3/library/asyncio.html][asyncio]].
+
+     Internal representation relies on its own promise implementation and [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Generators.html][generators]].
+
+
+**** async-await.el
+
+     [[https://github.com/chuntaro/emacs-async-await][source & doc]]
+
+     Simple implementation of Async/Await, based on the TypeScript syntax.
+
+     Relies on =promise.el= and [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Generators.html][generators]]..
+
+
+**** lcr
+
+     [[https://github.com/jyp/lcr][source]]
+
+     lcr stands for Lightweight CoRoutines.
+
+     Seems to rely on timers.
+
+
+*** async command processes
+
+    These libs only allow to run asynchronously command processes (as opposed to elisp function calls).
+
+    It can be done in standard with low-level functions (in C core or =subr.el=) such as =make-process=,  =start-process= or =start-process-shell-command=.
+
+    Some advanced behaviours are hard to program, that's why wrapper libraries can help you.
+
+
+**** simple.el / =async-shell-command=
+
+     *standard* (bundled with every Emacs install)
+
+     =simple.el= provides =async-shell-command= that allows launching background commands as run by a shell interpreter (e.g. bash) with full environment resolution and advanced parsing (thanks to =comint.el=).
+
+     Callbacks can be defined by binding a [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Sentinels.html][sentinel]] to the process.
+
+
+**** friendly-shell-command
+
+     [[https://github.com/p3r7/friendly-shell][source & doc]]
+
+     =friendly-shell-command= provides =friendly-shell-command-async=, a wrapper around =async-shell-command= with easier access to advanced beahviours thanks to optional keyword arguments.
+
+     It notably eases associating a callback to the execution.
+
+
+**** deferred
+
+     [[https://github.com/kiwanami/emacs-deferred][source & doc]]
+
+     Not super-actively maintained, but featureful.
+
+     Also allows handling async elisp function calls and HTTP calls with [[https://github.com/tkf/emacs-request][request.el bindings]].
+
+
+**** bpr
+
+     [[https://github.com/ilya-babanov/emacs-bpr][source & doc]]
+
+     Stands for Background Process Runner.
+     Allows running a command process in the background.
+
+     Allows advanced callback behaviours.
+
+     It relies on =start-process-shell-command=.
+
+
+**** pfuture
+
+     [[https://github.com/Alexander-Miller/pfuture][source & doc]]
+
+     Allows running a command process in the background.
+
+     Result can be handled either with a future (=pfuture-new=, =pfuture-result=) or a callback (=pfuture-callback=).
+
+     It relies on =make-pipe-process= for the future-based implementation and =make-process= for the callback one.
+
+
+** HTTP
+
+*** request.el
+
+    [[https://github.com/tkf/emacs-request][source & doc]]
+
+    Supports asynchronicity w/ via bindings with =deferred=.
+
+
+*** apiwrap
+
+    [[https://github.com/vermiculus/apiwrap.el][source & doc]]
+
+    Macros to ease the definition of binding functions to HTTP APIs.
+
+
+*** with-proxy
+
+    [[https://github.com/twlz0ne/with-proxy.el][source & doc]]
+
+    Wrapper for let-binding HTTP proxies.
+
+
+** Emacs rendering
+
+*** ov
+
+    [[https://github.com/emacsorphanage/ov][source & doc]]
+
+    Helpers to maniupalte overlays.
+    Originaly authored by [[https://github.com/ShingoFukuyama][@ShingoFukuyama]]. Unmaintained.
