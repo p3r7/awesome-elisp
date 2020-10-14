@@ -1,8 +1,8 @@
 
 
-* resources
+* Resources
 
-** entry-level
+** Entry-level
 
 *** An Introduction to Programming in Emacs Lisp
 
@@ -20,6 +20,13 @@
     [[https://github.com/caiorss/Emacs-Elisp-Programming/blob/master/Elisp_Programming.org][source]]
 
     Very complete and gentle introduction.
+
+
+*** (Almost) All You Need to Know About Variables
+
+    [[https://with-emacs.com/posts/tutorials/almost-all-you-need-to-know-about-variables/][read online]]
+
+    *A must read!*
 
 
 *** elisp-guide
@@ -43,9 +50,10 @@
     [[https://github.com/alhassy/ElispCheatSheet][source]]
 
     Focused around data structures.
+    Author's Common Lisp background can be felt.
 
 
-** advanced
+** Advanced
 
 *** Emacs Lisp Reference Manual
 
@@ -76,13 +84,17 @@
     Lots of good insights, but its strucutre is kinda off-putting.
 
 
-** cookbooks
+** Cookbooks
 
-*** EmacsWiki's Cookbook
+*** elisp-demos
 
-    [[https://www.emacswiki.org/emacs/ElispCookbook][read online]]
+    [[https://github.com/xuchunyang/elisp-demos/blob/master/elisp-demos.org][read online]]
+    [[https://github.com/xuchunyang/elisp-demos][source]]
 
-    Community-driven snippets.
+    Very good and beginer-friendly.
+
+    Almost complete list of single-liner examples of standard function.
+    Also packs examples fro =dash= and =s=.
 
 
 *** Emacs In A Box - Elisp Snippets
@@ -92,6 +104,19 @@
 
     Realy nice selection of snippets with real-world use-cases.
 
+*** EmacsWiki's Cookbook
+
+    [[https://www.emacswiki.org/emacs/ElispCookbook][read online]]
+
+    Community-driven snippets, beginer-friendly.
+
+
+*** @alphapapa's unpackaged.el
+
+    [[https://alphapapa.github.io/unpackaged.el/][read online]]
+    [[https://github.com/alphapapa/unpackaged.el][source]]
+
+    Real-world selection of snippets, not beginer-friendly.
 
 * libraries
 
@@ -104,7 +129,7 @@
   Some libraries might be listed several times, as they fit in several categories (e.g. =subr-x=, =dash=).
 
 
-** General purpose
+** Core / general purpose
 
 **** cl-lib
 
@@ -167,7 +192,15 @@
      Reimplementation of hooks, with more advanced features.
 
 
-** Data structure manipulation
+**** weak-ref
+
+     [[https://github.com/skeeto/elisp-weak-ref][source & doc]]
+
+     Allows creating weak reference to vars.
+     Weak reference are more performant but can be garbage collected.
+
+
+** Data structures
 
 *** strings
 
@@ -244,10 +277,10 @@
 
     Each data structure has its own APIs to get/insert/update.
 
-    Thanksfully, some libraries provide an abstraction layer that allows having a single API for those 3 types.
+    Thanksfully, some libraries provide an abstraction layer that allows having a single API for multiple data structures.
 
     I would recommend sticking with thee default =map.el= library, unless you really enjoy the clojure syntax in which case =a.el= is also a nice choice.
-    If you know for sure that you are dealling with an alist and don't want any abstraction, =asoc.el= is a high quality choice.
+    If you know for sure that you want to stick with an alist or a hash-table or  =asoc.el= and =ht= are high quality choice.
 
 
 **** map.el
@@ -258,9 +291,10 @@
 
      supports: alists, plists and hash-tables.
 
+     Shared API for all 3 elisp map objects.
      Weirdly enough, plists are called "arrays" in its source/inline docs.
 
-     No documentation other than source.
+     No documentation other than what is inlined in source.
 
 
 **** asoc
@@ -271,7 +305,7 @@
 
      supports: only alists.
 
-     Lots of helper functions complementing nicely what comes default.
+     Nice set of additional APIs for alists.
 
 
 **** ht
@@ -282,6 +316,8 @@
 
      supports: only hash-tables, but allow converting from/to alists and plists.
 
+     Nice set of additional APIs for hash-tables.
+
 
 **** a.el
 
@@ -289,6 +325,7 @@
 
      supports: alists and hash-tables.
 
+     Shared API for alists and hash-tables.
      Like =map.el=, but in a more "Clojurey" syntax.
 
 
@@ -322,6 +359,15 @@
 
      Desqigned for parsing code into an [[https://en.wikipedia.org/wiki/Abstract_syntax_tree][AST]].
      Implemented as a module, binding with the [[https://tree-sitter.github.io/tree-sitter/][tree-sitter]] parser (writte in Rust).
+
+
+*** XML/HTML
+
+**** dom.el
+
+     *standard* (bundled with every Emacs install)
+
+     DOM manipulation and searching functions.
 
 
 *** Org-mode outlines
@@ -509,37 +555,47 @@
      It relies on =make-pipe-process= for the future-based implementation and =make-process= for the callback one.
 
 
-** HTTP
+** Networking
 
-*** request.el
+*** HTTP
 
-    [[https://github.com/tkf/emacs-request][source & doc]]
+**** request.el
 
-    Supports asynchronicity w/ via bindings with =deferred=.
+     [[https://github.com/tkf/emacs-request][source & doc]]
 
-
-*** apiwrap
-
-    [[https://github.com/vermiculus/apiwrap.el][source & doc]]
-
-    Macros to ease the definition of binding functions to HTTP APIs.
+     Supports asynchronicity w/ via bindings with =deferred=.
 
 
-*** with-proxy
+**** apiwrap
 
-    [[https://github.com/twlz0ne/with-proxy.el][source & doc]]
+     [[https://github.com/vermiculus/apiwrap.el][source & doc]]
 
-    Wrapper for let-binding HTTP proxies.
+     Macros to ease the definition of binding functions to HTTP APIs.
 
 
-** Emacs rendering
+**** with-proxy
 
-*** ov
+     [[https://github.com/twlz0ne/with-proxy.el][source & doc]]
 
-    [[https://github.com/emacsorphanage/ov][source & doc]]
+     Wrapper for let-binding HTTP proxies.
 
-    Helpers to maniupalte overlays.
-    Originaly authored by [[https://github.com/ShingoFukuyama][@ShingoFukuyama]]. Unmaintained.
+
+** GUI
+
+*** popups
+
+**** frog-menu
+
+     https://github.com/clemera/frog-menu
+
+*** overlays
+
+**** ov
+
+     [[https://github.com/emacsorphanage/ov][source & doc]]
+
+     Helpers to maniupalte overlays.
+     Originaly authored by [[https://github.com/ShingoFukuyama][@ShingoFukuyama]]. Unmaintained.
 
 
 * Development tools
@@ -558,6 +614,10 @@
 
 
 ** linting / validation
+
+**** melpazoid
+
+     https://github.com/riscy/melpazoid
 
 **** elisp-lint
 
@@ -593,7 +653,7 @@
 
 
 
-* elisp heroes
+* Heroes
 
   Emacs has too many heroes to really list.
 
@@ -628,11 +688,13 @@
    Contributed to elisp development with:
    - [[https://github.com/magit/transient][transient]]
 
+
 ** @alphapapa
 
    Contributed to elisp development with:
    - [[https://github.com/alphapapa/emacs-package-dev-handbook][The Emacs Package Developer’s Handbook]]
    - =org-ql=
+
 
 ** Oleh Krehel (@abo-abo)
 
@@ -642,6 +704,7 @@
 
    Author of many high-quality packages such as [[https://github.com/abo-abo/swiper][ivy]], [[https://github.com/abo-abo/hydra][hydra]], [[https://github.com/abo-abo/lispy][lispy]]...
 
+
 ** Magnar Sveen (@magnars)
 
    [[https://github.com/magnars][github]]
@@ -650,6 +713,7 @@
    Contributed to elisp development with:
    - [[https://github.com/magnars/s.el][s]] (strings)
    - [[https://github.com/magnars/dash.el][dash]] (lists)
+
 
 ** Nicolas Petton
 
@@ -669,6 +733,7 @@
    Contributed to elisp development with:
    - his book [[http://caiorss.github.io/Emacs-Elisp-Programming/][Emacs In a Box]]
 
+
 ** Chris Wellons (@skeeto)
 
    [[https://github.com/skeeto][github]]
@@ -680,3 +745,4 @@
    Contributed to elisp development with:
    - his blog
    - =aio=
+   - =week-ref=
