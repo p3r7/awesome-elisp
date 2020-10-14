@@ -16,8 +16,7 @@
 
 *** Emacs In A Box - Elisp Programming
 
-    [[http://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Programming.html][read online]]
-    [[https://github.com/caiorss/Emacs-Elisp-Programming/blob/master/Elisp_Programming.org][source]]
+    [[http://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Programming.html][read online]], [[https://github.com/caiorss/Emacs-Elisp-Programming/blob/master/Elisp_Programming.org][source]]
 
     Very complete and gentle introduction.
 
@@ -46,8 +45,7 @@
 
 *** ElispCheatSheet
 
-    [[https://alhassy.github.io/ElispCheatSheet/][read online]]
-    [[https://github.com/alhassy/ElispCheatSheet][source]]
+    [[https://alhassy.github.io/ElispCheatSheet/][read online]], [[https://github.com/alhassy/ElispCheatSheet][source]]
 
     Focused around data structures.
     Author's Common Lisp background can be felt.
@@ -76,8 +74,7 @@
 
 *** The Emacs Package Developer’s Handbook
 
-    [[https://alphapapa.github.io/emacs-package-dev-handbook/][read online]]
-    [[https://github.com/alphapapa/emacs-package-dev-handbook][source]]
+    [[https://alphapapa.github.io/emacs-package-dev-handbook/][read online]], [[https://github.com/alphapapa/emacs-package-dev-handbook][source]]
 
     List bunch of tools and libraries for helping package developers.
     Also provides various snippets and best practices.
@@ -88,8 +85,7 @@
 
 *** elisp-demos
 
-    [[https://github.com/xuchunyang/elisp-demos/blob/master/elisp-demos.org][read online]]
-    [[https://github.com/xuchunyang/elisp-demos][source]]
+    [[https://github.com/xuchunyang/elisp-demos/blob/master/elisp-demos.org][read online]], [[https://github.com/xuchunyang/elisp-demos][source]]
 
     Very good and beginer-friendly.
 
@@ -99,8 +95,7 @@
 
 *** Emacs In A Box - Elisp Snippets
 
-    [[http://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Snippets.html][read online]]
-    [[https://github.com/caiorss/Emacs-Elisp-Programming/blob/master/Elisp_Snippets.org][source]]
+    [[http://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Snippets.html][read online]], [[https://github.com/caiorss/Emacs-Elisp-Programming/blob/master/Elisp_Snippets.org][source]]
 
     Realy nice selection of snippets with real-world use-cases.
 
@@ -113,8 +108,7 @@
 
 *** @alphapapa's unpackaged.el
 
-    [[https://alphapapa.github.io/unpackaged.el/][read online]]
-    [[https://github.com/alphapapa/unpackaged.el][source]]
+    [[https://alphapapa.github.io/unpackaged.el/][read online]], [[https://github.com/alphapapa/unpackaged.el][source]]
 
     Real-world selection of snippets, not beginer-friendly.
 
@@ -236,8 +230,7 @@
 
 **** seq
 
-     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/seq.el][source]]
-     [[https://github.com/NicolasPetton/seq.el][doc]] (on original repo)
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/seq.el][source]], [[https://github.com/NicolasPetton/seq.el][doc]]
 
      *standard* (bundled with every Emacs install, since version 25)
 
@@ -376,7 +369,7 @@
 
 **** hierarchy
 
-     [[https://github.com/DamienCassou/hierarchy][source & doc]] [[https://emacs.cafe/emacs/guest-post/2017/06/26/hierarchy.html][blog post]]
+     [[https://github.com/DamienCassou/hierarchy][source & doc]], [[https://emacs.cafe/emacs/guest-post/2017/06/26/hierarchy.html][blog post]]
 
      Allows defining trees as well as diplaying them.
 
@@ -390,8 +383,7 @@
 
 **** tree-sitter
 
-     [[https://github.com/ubolonton/emacs-tree-sitter/][source & doc]]
-     [[https://www.reddit.com/r/emacs/comments/chnxzm/dynamic_module_binding_for_treesitter_an/][reddit post]]
+     [[https://github.com/ubolonton/emacs-tree-sitter/][source & doc]], [[https://www.reddit.com/r/emacs/comments/chnxzm/dynamic_module_binding_for_treesitter_an/][reddit post]]
 
      Desqigned for parsing code into an [[https://en.wikipedia.org/wiki/Abstract_syntax_tree][AST]].
      Implemented as a module, binding with the [[https://tree-sitter.github.io/tree-sitter/][tree-sitter]] parser (writte in Rust).
@@ -471,7 +463,7 @@
 
 **** aio
 
-     [[https://github.com/skeeto/emacs-aio][source & doc]] [[https://nullprogram.com/blog/2019/03/10/][blog post]]
+     [[https://github.com/skeeto/emacs-aio][source & doc]], [[https://nullprogram.com/blog/2019/03/10/][blog post]]
 
      Mostly an async/await lib but implements its own promise system internally.
 
@@ -505,7 +497,7 @@
 
 **** aio
 
-     [[https://github.com/skeeto/emacs-aio][source & doc]] [[https://nullprogram.com/blog/2019/03/10/][blog post]]
+     [[https://github.com/skeeto/emacs-aio][source & doc]], [[https://nullprogram.com/blog/2019/03/10/][blog post]]
 
      Short for async-io.
 
@@ -650,9 +642,7 @@
 
 **** edebug
 
-     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/edebug.el][source]]
-     [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Edebug.html][doc]]
-     [[https://www.gnu.org/software/emacs/manual/html_node/eintr/Debugging.html][chapter in book An Introduction to Programming in Emacs Lisp]]
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/edebug.el][source]], [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Edebug.html][doc]]
 
      *standard* (bundled with every Emacs install)
 
@@ -663,6 +653,7 @@
      - [[https://endlessparentheses.com/debugging-emacs-lisp-part-1-earn-your-independence.html][Endless Parentheses - Debugging Elisp Part 1: Earn your independence]]
      - [[https://endlessparentheses.com/debugging-emacs-lisp-part-1-earn-your-independence.html][Endless Parentheses - Debugging Elisp Part 2: Advanced topics]]
 
+     You can also read the dedicated [[https://www.gnu.org/software/emacs/manual/html_node/eintr/Debugging.html][chapter in book An Introduction to Programming in Emacs Lisp]].
 
 
 ** Validation
@@ -670,6 +661,7 @@
 **** melpazoid
 
      https://github.com/riscy/melpazoid
+
 
 **** elisp-lint
 
@@ -686,6 +678,7 @@
 
      Standard Emacs pretty-printing util.
 
+
 **** ppp
 
      [[https://github.com/conao3/ppp.el][source & doc]]
@@ -698,6 +691,7 @@
 **** cask
 
      https://github.com/cask/cask
+
 
 **** eldev
 
@@ -713,9 +707,7 @@
 
 ** John Wiegley (@jwiegley)
 
-   [[http://newartisans.com/][blog]]
-   [[https://github.com/jwiegley][github]]
-   [[https://github.com/jwiegley/dot-emacs/blob/master/init.el][dot emacs]]
+   [[http://newartisans.com/][blog]], [[https://github.com/jwiegley][github]], [[https://github.com/jwiegley/dot-emacs/blob/master/init.el][dot emacs]]
 
    Known for:
    - being the head of the Emacs project maintainers
@@ -727,11 +719,10 @@
      - [[https://www.youtube.com/watch?v=QFClYrhV1z4][Emacs Lisp Development - @ Emacs Conference 2013]]
      - [[https://sachachua.com/blog/2015/04/2015-04-08-emacs-lisp-development-tips-with-john-wiegley/][Emacs Lisp Development Tips - Sacha Chua Emacs Chat 2015-04-08]].
 
+
 ** Jonas Bernoulli (@tarsius)
 
-   [[https://emacsair.me/][blog]]
-   [[https://github.com/tarsius][github]]
-   [[https://magit.vc/donate/][open to sponsoring]]
+   [[https://emacsair.me/][blog]], [[https://github.com/tarsius][github]], [[https://magit.vc/donate/][open to sponsoring]]
 
    Known for:
    - authoring [[https://github.com/magit/magit][magit]]
@@ -743,6 +734,8 @@
 
 ** @alphapapa
 
+   [[https://github.com/alphapapa][github]]
+
    Contributed to elisp development with:
    - [[https://github.com/alphapapa/emacs-package-dev-handbook][The Emacs Package Developer’s Handbook]]
    - =org-ql=
@@ -750,17 +743,14 @@
 
 ** Oleh Krehel (@abo-abo)
 
-   [[https://oremacs.com/][blog]]
-   [[https://github.com/abo-abo][github]]
-   [[https://github.com/sponsors/abo-abo][open to sponsoring]]
+   [[https://oremacs.com/][blog]], [[https://github.com/abo-abo][github]], [[https://github.com/sponsors/abo-abo][open to sponsoring]]
 
    Author of many high-quality packages such as [[https://github.com/abo-abo/swiper][ivy]], [[https://github.com/abo-abo/hydra][hydra]], [[https://github.com/abo-abo/lispy][lispy]]...
 
 
 ** Magnar Sveen (@magnars)
 
-   [[https://github.com/magnars][github]]
-   [[http://twitter.com/magnars][twitter]]
+   [[https://github.com/magnars][github]], [[http://twitter.com/magnars][twitter]]
 
    Contributed to elisp development with:
    - [[https://github.com/magnars/s.el][s]] (strings)
@@ -788,8 +778,7 @@
 
 ** Chris Wellons (@skeeto)
 
-   [[https://github.com/skeeto][github]]
-   [[https://nullprogram.com/][blog]]
+   [[https://github.com/skeeto][github]], [[https://nullprogram.com/][blog]]
 
    Known for:
    - [[https://github.com/skeeto/elfeed][elfeed]], the popular Emacs RSS reader
