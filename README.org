@@ -1,5 +1,98 @@
 
 
+* resources
+
+** entry-level
+
+*** An Introduction to Programming in Emacs Lisp
+
+    [[https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html][read online]]
+
+    Also comes bundled with Emacs.
+    Just =C-h i= (or =M-x info=) and open =Emacs Lisp Intro=.
+
+    A bit scholarly. Not the easiest read.
+
+
+*** Emacs In A Box - Elisp Programming
+
+    [[http://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Programming.html][read online]]
+    [[https://github.com/caiorss/Emacs-Elisp-Programming/blob/master/Elisp_Programming.org][source]]
+
+    Very complete and gentle introduction.
+
+
+*** elisp-guide
+
+    [[https://github.com/chrisdone/elisp-guide][read online]]
+
+    Focused on introducing general concepts and terminology.
+
+
+*** Emergency Elisp
+
+    [[http://steve-yegge.blogspot.com/2008/01/emergency-elisp.html][read online]]
+
+    Focused around data structures.
+    More like a cheat sheet.
+
+
+*** ElispCheatSheet
+
+    [[https://alhassy.github.io/ElispCheatSheet/][read online]]
+    [[https://github.com/alhassy/ElispCheatSheet][source]]
+
+    Focused around data structures.
+
+
+** advanced
+
+*** Emacs Lisp Reference Manual
+
+    [[https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html][read online]]
+
+    Also comes bundled with Emacs.
+    Just =C-h i= (or =M-x info=) and open =Elisp=.
+
+    Comrpehensive guide of core elisp APIs.
+
+    Generally well written but needs you to understand its logic and be familiar with Emacs terminology.
+
+
+*** The Emacs Lisp Style Guide
+
+    [[https://github.com/bbatsov/emacs-lisp-style-guide][read online]]
+
+    Provides solid guidelines on the dos and don'ts for quality elisp code.
+
+
+*** The Emacs Package Developer’s Handbook
+
+    [[https://alphapapa.github.io/emacs-package-dev-handbook/][read online]]
+    [[https://github.com/alphapapa/emacs-package-dev-handbook][source]]
+
+    List bunch of tools and libraries for helping package developers.
+    Also provides various snippets and best practices.
+    Lots of good insights, but its strucutre is kinda off-putting.
+
+
+** cookbooks
+
+*** EmacsWiki's Cookbook
+
+    [[https://www.emacswiki.org/emacs/ElispCookbook][read online]]
+
+    Community-driven snippets.
+
+
+*** Emacs In A Box - Elisp Snippets
+
+    [[http://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Snippets.html][read online]]
+    [[https://github.com/caiorss/Emacs-Elisp-Programming/blob/master/Elisp_Snippets.org][source]]
+
+    Realy nice selection of snippets with real-world use-cases.
+
+
 * libraries
 
   #+begin_quote
@@ -170,18 +263,11 @@
      No documentation other than source.
 
 
-**** a.el
-
-     [[https://github.com/plexus/a.el][source & doc]]
-
-     supports: alists and hash-tables.
-
-     Like =map.el=, but in a more "Clojurey" syntax.
-
-
 **** asoc
 
      [[https://github.com/troyp/asoc.el][source & doc]]
+
+     *informal standard* (not bundled with Emacs, but used everywhere)
 
      supports: only alists.
 
@@ -192,7 +278,19 @@
 
      [[https://github.com/Wilfred/ht.el][source & doc]]
 
+     *informal standard* (not bundled with Emacs, but used everywhere)
+
      supports: only hash-tables, but allow converting from/to alists and plists.
+
+
+**** a.el
+
+     [[https://github.com/plexus/a.el][source & doc]]
+
+     supports: alists and hash-tables.
+
+     Like =map.el=, but in a more "Clojurey" syntax.
+
 
 **** kv
 
@@ -244,6 +342,12 @@
      [[https://github.com/alphapapa/org-ql][source & doc]]
 
      Query language ([[https://en.wikipedia.org/wiki/Domain-specific_language][DSL]]) for parsing, searching and filtering an org outline.
+
+**** org-ba
+
+     [[https://github.com/Fuco1/orgba][source & doc]]
+
+     More user-friendly APIs for writting code for interacting with org documents.
 
 
 ** Concurency / Asynchronicity
@@ -436,3 +540,143 @@
 
     Helpers to maniupalte overlays.
     Originaly authored by [[https://github.com/ShingoFukuyama][@ShingoFukuyama]]. Unmaintained.
+
+
+* Development tools
+
+** debugging
+
+**** edebug
+
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/edebug.el][source]]
+     [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Edebug.html][doc]]
+     [[https://www.gnu.org/software/emacs/manual/html_node/eintr/Debugging.html][chapter in book An Introduction to Programming in Emacs Lisp]]
+
+     *standard* (bundled with every Emacs install)
+
+     edebug is the interactive elisp debugger.
+
+
+** linting / validation
+
+**** elisp-lint
+
+     https://github.com/gonewest818/elisp-lint
+
+
+** pretty printing
+
+**** pp
+
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/pp.el][source]]
+
+     *standard* (bundled with every Emacs install)
+
+     Standard Emacs pretty-printing util.
+
+**** ppp
+
+     [[https://github.com/conao3/ppp.el][source & doc]]
+
+     Advanced pretty-printing util.
+
+
+** build
+
+**** cask
+
+     https://github.com/cask/cask
+
+**** eldev
+
+     https://github.com/doublep/eldev
+
+
+
+* elisp heroes
+
+  Emacs has too many heroes to really list.
+
+  In this section, we only list users who have contributed with libraries and resources that improve the Emacs development experience.
+
+** John Wiegley (@jwiegley)
+
+   [[http://newartisans.com/][blog]]
+   [[https://github.com/jwiegley][github]]
+   [[https://github.com/jwiegley/dot-emacs/blob/master/init.el][dot emacs]]
+
+   Known for:
+   - being the head of the Emacs project maintainers
+   - authoring =use-pacakge=
+
+   Contributed to elisp development with:
+   - =async.el=
+   - talks on how to setup emacs to ease elisp development:
+     - [[https://www.youtube.com/watch?v=QFClYrhV1z4][Emacs Lisp Development - @ Emacs Conference 2013]]
+     - [[https://sachachua.com/blog/2015/04/2015-04-08-emacs-lisp-development-tips-with-john-wiegley/][Emacs Lisp Development Tips - Sacha Chua Emacs Chat 2015-04-08]].
+
+** Jonas Bernoulli (@tarsius)
+
+   [[https://emacsair.me/][blog]]
+   [[https://github.com/tarsius][github]]
+   [[https://magit.vc/donate/][open to sponsoring]]
+
+   Known for:
+   - authoring [[https://github.com/magit/magit][magit]]
+   - a lot of high quality smaller packages
+
+   Contributed to elisp development with:
+   - [[https://github.com/magit/transient][transient]]
+
+** @alphapapa
+
+   Contributed to elisp development with:
+   - [[https://github.com/alphapapa/emacs-package-dev-handbook][The Emacs Package Developer’s Handbook]]
+   - =org-ql=
+
+** Oleh Krehel (@abo-abo)
+
+   [[https://oremacs.com/][blog]]
+   [[https://github.com/abo-abo][github]]
+   [[https://github.com/sponsors/abo-abo][open to sponsoring]]
+
+   Author of many high-quality packages such as [[https://github.com/abo-abo/swiper][ivy]], [[https://github.com/abo-abo/hydra][hydra]], [[https://github.com/abo-abo/lispy][lispy]]...
+
+** Magnar Sveen (@magnars)
+
+   [[https://github.com/magnars][github]]
+   [[http://twitter.com/magnars][twitter]]
+
+   Contributed to elisp development with:
+   - [[https://github.com/magnars/s.el][s]] (strings)
+   - [[https://github.com/magnars/dash.el][dash]] (lists)
+
+** Nicolas Petton
+
+   [[https://github.com/NicolasPetton][github]]
+
+   Known for:
+   - creating the popular [[https://github.com/NicolasPetton/Indium][Indium]] interractive javascript development environment
+
+   Contributed to elisp development with:
+   - creating the now standard =seq.el= and =map.el=
+   - =stream.el=
+
+** Caio Rordrigues (@caiorss)
+
+   [[https://github.com/caiorss][github]]
+
+   Contributed to elisp development with:
+   - his book [[http://caiorss.github.io/Emacs-Elisp-Programming/][Emacs In a Box]]
+
+** Chris Wellons (@skeeto)
+
+   [[https://github.com/skeeto][github]]
+   [[https://nullprogram.com/][blog]]
+
+   Known for:
+   - [[https://github.com/skeeto/elfeed][elfeed]], the popular Emacs RSS reader
+
+   Contributed to elisp development with:
+   - his blog
+   - =aio=
