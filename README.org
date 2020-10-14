@@ -118,7 +118,8 @@
 
     Real-world selection of snippets, not beginer-friendly.
 
-* libraries
+
+* Libraries
 
   #+begin_quote
   NOTE: Traditionally, it was recommanded to not use external libs/dependencies and prefer using standard functions / libs bundled with Emacs.
@@ -202,7 +203,7 @@
 
 ** Data structures
 
-*** strings
+*** Strings
 
 **** subr-x
 
@@ -222,7 +223,16 @@
      Advanced yet easy to use string manipulation helpers.
 
 
-*** sequences
+**** rx
+
+     [[https://francismurillo.github.io/2017-03-30-Exploring-Emacs-rx-Macro/][tutorial]]
+
+     *standard* (bundled with every Emacs install)
+
+     Macro for helping writting elisp regexp.
+
+
+*** Sequences
 
 **** seq
 
@@ -249,7 +259,8 @@
      Allows defining streams of data as data sequences.
      Compatible w/ seq.el.
 
-*** maps
+
+*** Maps
 
     (Hash)maps are a special type of sequences that allow representing a list of key / value pairs.
     In other languages they can also be called associative arrays or dictionaries.
@@ -336,7 +347,32 @@
      support: mostly alists, but allow converting from/to alists and plists.
 
 
-*** trees
+*** Tables
+
+**** tabulated-list
+
+     *standard* (bundled with every Emacs install)
+
+     Library for defining, manipulating and displaying tables.
+
+
+**** tablist
+
+     [[https://github.com/politza/tablist][source & doc]]
+
+     *informal standard* (not bundled with Emacs, but used everywhere)
+
+     Extension to tabulated-list, adding possibility to mark and filter items.
+
+
+**** ctable
+
+     [[https://github.com/kiwanami/emacs-ctable][source & doc]]
+
+     Library for defining, manipulating and displaying tables.
+
+
+*** Trees
 
 **** hierarchy
 
@@ -582,13 +618,14 @@
 
 ** GUI
 
-*** popups
+*** Popups
 
 **** frog-menu
 
      https://github.com/clemera/frog-menu
 
-*** overlays
+
+*** Overlays
 
 **** ov
 
@@ -596,6 +633,15 @@
 
      Helpers to maniupalte overlays.
      Originaly authored by [[https://github.com/ShingoFukuyama][@ShingoFukuyama]]. Unmaintained.
+
+
+*** Charts & diagrams
+
+**** chart
+
+     [[https://francismurillo.github.io/2017-04-15-Exploring-Emacs-chart-Library/][tutorial]]
+
+     *standard* (bundled with every Emacs install)
 
 
 * Development tools
