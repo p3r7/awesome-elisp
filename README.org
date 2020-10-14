@@ -600,7 +600,7 @@
 
 * Development tools
 
-** debugging
+** Debugging
 
 **** edebug
 
@@ -613,7 +613,7 @@
      edebug is the interactive elisp debugger.
 
 
-** linting / validation
+** Validation
 
 **** melpazoid
 
@@ -624,7 +624,7 @@
      https://github.com/gonewest818/elisp-lint
 
 
-** pretty printing
+** Pretty printing
 
 **** pp
 
@@ -641,7 +641,7 @@
      Advanced pretty-printing util.
 
 
-** build
+** Building
 
 **** cask
 
