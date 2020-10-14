@@ -612,6 +612,12 @@
 
      edebug is the interactive elisp debugger.
 
+     The documentation is a bit rough to get started.
+     I recommend reading this series of posts:
+     - [[https://endlessparentheses.com/debugging-emacs-lisp-part-1-earn-your-independence.html][Endless Parentheses - Debugging Elisp Part 1: Earn your independence]]
+     - [[https://endlessparentheses.com/debugging-emacs-lisp-part-1-earn-your-independence.html][Endless Parentheses - Debugging Elisp Part 2: Advanced topics]]
+
+
 
 ** Validation
 
