@@ -60,7 +60,7 @@
     Also comes bundled with Emacs.
     Just =C-h i= (or =M-x info=) and open =Elisp=.
 
-    Comrpehensive guide of core elisp APIs.
+    Comprehensive guide of core elisp APIs.
 
     Generally well written but needs you to understand its logic and be familiar with Emacs terminology.
 
@@ -78,7 +78,7 @@
 
     List bunch of tools and libraries for helping package developers.
     Also provides various snippets and best practices.
-    Lots of good insights, but its strucutre is kinda off-putting.
+    Lots of good insights, but its structure is kinda off-putting.
 
 
 ** Cookbooks
@@ -87,7 +87,7 @@
 
     [[https://github.com/xuchunyang/elisp-demos/blob/master/elisp-demos.org][read online]], [[https://github.com/xuchunyang/elisp-demos][source]]
 
-    Very good and beginer-friendly.
+    Very good and beginner-friendly.
 
     Almost complete list of single-liner examples of standard function.
     Also packs examples fro =dash= and =s=.
@@ -103,23 +103,23 @@
 
     [[https://www.emacswiki.org/emacs/ElispCookbook][read online]]
 
-    Community-driven snippets, beginer-friendly.
+    Community-driven snippets, beginner-friendly.
 
 
 *** @alphapapa's unpackaged.el
 
     [[https://alphapapa.github.io/unpackaged.el/][read online]], [[https://github.com/alphapapa/unpackaged.el][source]]
 
-    Real-world selection of snippets, not beginer-friendly.
+    Real-world selection of snippets, not beginner-friendly.
 
 
 * Libraries
 
-  #+begin_quote
-  NOTE: Traditionally, it was recommanded to not use external libs/dependencies and prefer using standard functions / libs bundled with Emacs.
-  These recommandations are still mostly valid but predated the advent of =package.el=.
+  Traditionally, it was recommended to not use external libs/dependencies and prefer using standard APIs bundled with Emacs.
+
+  These recommendation are still mostly valid but predated the advent of =package.el=.
+
   Some external libs are now considered "standard", as lots of popular packages use them and they can outperform standard implementations while still being simpler to use (e.g. =dash=).
-  #+end_quote
 
   Some libraries might be listed several times, as they fit in several categories (e.g. =subr-x=, =dash=).
 
@@ -144,7 +144,7 @@
      Intended as an extension to [[https://github.com/emacs-mirror/emacs/blob/master/lisp/subr.el][subr.el]], the core library of basic functions written in elisp.
 
      Provides:
-     - threading macros (/a la/ clojure, =thread-first= and =thread-last=)
+     - threading macros (/a la/ Clojure, =thread-first= and =thread-last=)
      - additional binding helpers (=if-let=, =if-let*=, =when-let=, =when-let*= and =and-let*=)    - hash-table manipulation helper (=hash-table-empty-p=, =hash-table-keys= and =hash-table-values=)
      - string manipulation helper (=string-empty-p=, =string-blank-p=, =string-join=, =string-trim=, =string-trim-left=, =string-trim-right=, =string-remove-prefix= and =string-remove-suffix=)
      - region manipulation helpers (=replace-region-contents=)
@@ -163,7 +163,7 @@
 
      *informal standard* (not bundled with Emacs, but used everywhere)
 
-     Even though this lib revolves primarilly around list manipulation, it also offers for general purpose utils.
+     Even though this lib revolves primarily around list manipulation, it also offers for general purpose utils.
 
      Those are:
      - [[https://github.com/magnars/dash.el#threading-macros][threading macros]]
@@ -192,7 +192,7 @@
      [[https://github.com/skeeto/elisp-weak-ref][source & doc]]
 
      Allows creating weak reference to vars.
-     Weak reference are more performant but can be garbage collected.
+     Weak reference offer better performance but can be garbage collected.
 
 
 ** Data structures
@@ -223,7 +223,7 @@
 
      *standard* (bundled with every Emacs install)
 
-     Macro for helping writting elisp regexp.
+     Macro for helping writing elisp regexp.
 
 
 *** Sequences
@@ -283,7 +283,7 @@
 
     Thanksfully, some libraries provide an abstraction layer that allows having a single API for multiple data structures.
 
-    I would recommend sticking with thee default =map.el= library, unless you really enjoy the clojure syntax in which case =a.el= is also a nice choice.
+    I would recommend sticking with thee default =map.el= library, unless you really enjoy the Clojure syntax in which case =a.el= is also a nice choice.
     If you know for sure that you want to stick with an alist or a hash-table or  =asoc.el= and =ht= are high quality choice.
 
 
@@ -371,7 +371,7 @@
 
      [[https://github.com/DamienCassou/hierarchy][source & doc]], [[https://emacs.cafe/emacs/guest-post/2017/06/26/hierarchy.html][blog post]]
 
-     Allows defining trees as well as diplaying them.
+     Allows defining trees as well as displaying them.
 
 
 **** treepy
@@ -385,8 +385,8 @@
 
      [[https://github.com/ubolonton/emacs-tree-sitter/][source & doc]], [[https://www.reddit.com/r/emacs/comments/chnxzm/dynamic_module_binding_for_treesitter_an/][reddit post]]
 
-     Desqigned for parsing code into an [[https://en.wikipedia.org/wiki/Abstract_syntax_tree][AST]].
-     Implemented as a module, binding with the [[https://tree-sitter.github.io/tree-sitter/][tree-sitter]] parser (writte in Rust).
+     Designed for parsing code into an [[https://en.wikipedia.org/wiki/Abstract_syntax_tree][AST]].
+     Implemented as a module, binding with the [[https://tree-sitter.github.io/tree-sitter/][tree-sitter]] parser (written in Rust).
 
 
 *** XML/HTML
@@ -424,13 +424,13 @@
      More user-friendly APIs for writting code for interacting with org documents.
 
 
-** Concurency / Asynchronicity
+** Concurrency / Asynchronicity
 
-   Concurency in elisp / Emacs is a hot topic.
+   Concurrency in elisp / Emacs is a hot topic.
 
-   Due to its single-threaded nature, we wan't do parallel processing unless using some dirty tricks (see [[#async][async]]).
+   Due to its single-threaded nature, we can't do parallel processing unless using some dirty tricks (see [[#async][async]]).
 
-   Emacs 26 added support for [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Threads.html][threads]], but those are not what you might be thinking of coming from other lnaguages.
+   Emacs 26 added support for [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Threads.html][threads]], but those are not what you might be thinking of coming from other languages.
 
    For more info on those subject, read:
    - [[https://www.emacswiki.org/emacs/NoThreading][emacswiki/No Threading]]
@@ -459,7 +459,7 @@
 
      [[https://github.com/chuntaro/emacs-promise][source & doc]]
 
-     Reimplementation of the [[https://promisesaplus.com/][Promises/A+]] open standard (originally targetting Javascript).
+     Reimplementation of the [[https://promisesaplus.com/][Promises/A+]] open standard (originally targeting Javascript).
 
 **** aio
 
@@ -490,7 +490,7 @@
      Achieves true parallel processing by spawning a child Emacs sub-process.
      As such, necessary context needs to be passed w/ =async-inject-variables=.
 
-     Suports defining callbacks.
+     Supports defining callbacks.
 
      Offers bindings w/ =dired=, =bytecomp= and =smtp-mail=.
 
@@ -499,9 +499,9 @@
 
      [[https://github.com/skeeto/emacs-aio][source & doc]], [[https://nullprogram.com/blog/2019/03/10/][blog post]]
 
-     Short for async-io.
+     Short for =async-io=.
 
-     Allows writting coroutines with the async/await syntax found in Python's [[https://docs.python.org/3/library/asyncio.html][asyncio]].
+     Allows writing coroutines with the async/await syntax found in Python's [[https://docs.python.org/3/library/asyncio.html][asyncio]].
 
      Internal representation relies on its own promise implementation and [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Generators.html][generators]].
 
@@ -546,7 +546,7 @@
 
      [[https://github.com/p3r7/friendly-shell][source & doc]]
 
-     =friendly-shell-command= provides =friendly-shell-command-async=, a wrapper around =async-shell-command= with easier access to advanced beahviours thanks to optional keyword arguments.
+     =friendly-shell-command= provides =friendly-shell-command-async=, a wrapper around =async-shell-command= with easier access to advanced behaviours thanks to optional keyword arguments.
 
      It notably eases associating a callback to the execution.
 
@@ -623,8 +623,8 @@
 
      [[https://github.com/emacsorphanage/ov][source & doc]]
 
-     Helpers to maniupalte overlays.
-     Originaly authored by [[https://github.com/ShingoFukuyama][@ShingoFukuyama]]. Unmaintained.
+     Helpers to manipulate overlays.
+     Originally authored by [[https://github.com/ShingoFukuyama][@ShingoFukuyama]]. Unmaintained.
 
 
 *** Charts & diagrams
@@ -683,7 +683,7 @@
 
      [[https://github.com/conao3/ppp.el][source & doc]]
 
-     Advanced pretty-printing util.
+     Advanced pretty-printing utils.
 
 
 ** Building
@@ -703,7 +703,8 @@
 
   Emacs has too many heroes to really list.
 
-  In this section, we only list users who have contributed with libraries and resources that improve the Emacs development experience.
+  In this section, we only list users who have significantly contributed with libraries and resources that improve the Emacs development experience.
+
 
 ** John Wiegley (@jwiegley)
 
@@ -762,11 +763,12 @@
    [[https://github.com/NicolasPetton][github]]
 
    Known for:
-   - creating the popular [[https://github.com/NicolasPetton/Indium][Indium]] interractive javascript development environment
+   - creating the popular [[https://github.com/NicolasPetton/Indium][Indium]] interactive Javascript development environment
 
    Contributed to elisp development with:
    - creating the now standard =seq.el= and =map.el=
    - =stream.el=
+
 
 ** Caio Rordrigues (@caiorss)
 
