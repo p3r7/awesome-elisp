@@ -10,6 +10,8 @@ It's aim is to not be a simple index but a /compendium/: resources are not only 
 
 It tries to be as exhaustive as possible.
 
+For a more general index related to all-things Emacs, use [[https://github.com/emacs-tw/awesome-emacs][Awesome Emacs]].
+
 
 * Table of Contents                                                     :TOC_5:QUOTE:
 #+BEGIN_QUOTE
