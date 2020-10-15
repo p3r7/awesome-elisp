@@ -1,4 +1,40 @@
 
+* Table of Contents                                                     :TOC_5:QUOTE:
+#+BEGIN_QUOTE
+- [[#resources][Resources]]
+  - [[#entry-level][Entry-level]]
+  - [[#advanced][Advanced]]
+  - [[#cookbooks][Cookbooks]]
+- [[#libraries][Libraries]]
+  - [[#core--general-purpose][Core / general purpose]]
+  - [[#data-structures][Data structures]]
+    - [[#strings][Strings]]
+    - [[#sequences][Sequences]]
+    - [[#maps][Maps]]
+    - [[#custom-types--oop][Custom Types & OOP]]
+    - [[#tables][Tables]]
+    - [[#trees][Trees]]
+    - [[#xmlhtml][XML/HTML]]
+    - [[#org-mode-outlines][Org-mode outlines]]
+  - [[#concurrency--asynchronicity][Concurrency / Asynchronicity]]
+    - [[#timers][Timers]]
+    - [[#promises][Promises]]
+    - [[#async-elisp-function-calls][async elisp function calls]]
+    - [[#async-command-processes][async command processes]]
+  - [[#networking][Networking]]
+    - [[#http][HTTP]]
+  - [[#gui][GUI]]
+    - [[#popups][Popups]]
+    - [[#overlays][Overlays]]
+    - [[#charts--diagrams][Charts & diagrams]]
+- [[#development-tools][Development tools]]
+  - [[#debugging][Debugging]]
+  - [[#validation][Validation]]
+  - [[#pretty-printing][Pretty printing]]
+  - [[#building][Building]]
+- [[#heroes][Heroes]]
+#+END_QUOTE
+
 
 * Resources
 
