@@ -25,7 +25,7 @@
 
     [[https://with-emacs.com/posts/tutorials/almost-all-you-need-to-know-about-variables/][read online]]
 
-    *A must read!*
+    A must read!
 
 
 *** elisp-guide
@@ -97,7 +97,8 @@
 
     [[http://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Snippets.html][read online]], [[https://github.com/caiorss/Emacs-Elisp-Programming/blob/master/Elisp_Snippets.org][source]]
 
-    Realy nice selection of snippets with real-world use-cases.
+    Really nice selection of snippets with real-world use-cases.
+
 
 *** EmacsWiki's Cookbook
 
@@ -742,6 +743,8 @@
 
   In this section, we list some users who have significantly contributed with libraries and resources that improve the Emacs development experience.
 
+  They are listed in alphabetical order.
+
 
 ** @alphapapa
 
@@ -750,6 +753,18 @@
    Contributed to elisp development with:
    - [[https://github.com/alphapapa/emacs-package-dev-handbook][The Emacs Package Developer’s Handbook]]
    - =org-ql=
+
+
+** Bozhidar Batsov (@bbatsov)
+
+   [[https://github.com/bbatsov][github]], [[https://emacsredux.com/][Emacs-related blog]], [[https://github.com/sponsors/bbatsov][open to sponsoring]]
+
+   Known for:
+   - [[https://github.com/bbatsov/projectile][projectile]]: the best project management package for Emacs
+   - [[https://cider.mx/][CIDER]]: the interactive Clojure development environment for Emacs
+
+   Contributed to elisp development with:
+   - [[https://github.com/bbatsov/emacs-lisp-style-guide][The Emacs Lisp Style Guide]]
 
 
 ** Caio Rordrigues (@caiorss)
@@ -796,7 +811,7 @@
 
    Known for:
    - authoring [[https://github.com/magit/magit][magit]]
-   - a lot of high quality smaller packages
+   - lots of high quality smaller packages ([[https://github.com/tarsius/orglink][orglink]], [[https://github.com/tarsius/keycast][keycast]]...)
 
    Contributed to elisp development with:
    - [[https://github.com/magit/transient][transient]]
