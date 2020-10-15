@@ -741,9 +741,37 @@
 
   Emacs has too many heroes to really list.
 
-  In this section, we only list users who have significantly contributed with libraries and resources that improve the Emacs development experience.
+  In this section, we list some users who have significantly contributed with libraries and resources that improve the Emacs development experience.
 
 
+** @alphapapa
+
+   [[https://github.com/alphapapa][github]]
+
+   Contributed to elisp development with:
+   - [[https://github.com/alphapapa/emacs-package-dev-handbook][The Emacs Package Developer’s Handbook]]
+   - =org-ql=
+
+
+** Caio Rordrigues (@caiorss)
+
+   [[https://github.com/caiorss][github]]
+
+   Contributed to elisp development with:
+   - his book [[http://caiorss.github.io/Emacs-Elisp-Programming/][Emacs In a Box]]
+
+
+** Chris Wellons (@skeeto)
+
+   [[https://github.com/skeeto][github]], [[https://nullprogram.com/][blog]]
+
+   Known for:
+   - [[https://github.com/skeeto/elfeed][elfeed]], the popular Emacs RSS reader
+
+   Contributed to elisp development with:
+   - his blog
+   - =aio=
+   - =week-ref=
 ** John Wiegley (@jwiegley)
 
    [[http://newartisans.com/][blog]], [[https://github.com/jwiegley][github]], [[https://github.com/jwiegley/dot-emacs/blob/master/init.el][dot emacs]]
@@ -771,22 +799,6 @@
    - [[https://github.com/magit/transient][transient]]
 
 
-** @alphapapa
-
-   [[https://github.com/alphapapa][github]]
-
-   Contributed to elisp development with:
-   - [[https://github.com/alphapapa/emacs-package-dev-handbook][The Emacs Package Developer’s Handbook]]
-   - =org-ql=
-
-
-** Oleh Krehel (@abo-abo)
-
-   [[https://oremacs.com/][blog]], [[https://github.com/abo-abo][github]], [[https://github.com/sponsors/abo-abo][open to sponsoring]]
-
-   Author of many high-quality packages such as [[https://github.com/abo-abo/swiper][ivy]], [[https://github.com/abo-abo/hydra][hydra]], [[https://github.com/abo-abo/lispy][lispy]]...
-
-
 ** Magnar Sveen (@magnars)
 
    [[https://github.com/magnars][github]], [[http://twitter.com/magnars][twitter]]
@@ -808,22 +820,8 @@
    - =stream.el=
 
 
-** Caio Rordrigues (@caiorss)
+** Oleh Krehel (@abo-abo)
 
-   [[https://github.com/caiorss][github]]
+   [[https://oremacs.com/][blog]], [[https://github.com/abo-abo][github]], [[https://github.com/sponsors/abo-abo][open to sponsoring]]
 
-   Contributed to elisp development with:
-   - his book [[http://caiorss.github.io/Emacs-Elisp-Programming/][Emacs In a Box]]
-
-
-** Chris Wellons (@skeeto)
-
-   [[https://github.com/skeeto][github]], [[https://nullprogram.com/][blog]]
-
-   Known for:
-   - [[https://github.com/skeeto/elfeed][elfeed]], the popular Emacs RSS reader
-
-   Contributed to elisp development with:
-   - his blog
-   - =aio=
-   - =week-ref=
+   Author of many high-quality packages such as [[https://github.com/abo-abo/swiper][ivy]], [[https://github.com/abo-abo/hydra][hydra]], [[https://github.com/abo-abo/lispy][lispy]]...
