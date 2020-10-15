@@ -49,6 +49,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#pretty-printing][Pretty printing]]
   - [[#building][Building]]
 - [[#heroes][Heroes]]
+- [[#license][License]]
 #+END_QUOTE
 
 
@@ -993,3 +994,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    - [[http://www.dr-qubit.org/undo-tree/undo-tree.el][undo-tree]]
 
    Contributed to elisp development with [[http://www.dr-qubit.org/emacs_data-structures.html][his implementation of basic and more complex data structures]]: =queue=, =heap=, =avl-tree=, =trie=, =dict-tree=, =tNFA=.
+
+
+* License
+
+[[https://creativecommons.org/publicdomain/zero/1.0/][https://licensebuttons.net/p/zero/1.0/88x31.png]]
