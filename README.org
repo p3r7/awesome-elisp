@@ -736,7 +736,6 @@
      https://github.com/doublep/eldev
 
 
-
 * Heroes
 
   Emacs has too many heroes to really list.
@@ -767,9 +766,11 @@
 
    Known for:
    - [[https://github.com/skeeto/elfeed][elfeed]], the popular Emacs RSS reader
+   - [[https://github.com/skeeto/emacs-web-server][simple-httpd]], a web server in pure elisp
+   - [[https://github.com/skeeto/skewer-mode][skewer-mode]], interactive web development with auto-reload on edit
 
    Contributed to elisp development with:
-   - his blog
+   - his blog, /nullprogram.com/
    - =aio=
    - =week-ref=
 
