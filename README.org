@@ -1,3 +1,15 @@
+#+HTML:<div align=center><a href="https://github.com/p3r7/awesome-elisp"><img alt="Emacs Logo" width="240" height="240" src="https://upload.wikimedia.org/wikipedia/commons/0/08/EmacsIcon.svg"></a>
+
+* Awesome Elisp
+
+#+HTML:</div>
+
+Welcome to /Awesome Elisp/, a list of resources linked to Emacs LISP (elisp) development.
+
+It's aim is to not be a simple index but a /compendium/: resources are not only listed but also commented.
+
+It tries to be as exhaustive as possible.
+
 
 * Table of Contents                                                     :TOC_5:QUOTE:
 #+BEGIN_QUOTE
