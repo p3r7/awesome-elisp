@@ -12,7 +12,9 @@
     - [[#sequences][Sequences]]
     - [[#maps][Maps]]
     - [[#custom-types--oop][Custom Types & OOP]]
+    - [[#date--time][Date & Time]]
     - [[#tables][Tables]]
+    - [[#queues][Queues]]
     - [[#trees][Trees]]
     - [[#xmlhtml][XML/HTML]]
     - [[#org-mode-outlines][Org-mode outlines]]
@@ -290,6 +292,15 @@
      Compatible w/ seq.el.
 
 
+**** trie
+
+     [[http://www.dr-qubit.org/predictive/trie.el][source]]
+
+     Provides APIs for building and manipulating /tries/, sequence-like data structures where both storage and retrieval are space- and time-efficient.
+
+     Stored elements must be ordered sequences, i.e. strings (most common use-case), lists or vectors.
+
+
 *** Maps
 
     (Hash)maps are a special type of sequences that allow representing a list of key / value pairs.
@@ -318,13 +329,13 @@
 
     Each data structure has its own APIs to get/insert/update.
 
-    Thanksfully, some libraries provide an abstraction layer that allows having a single API for multiple data structures.
+    Thankfully, some libraries provide an abstraction layer that allows having a single API for multiple data structures.
 
     I would recommend sticking with thee default =map.el= library, unless you really enjoy the Clojure syntax in which case =a.el= is also a nice choice.
     If you know for sure that you want to stick with an alist or a hash-table or  =asoc.el= and =ht= are high quality choice.
 
 
-**** map.el
+**** map
 
      [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/map.el][source]]
 
@@ -360,7 +371,7 @@
      Nice set of additional APIs for hash-tables.
 
 
-**** a.el
+**** a
 
      [[https://github.com/plexus/a.el][source & doc]]
 
@@ -375,6 +386,15 @@
      [[https://github.com/nicferrier/emacs-kv][source & doc]]
 
      support: mostly alists, but allow converting from/to alists and plists.
+
+
+**** dict-tree
+
+     [[http://www.dr-qubit.org/predictive/dict-tree.el][source]]
+
+     Provides APIs for building and manipulating /Dictionary trees/, hybrid between [[#trie][tries]] and hash tables.
+
+     Think about it as a more storage-efficient hash tables.
 
 
 *** Custom Types & OOP
@@ -411,6 +431,17 @@
      Built on top of the native [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Records.html#Records][records]] system.
 
 
+*** Date & Time
+
+**** ts
+
+     [[https://github.com/alphapapa/ts.el][source & doc]]
+
+     *informal standard* (not bundled with Emacs, but used everywhere)
+
+     Advanced yet easy to use datetiem / timestamp library.
+
+
 *** Tables
 
 **** tabulated-list
@@ -436,7 +467,33 @@
      Library for defining, manipulating and displaying tables.
 
 
+*** Queues
+
+**** queue
+
+     [[http://www.dr-qubit.org/predictive/queue.el][source]]
+
+     *standard* (bundled with every Emacs install)
+
+     Provides FIFO / FILO queue APIs.
+
+
 *** Trees
+
+**** heap
+
+     [[http://www.dr-qubit.org/predictive/heap.el][source]]
+
+     Provides APIs to build and manipulate a /ternary/ (at most 3 children per node) /heap/ (self-sorting tree).
+
+
+**** avl-tree
+
+     [[http://www.dr-qubit.org/predictive/avl-tree.el][source]]
+
+     *standard* (bundled with every Emacs install)
+
+     Provides APIs to build and manipulate a self-balancing binary tree.
 
 **** hierarchy
 
@@ -458,6 +515,15 @@
 
      Designed for parsing code into an [[https://en.wikipedia.org/wiki/Abstract_syntax_tree][AST]].
      Implemented as a module, binding with the [[https://tree-sitter.github.io/tree-sitter/][tree-sitter]] parser (written in Rust).
+
+
+**** tNFA
+
+     [[http://www.dr-qubit.org/predictive/tNFA.el][source]]
+
+     Provides APIs to build and manipulate NFA (/Nondeterministic Finite Automaton/), i.e. a state machine / decision tree.
+
+     It was built manily with regexp parsing in mind.
 
 
 *** XML/HTML
@@ -511,7 +577,7 @@
    - blog post from @skeeto: [[https://nullprogram.com/blog/2018/05/31/][Emacs 26 Brings Generators and Threads]]
 
 
-*** timers
+*** Timers
 
 **** timer.el
 
@@ -527,7 +593,16 @@
      Easier to use timer lib.
 
 
-*** promises
+*** Promises & Delays
+
+**** thunk.el
+
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/thunk.el][source]]
+
+     *standard* (bundled with every Emacs install)
+
+     Provides an API for creating and dereferencing / evaluating /delays/.
+
 
 **** promise.el
 
@@ -543,7 +618,7 @@
      Mostly an async/await lib but implements its own promise system internally.
 
 
-*** async elisp function calls
+*** Async elisp function calls
 
 **** deferred
 
@@ -599,7 +674,7 @@
      Seems to rely on timers.
 
 
-*** async command processes
+*** Async command processes
 
     These libs only allow to run asynchronously command processes (as opposed to elisp function calls).
 
@@ -788,6 +863,7 @@
 
    Contributed to elisp development with:
    - [[https://github.com/alphapapa/emacs-package-dev-handbook][The Emacs Package Developer’s Handbook]]
+   - =ts=
    - =org-ql=
 
 
@@ -879,3 +955,13 @@
    [[https://oremacs.com/][blog]], [[https://github.com/abo-abo][github]], [[https://github.com/sponsors/abo-abo][open to sponsoring]]
 
    Author of many high-quality packages such as [[https://github.com/abo-abo/swiper][ivy]], [[https://github.com/abo-abo/hydra][hydra]], [[https://github.com/abo-abo/lispy][lispy]]...
+
+
+** Toby 'qubit' Cubitt
+
+   [[http://www.dr-qubit.org/][website]]
+
+   Known for:
+   - [[http://www.dr-qubit.org/undo-tree/undo-tree.el][undo-tree]]
+
+   Contributed to elisp development with [[http://www.dr-qubit.org/emacs_data-structures.html][his implementation of basic and more complex data structures]]: =queue=, =heap=, =avl-tree=, =trie=, =dict-tree=, =tNFA=.
