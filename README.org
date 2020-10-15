@@ -187,13 +187,6 @@
      - region manipulation helpers (=replace-region-contents=)
 
 
-**** el-patch
-
-     [[https://github.com/raxod502/el-patch][source and doc]]
-
-     More perene advices, get notified when they break.
-
-
 **** dash
 
      [[https://github.com/magnars/dash.el][source & doc]]
@@ -208,6 +201,13 @@
      - [[https://github.com/magnars/dash.el#binding][additional binding helpers]]
 
      They all seem to be heavily inspired by Clojure.
+
+
+**** el-patch
+
+     [[https://github.com/raxod502/el-patch][source and doc]]
+
+     More perene advices, get notified when they break.
 
 
 **** anaphora
