@@ -885,6 +885,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
   They are listed in alphabetical order.
 
+  Another complementary list is [[https://github.com/tarsius/elisp-maintainers][elisp-maintainers]].
+
 
 ** @alphapapa
 
