@@ -128,9 +128,9 @@
 
 **** cl-lib
 
-     Lib extending elisp with functionalities inherited from Common Lisp.
-
      *standard* (bundled with every Emacs install)
+
+     Lib extending elisp with functionalities inherited from Common Lisp.
 
      Just do a =(require 'cl-lib)= to use it.
 
@@ -340,6 +340,40 @@
      support: mostly alists, but allow converting from/to alists and plists.
 
 
+*** Custom Types & OOP
+
+    Can be done natively using [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Records.html#Records][records]], additional custom user-defined types.
+
+**** cl-lib (defstruct API)
+
+     [[https://www.gnu.org/software/emacs/manual/html_node/cl/Structures.html][API documentation]]
+
+     *standard* (bundled with every Emacs install)
+
+     One part of =cl-lib= is APIs to define and manipulate C-like data structures, strongly typed.
+
+     Provides the =cl-defstruct= macro.
+
+     Built on top of the native [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Records.html#Records][records]] system.
+
+     See also this blog post from @skeeto: [[https://nullprogram.com/blog/2018/02/14/][Options for Structured Data in Emacs Lisp]]
+
+
+**** EIEIO
+
+     [[https://www.gnu.org/software/emacs/manual/html_mono/eieio.html][doc]]
+
+     *standard* (bundled with every Emacs install)
+
+     Stands for /Enhanced Implementation of Emacs Interpreted Objects/.
+
+     Brings an OOP layer to elisp, based upon the /Common Lisp Object System/ (CLOS).
+
+     Provides the =defclass= macro.
+
+     Built on top of the native [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Records.html#Records][records]] system.
+
+
 *** Tables
 
 **** tabulated-list
@@ -430,11 +464,14 @@
 
    Due to its single-threaded nature, we can't do parallel processing unless using some dirty tricks (see [[#async][async]]).
 
-   Emacs 26 added support for [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Threads.html][threads]], but those are not what you might be thinking of coming from other languages.
+   But that doesn't prevent us from doing concurrent processing, with say /timers/.
+
+   Emacs recently extended this support with [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Generators.html][generators]] (since 25.1) [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Threads.html][native threads]] (not what you might be thinking of, since 26.1).
 
    For more info on those subject, read:
    - [[https://www.emacswiki.org/emacs/NoThreading][emacswiki/No Threading]]
    - [[https://www.emacswiki.org/emacs/NoThreading][emacswiki/Concurrent Emacs]]
+   - blog post from @skeeto: [[https://nullprogram.com/blog/2018/05/31/][Emacs 26 Brings Generators and Threads]]
 
 
 *** timers
@@ -460,6 +497,7 @@
      [[https://github.com/chuntaro/emacs-promise][source & doc]]
 
      Reimplementation of the [[https://promisesaplus.com/][Promises/A+]] open standard (originally targeting Javascript).
+
 
 **** aio
 
