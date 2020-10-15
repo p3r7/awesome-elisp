@@ -442,6 +442,13 @@
      Advanced yet easy to use datetiem / timestamp library.
 
 
+**** datetime-format
+
+     [[https://github.com/emacs-php/emacs-datetime][source & doc]]
+
+     Provides =datetime-format=, inspired by PHP’s =Datetime::format= method.
+
+
 *** Tables
 
 **** tabulated-list
@@ -528,11 +535,18 @@
 
 *** XML/HTML
 
-**** dom.el
+**** dom
 
      *standard* (bundled with every Emacs install)
 
      DOM manipulation and searching functions.
+
+
+**** xml-query
+
+     [[https://github.com/skeeto/elfeed/blob/master/xml-query.el][source]]
+
+     List-based XML selectors. Part of the elfeed package.
 
 
 *** Org-mode outlines
