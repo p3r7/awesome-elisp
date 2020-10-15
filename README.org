@@ -772,6 +772,8 @@
    - his blog
    - =aio=
    - =week-ref=
+
+
 ** John Wiegley (@jwiegley)
 
    [[http://newartisans.com/][blog]], [[https://github.com/jwiegley][github]], [[https://github.com/jwiegley/dot-emacs/blob/master/init.el][dot emacs]]
