@@ -19,6 +19,14 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#entry-level][Entry-level]]
   - [[#advanced][Advanced]]
   - [[#cookbooks][Cookbooks]]
+- [[#development-tools][Development Tools]]
+  - [[#interactive-development--debugging][Interactive Development & Debugging]]
+  - [[#documentation][Documentation]]
+  - [[#code-navigation][Code Navigation]]
+  - [[#validation][Validation]]
+  - [[#syntax-highlighting][Syntax highlighting]]
+  - [[#pretty-printing][Pretty printing]]
+  - [[#building][Building]]
 - [[#libraries][Libraries]]
   - [[#core--general-purpose][Core / General Purpose]]
   - [[#data-structures][Data Structures]]
@@ -49,14 +57,6 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#popups][Popups]]
     - [[#overlays][Overlays]]
     - [[#charts--diagrams][Charts & diagrams]]
-- [[#development-tools][Development Tools]]
-  - [[#interactive-development--debugging][Interactive Development & Debugging]]
-  - [[#documentation][Documentation]]
-  - [[#code-navigation][Code Navigation]]
-  - [[#validation][Validation]]
-  - [[#syntax-highlighting][Syntax highlighting]]
-  - [[#pretty-printing][Pretty printing]]
-  - [[#building][Building]]
 - [[#heroes][Heroes]]
 - [[#license][License]]
 #+END_QUOTE
@@ -174,6 +174,235 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     [[https://alphapapa.github.io/unpackaged.el/][read online]], [[https://github.com/alphapapa/unpackaged.el][source]]
 
     Real-world selection of snippets, not beginner-friendly.
+
+
+* Development Tools
+
+  By default, Emacs is already pretty well set up for elisp development.
+
+  But some features can be hard to learn and some stuff can be improved with additinal packages.
+
+  See also those talks [[https://github.com/p3r7/awesome-elisp#john-wiegley-jwiegley][John Wiegley]] gave about hist setup for elisp development:
+  - [[https://www.youtube.com/watch?v=QFClYrhV1z4][Emacs Lisp Development - @ Emacs Conference 2013]]
+  - [[https://sachachua.com/blog/2015/04/2015-04-08-emacs-lisp-development-tips-with-john-wiegley/][Emacs Lisp Development Tips - Sacha Chua Emacs Chat 2015-04-08]].
+
+
+** Interactive Development & Debugging
+
+   Emacs is built with interactive development in mind.
+
+   You could spend days developing elisp code without ever having to restart Emacs.
+
+   Standard /commands/ used are:
+   - =eval-last-sexp= (=C-x C-e=)
+   - =eval-defun= (=C-M-x=)
+   - =eval-buffer=
+   - =eval-region=
+
+   The =*scratch*= buffer also provides a temporary zone to try and test ideas.
+   In it can be used =eval-print-last-sexp= (=C-j=) which acts like =eval-last-sexp= but also prints the result after the /s-exp/ in the buffer.
+
+   =eval-expression= (=M-:=) allows quickly evaluating a /s-exp/ from anywhere by entering it in the /minibuffer/.
+
+   For logging, function =(message "<text>")= allows printing into the =*Messages*= buffer.
+
+   For debugging, the most basic command is =toggle-debug-on-error= to get a stacktrace.
+
+   See also:
+   - [[https://www.masteringemacs.org/article/evaluating-elisp-emacs][Mastering Emacs - Evaluating Elisp in Emacs]]
+
+
+**** IELM
+
+     *standard* (bundled with every Emacs install)
+
+     Stands for Inferior Emacs Lisp Mode.
+
+     Provides a [[https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop][REPL]] for evaluating elisp code.
+
+
+**** edebug
+
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/edebug.el][source]], [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Edebug.html][doc]]
+
+     *standard* (bundled with every Emacs install)
+
+     edebug is the interactive elisp debugger.
+
+     The documentation is a bit rough to get started.
+     I recommend reading this series of posts:
+     - [[https://endlessparentheses.com/debugging-emacs-lisp-part-1-earn-your-independence.html][Endless Parentheses - Debugging Elisp Part 1: Earn your independence]]
+     - [[https://endlessparentheses.com/debugging-emacs-lisp-part-1-earn-your-independence.html][Endless Parentheses - Debugging Elisp Part 2: Advanced topics]]
+
+     You can also read the dedicated [[https://www.gnu.org/software/emacs/manual/html_node/eintr/Debugging.html][chapter in book An Introduction to Programming in Emacs Lisp]].
+
+
+**** macrostep
+
+     [[https://github.com/joddie/macrostep][source & doc]]
+
+     Interactive macro expander.
+
+     Expand nested macros one by one.
+
+     Way better than using default =macroexpand=.
+
+
+**** eval-expr
+
+     [[https://github.com/jwiegley/eval-expr][source]]
+
+     Provides =eval-expr=, an enhanced =eval-expression= command.
+
+     Some highlights:
+     - automatic display of output in temp buffer if too big
+     - allows pretty printing of results (with =pp=)
+     - invalid /s-expr/ don't have to be retyped on 2nd try
+
+
+**** eval-sexp-fu
+
+     [[https://github.com/emacsmirror/eval-sexp-fu][source]]
+
+     Visual improvment.
+
+     Flashes the sexps during the evaluation.
+
+
+** Documentation
+
+   To get the documentation of a symbol, you could use one of the built-in:
+   - =describe-symbol=: get documentation of symbol
+   - =describe-function=: get documentation of function
+   - =describe-variable=: get documentation of variable
+   - =describe-key=: get documentation of /command/ associated with keybinding
+
+   These would spawn a =*Help*= buffer. Hence documentation in Emacs is often reffered to as the /help/.
+
+   Some packages improve on these.
+
+
+*** helpful
+
+    [[https://github.com/Wilfred/helpful][source & doc]]
+
+    Provides more contextual information.
+
+    | helpful command     | default command     | comment                                                            |
+    |---------------------+---------------------+--------------------------------------------------------------------|
+    | =helpful-at-point=  | =describe-symbol=   |                                                                    |
+    | =helpful-callable=  | no equivalent       | like =helpful-function= but also works on macros and special forms |
+    | =helpful-function=  | =describe-function= |                                                                    |
+    | =helpful-macro=     | no equivalent       |                                                                    |
+    | =helpful-variable=  | =describe-variable= |                                                                    |
+    | =helpful-key=       | =describe-key=      |                                                                    |
+
+
+*** which-key
+
+    [[https://github.com/justbur/emacs-which-key][source & doc]]
+
+    =which-key= is like an always-on =describe-key=.
+
+    It displays automatically all the possible keybindings following a key prefix.
+
+
+** Code Navigation
+
+   To jump to the definition of a symbol Emacs provides =xref-find-definitions=. In practice it works with nicely with functions but is kind of hit-or-miss with variables.
+
+   In addition, the following more specialised functions exist:
+   - =find-function=: go to the definition of function
+   - =find-variable=: go to the definition of function
+   - =find-library=: go to the definition of /feature/ (i.e. module, package)
+
+   Better options exists so that you don't have to remember all of these.
+
+   To get the documentation of a symbol, you can use one of the default
+
+   Honorable mention: [[https://github.com/purcell/elisp-slime-nav][elisp-slime-nav]], that can be seen as an ancestor to =elisp-def=.
+
+
+*** elisp-def
+
+    [[https://github.com/Wilfred/elisp-def][source & doc]]
+
+    Provides =elisp-def= that allows jumping to the definition of function / variable / feature.
+
+    Like a better =xref-find-definitions=.
+
+    Is able to distinguish between functions / variables / features depending on the context.
+
+    Also handles macros, functions defined through macros and let-bound variables.
+
+
+** Validation
+
+**** melpazoid
+
+     https://github.com/riscy/melpazoid
+
+
+**** elisp-lint
+
+     https://github.com/gonewest818/elisp-lint
+
+
+** Syntax highlighting
+
+   Several packages allow to improve default syntax highlighting (/font locking/ in Emacs lingo).
+
+   All those listed bellow are complementary.
+
+   Honorable mention: [[https://github.com/Fanael/highlight-defined][highlight-defined]] which is ok but superseded by =lisp-extra-font-lock= functionalities.
+
+
+*** lisp-extra-font-lock
+
+    [[https://github.com/Lindydancer/lisp-extra-font-lock][source & doc]]
+
+    Various additional syntax highlightings.
+
+    Killer feature is having different faces for /special/ vars (global) VS /normal/ ones (local).
+
+
+*** cl-lib-highlight
+
+    [[https://github.com/skeeto/cl-lib-highlight][source & doc]]
+
+    Provides additonal / alternative font-locking for =cl-lib= symbols, to make them stand out in your code.
+
+    Also highlights deprecated =cl= symbols with a different face. Useful when reading legacy code.
+
+
+** Pretty printing
+
+**** pp
+
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/pp.el][source]]
+
+     *standard* (bundled with every Emacs install)
+
+     Standard Emacs pretty-printing util.
+
+
+**** ppp
+
+     [[https://github.com/conao3/ppp.el][source & doc]]
+
+     Advanced pretty-printing utils.
+
+
+** Building
+
+**** cask
+
+     https://github.com/cask/cask
+
+
+**** eldev
+
+     https://github.com/doublep/eldev
 
 
 * Libraries
@@ -990,235 +1219,6 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      [[https://francismurillo.github.io/2017-04-15-Exploring-Emacs-chart-Library/][tutorial]]
 
      *standard* (bundled with every Emacs install)
-
-
-* Development Tools
-
-  By default, Emacs is already pretty well set up for elisp development.
-
-  But some features can be hard to learn and some stuff can be improved with additinal packages.
-
-  See also those talks [[https://github.com/p3r7/awesome-elisp#john-wiegley-jwiegley][John Wiegley]] gave about hist setup for elisp development:
-  - [[https://www.youtube.com/watch?v=QFClYrhV1z4][Emacs Lisp Development - @ Emacs Conference 2013]]
-  - [[https://sachachua.com/blog/2015/04/2015-04-08-emacs-lisp-development-tips-with-john-wiegley/][Emacs Lisp Development Tips - Sacha Chua Emacs Chat 2015-04-08]].
-
-
-** Interactive Development & Debugging
-
-   Emacs is built with interactive development in mind.
-
-   You could spend days developing elisp code without ever having to restart Emacs.
-
-   Standard /commands/ used are:
-   - =eval-last-sexp= (=C-x C-e=)
-   - =eval-defun= (=C-M-x=)
-   - =eval-buffer=
-   - =eval-region=
-
-   The =*scratch*= buffer also provides a temporary zone to try and test ideas.
-   In it can be used =eval-print-last-sexp= (=C-j=) which acts like =eval-last-sexp= but also prints the result after the /s-exp/ in the buffer.
-
-   =eval-expression= (=M-:=) allows quickly evaluating a /s-exp/ from anywhere by entering it in the /minibuffer/.
-
-   For logging, function =(message "<text>")= allows printing into the =*Messages*= buffer.
-
-   For debugging, the most basic command is =toggle-debug-on-error= to get a stacktrace.
-
-   See also:
-   - [[https://www.masteringemacs.org/article/evaluating-elisp-emacs][Mastering Emacs - Evaluating Elisp in Emacs]]
-
-
-**** IELM
-
-     *standard* (bundled with every Emacs install)
-
-     Stands for Inferior Emacs Lisp Mode.
-
-     Provides a [[https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop][REPL]] for evaluating elisp code.
-
-
-**** edebug
-
-     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/edebug.el][source]], [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Edebug.html][doc]]
-
-     *standard* (bundled with every Emacs install)
-
-     edebug is the interactive elisp debugger.
-
-     The documentation is a bit rough to get started.
-     I recommend reading this series of posts:
-     - [[https://endlessparentheses.com/debugging-emacs-lisp-part-1-earn-your-independence.html][Endless Parentheses - Debugging Elisp Part 1: Earn your independence]]
-     - [[https://endlessparentheses.com/debugging-emacs-lisp-part-1-earn-your-independence.html][Endless Parentheses - Debugging Elisp Part 2: Advanced topics]]
-
-     You can also read the dedicated [[https://www.gnu.org/software/emacs/manual/html_node/eintr/Debugging.html][chapter in book An Introduction to Programming in Emacs Lisp]].
-
-
-**** macrostep
-
-     [[https://github.com/joddie/macrostep][source & doc]]
-
-     Interactive macro expander.
-
-     Expand nested macros one by one.
-
-     Way better than using default =macroexpand=.
-
-
-**** eval-expr
-
-     [[https://github.com/jwiegley/eval-expr][source]]
-
-     Provides =eval-expr=, an enhanced =eval-expression= command.
-
-     Some highlights:
-     - automatic display of output in temp buffer if too big
-     - allows pretty printing of results (with =pp=)
-     - invalid /s-expr/ don't have to be retyped on 2nd try
-
-
-**** eval-sexp-fu
-
-     [[https://github.com/emacsmirror/eval-sexp-fu][source]]
-
-     Visual improvment.
-
-     Flashes the sexps during the evaluation.
-
-
-** Documentation
-
-   To get the documentation of a symbol, you could use one of the built-in:
-   - =describe-symbol=: get documentation of symbol
-   - =describe-function=: get documentation of function
-   - =describe-variable=: get documentation of variable
-   - =describe-key=: get documentation of /command/ associated with keybinding
-
-   These would spawn a =*Help*= buffer. Hence documentation in Emacs is often reffered to as the /help/.
-
-   Some packages improve on these.
-
-
-*** helpful
-
-    [[https://github.com/Wilfred/helpful][source & doc]]
-
-    Provides more contextual information.
-
-    | helpful command     | default command     | comment                                                            |
-    |---------------------+---------------------+--------------------------------------------------------------------|
-    | =helpful-at-point=  | =describe-symbol=   |                                                                    |
-    | =helpful-callable=  | no equivalent       | like =helpful-function= but also works on macros and special forms |
-    | =helpful-function=  | =describe-function= |                                                                    |
-    | =helpful-macro=     | no equivalent       |                                                                    |
-    | =helpful-variable=  | =describe-variable= |                                                                    |
-    | =helpful-key=       | =describe-key=      |                                                                    |
-
-
-*** which-key
-
-    [[https://github.com/justbur/emacs-which-key][source & doc]]
-
-    =which-key= is like an always-on =describe-key=.
-
-    It displays automatically all the possible keybindings following a key prefix.
-
-
-** Code Navigation
-
-   To jump to the definition of a symbol Emacs provides =xref-find-definitions=. In practice it works with nicely with functions but is kind of hit-or-miss with variables.
-
-   In addition, the following more specialised functions exist:
-   - =find-function=: go to the definition of function
-   - =find-variable=: go to the definition of function
-   - =find-library=: go to the definition of /feature/ (i.e. module, package)
-
-   Better options exists so that you don't have to remember all of these.
-
-   To get the documentation of a symbol, you can use one of the default
-
-   Honorable mention: [[https://github.com/purcell/elisp-slime-nav][elisp-slime-nav]], that can be seen as an ancestor to =elisp-def=.
-
-
-*** elisp-def
-
-    [[https://github.com/Wilfred/elisp-def][source & doc]]
-
-    Provides =elisp-def= that allows jumping to the definition of function / variable / feature.
-
-    Like a better =xref-find-definitions=.
-
-    Is able to distinguish between functions / variables / features depending on the context.
-
-    Also handles macros, functions defined through macros and let-bound variables.
-
-
-** Validation
-
-**** melpazoid
-
-     https://github.com/riscy/melpazoid
-
-
-**** elisp-lint
-
-     https://github.com/gonewest818/elisp-lint
-
-
-** Syntax highlighting
-
-   Several packages allow to improve default syntax highlighting (/font locking/ in Emacs lingo).
-
-   All those listed bellow are complementary.
-
-   Honorable mention: [[https://github.com/Fanael/highlight-defined][highlight-defined]] which is ok but superseded by =lisp-extra-font-lock= functionalities.
-
-
-*** lisp-extra-font-lock
-
-    [[https://github.com/Lindydancer/lisp-extra-font-lock][source & doc]]
-
-    Various additional syntax highlightings.
-
-    Killer feature is having different faces for /special/ vars (global) VS /normal/ ones (local).
-
-
-*** cl-lib-highlight
-
-    [[https://github.com/skeeto/cl-lib-highlight][source & doc]]
-
-    Provides additonal / alternative font-locking for =cl-lib= symbols, to make them stand out in your code.
-
-    Also highlights deprecated =cl= symbols with a different face. Useful when reading legacy code.
-
-
-** Pretty printing
-
-**** pp
-
-     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/pp.el][source]]
-
-     *standard* (bundled with every Emacs install)
-
-     Standard Emacs pretty-printing util.
-
-
-**** ppp
-
-     [[https://github.com/conao3/ppp.el][source & doc]]
-
-     Advanced pretty-printing utils.
-
-
-** Building
-
-**** cask
-
-     https://github.com/cask/cask
-
-
-**** eldev
-
-     https://github.com/doublep/eldev
 
 
 * Heroes
