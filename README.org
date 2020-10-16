@@ -589,6 +589,19 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      It was built manily with regexp parsing in mind.
 
 
+**** parsec
+
+     [[https://github.com/cute-jumper/parsec.el][source & doc]]
+
+     Parsing library in the spirit of Haskell's parsec.
+
+
+**** pl
+
+     [[https://github.com/jwiegley/emacs-pl][source & doc]]
+
+     Parsing library in the spirit of Haskell's parsec. Somewhat limited.
+
 
 *** XML/HTML
 
