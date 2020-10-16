@@ -462,6 +462,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Advanced yet easy to use datetiem / timestamp library.
 
 
+**** datetime
+
+     [[https://github.com/doublep/datetime][source & doc]]
+
+     Library for parsing, formatting, matching and recoding timestamps and date-time format strings.
+
+
 **** datetime-format
 
      [[https://github.com/emacs-php/emacs-datetime][source & doc]]
@@ -485,6 +492,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      *informal standard* (not bundled with Emacs, but used everywhere)
 
      Extension to tabulated-list, adding possibility to mark and filter items.
+
+
+**** cell
+
+     [[http://xelf.me/cell.html][doc]], [[https://gitlab.com/dto/mosaic-el/blob/master/cell.el][source]]
+
+     Provides =cell-mode=, major mode for building spreadsheet-based user-interfaces.
 
 
 **** ctable
@@ -521,6 +535,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      *standard* (bundled with every Emacs install)
 
      Provides APIs to build and manipulate a self-balancing binary tree.
+
 
 **** hierarchy
 
