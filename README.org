@@ -256,6 +256,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Weak reference offer better performance but can be garbage collected.
 
 
+**** fn
+
+     [[https://github.com/troyp/fn.el][source & doc]]
+
+     Provides macros for a more concise lambda syntax, /a la/ Clojure.
+
+
 ** Data Structures
 
 *** Strings
