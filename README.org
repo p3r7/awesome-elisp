@@ -243,6 +243,17 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Allows the definition of anaphoric functions (as can be found in Common Lisp, Clojure...).
 
 
+**** with-simulated-input
+
+     [[https://github.com/DarwinAwardWinner/with-simulated-input][source & doc]]
+
+     *informal standard* (not bundled with Emacs, but used everywhere)
+
+     Simulate interactive user interactions.
+
+     Mostly usefull for writing tests.
+
+
 **** signal
 
      [[https://github.com/Mola-T/signal][source & doc]]
@@ -943,7 +954,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/skeeto/emacs-web-server][source & doc]]
 
-     A web server writen in pure elisp.
+     A web server written in pure elisp.
 
 
 **** porthole
