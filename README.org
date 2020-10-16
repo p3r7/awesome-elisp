@@ -940,7 +940,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     | helpful command     | default command     | comment                                                            |
     |---------------------+---------------------+--------------------------------------------------------------------|
     | =helpful-at-point=  | =describe-symbol=   |                                                                    |
-    | ==helpful-callable= | no equivalent       | like =helpful-function= but also works on macros and special forms |
+    | =helpful-callable=  | no equivalent       | like =helpful-function= but also works on macros and special forms |
     | =helpful-function=  | =describe-function= |                                                                    |
     | =helpful-macro=     | no equivalent       |                                                                    |
     | =helpful-variable=  | =describe-variable= |                                                                    |
