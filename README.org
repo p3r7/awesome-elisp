@@ -1390,7 +1390,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 ** Nicolas Petton
 
-   [[https://github.com/NicolasPetton][github]]
+   [[https://nicolas.petton.fr/][portfolio]], [[https://emacs.cafe/][blog]], [[https://github.com/NicolasPetton][github]]
 
    Known for:
    - creating the popular [[https://github.com/NicolasPetton/Indium][Indium]] interactive Javascript development environment
