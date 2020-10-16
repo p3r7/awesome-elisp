@@ -40,6 +40,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#async-elisp-function-calls][Async elisp function calls]]
     - [[#async-sub-processes][Async sub-processes]]
     - [[#async-interpreter-command-sub-processes][Async interpreter command sub-processes]]
+  - [[#buffer-manipulation][Buffer Manipulation]]
   - [[#filesystem-interactions][Filesystem Interactions]]
   - [[#networking][Networking]]
     - [[#http-client][HTTP client]]
@@ -847,6 +848,22 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      =friendly-shell-command= provides =friendly-shell-command-async=, a wrapper around =async-shell-command= with easier access to advanced behaviours thanks to optional keyword arguments.
 
      It notably eases associating a callback to the end of the execution.
+
+
+** Buffer Manipulation
+
+**** b
+
+     [[https://github.com/emacs-php/b.el][source & doc]]
+
+     Utility functions for buffer manipulation.
+
+
+**** tp
+
+     [[https://github.com/alphapapa/tp.el][source]]
+
+     Utilities for helping with manipulating a buffer's [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Text-Properties.html][text properties]].
 
 
 ** Filesystem Interactions
