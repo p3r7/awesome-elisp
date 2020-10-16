@@ -19,6 +19,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#entry-level][Entry-level]]
   - [[#advanced][Advanced]]
   - [[#cookbooks][Cookbooks]]
+  - [[#on-package-authoring][On Package Authoring]]
 - [[#development-tools][Development Tools]]
   - [[#interactive-development--debugging][Interactive Development & Debugging]]
   - [[#documentation][Documentation]]
@@ -184,6 +185,28 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     [[https://alphapapa.github.io/unpackaged.el/][read online]], [[https://github.com/alphapapa/unpackaged.el][source]]
 
     Real-world selection of snippets, not beginner-friendly.
+
+
+** On Package Authoring
+
+   [[#the-emacs-lisp-styleguide][The Emacs Lisp Style Guide]] applies all the more in this context.
+
+
+*** Article: Take Your Emacs to the Next Level by Writing Custom Packages
+
+    [[https://spin.atomicobject.com/2016/05/27/write-emacs-package/][read online]]
+
+    Real world experience of a user writing and submittinghis first package.
+
+*** MELPA recommandations
+
+    [[https://github.com/melpa/melpa/blob/master/CONTRIBUTING.org#making-your-package-ready-for-inclusion][read online]]
+
+    There's a high chance that you'll be uploading your package on [[https://melpa.org/][MELPA]].
+
+    They have clear recommandations.
+
+    Don't worry, for your first submissions, they will be very comprehensive and will help you fixing what's wrong.
 
 
 * Development Tools
