@@ -46,6 +46,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 - [[#development-tools][Development tools]]
   - [[#debugging][Debugging]]
   - [[#validation][Validation]]
+  - [[#syntax-highlighting][Syntax highlighting]]
   - [[#pretty-printing][Pretty printing]]
   - [[#building][Building]]
 - [[#heroes][Heroes]]
@@ -835,6 +836,17 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      You can also read the dedicated [[https://www.gnu.org/software/emacs/manual/html_node/eintr/Debugging.html][chapter in book An Introduction to Programming in Emacs Lisp]].
 
 
+**** macrostep
+
+     [[https://github.com/joddie/macrostep][source & doc]]
+
+     Interactive macro expander.
+
+     Expand nested macros one by one.
+
+     Way better than using default =macroexpand=.
+
+
 ** Validation
 
 **** melpazoid
@@ -845,6 +857,33 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 **** elisp-lint
 
      https://github.com/gonewest818/elisp-lint
+
+
+** Syntax highlighting
+
+   Several packages allow to improve default syntax highlighting (/font locking/ in Emacs lingo).
+
+   All those listed bellow are complementary.
+
+   Honorable mention: [[https://github.com/Fanael/highlight-defined][highlight-defined]] which is ok but superseded by =lisp-extra-font-lock= functionalities.
+
+
+*** lisp-extra-font-lock
+
+    [[https://github.com/Lindydancer/lisp-extra-font-lock][source & doc]]
+
+    Various additional syntax highlightings.
+
+    Killer feature is having different faces for /special/ vars (global) VS /normal/ ones (local).
+
+
+*** cl-lib-highlight
+
+    [[https://github.com/skeeto/cl-lib-highlight][source & doc]]
+
+    Provides additonal / alternative font-locking for =cl-lib= symbols, to make them stand out in your code.
+
+    Also highlights deprecated =cl= symbols with a different face. Useful when reading legacy code.
 
 
 ** Pretty printing
