@@ -35,8 +35,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#concurrency--asynchronicity][Concurrency / Asynchronicity]]
     - [[#timers][Timers]]
     - [[#promises][Promises]]
-    - [[#async-elisp-function-calls][async elisp function calls]]
-    - [[#async-command-processes][async command processes]]
+    - [[#async-elisp-function-calls][Async elisp function calls]]
+    - [[#async-sub-processes][Async sub-processes]]
+    - [[#async-interpreter-command-sub-processes][Async interpreter command sub-processes]]
   - [[#networking][Networking]]
     - [[#http][HTTP]]
   - [[#gui][GUI]]
@@ -706,31 +707,17 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Seems to rely on timers.
 
 
-*** Async command processes
+*** Async sub-processes
 
     These libs only allow to run asynchronously command processes (as opposed to elisp function calls).
 
-    It can be done in standard with low-level functions (in C core or =subr.el=) such as =make-process=,  =start-process= or =start-process-shell-command=.
+    It can be done in standard with low-level function =make-process= or derivatives =start-process=, =make-pipe-process= and =start-process-shell-command=.
 
     Some advanced behaviours are hard to program, that's why wrapper libraries can help you.
 
-
-**** simple.el / =async-shell-command=
-
-     *standard* (bundled with every Emacs install)
-
-     =simple.el= provides =async-shell-command= that allows launching background commands as run by a shell interpreter (e.g. bash) with full environment resolution and advanced parsing (thanks to =comint.el=).
-
-     Callbacks can be defined by binding a [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Sentinels.html][sentinel]] to the process.
-
-
-**** friendly-shell-command
-
-     [[https://github.com/p3r7/friendly-shell][source & doc]]
-
-     =friendly-shell-command= provides =friendly-shell-command-async=, a wrapper around =async-shell-command= with easier access to advanced behaviours thanks to optional keyword arguments.
-
-     It notably eases associating a callback to the execution.
+    Notably:
+    - ensuring the process is launched asynchronously (not blocking Emacs)
+    - configuring callbacks (by binding a [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Sentinels.html][sentinel]] to the process)
 
 
 **** deferred
@@ -763,6 +750,26 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Result can be handled either with a future (=pfuture-new=, =pfuture-result=) or a callback (=pfuture-callback=).
 
      It relies on =make-pipe-process= for the future-based implementation and =make-process= for the callback one.
+
+
+*** Async interpreter command sub-processes
+
+    Emacs provides a layer on top of =make-process= for spawning commands from a shell interpreter (i.e. =bash= or =zsh=).
+
+    These are provided by =simple.el= ([[https://github.com/emacs-mirror/emacs/blob/master/lisp/simple.el][source]]).
+
+    The async version of these command is =async-shell-command=.
+
+    Some advanced behaviours are hard to program, that's why wrapper libraries can help you.
+
+
+**** friendly-shell-command
+
+     [[https://github.com/p3r7/friendly-shell][source & doc]]
+
+     =friendly-shell-command= provides =friendly-shell-command-async=, a wrapper around =async-shell-command= with easier access to advanced behaviours thanks to optional keyword arguments.
+
+     It notably eases associating a callback to the end of the execution.
 
 
 ** Networking
