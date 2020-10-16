@@ -652,6 +652,15 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      More user-friendly APIs for writting code for interacting with org documents.
 
 
+*** Color Codes
+
+**** yk-color
+
+     [[https://github.com/yurikhan/yk-color][source]]
+
+     Color codes manipulation.
+
+
 ** Concurrency / Asynchronicity
 
    Concurrency in elisp / Emacs is a hot topic.
