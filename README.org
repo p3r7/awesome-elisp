@@ -578,6 +578,14 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Allows defining and traversing trees.
 
 
+**** rbit
+
+     [[http://elpa.gnu.org/packages/rbit.html][source]]
+
+     Self-balancing interval trees.
+
+     Implementation of Chris Okasaki's algorithm from [[https://dl.acm.org/citation.cfm?id=968578.968583&coll=DL&dl=GUIDE]["Red-black trees in a functional setting", JFP'99]].
+
 
 *** Parsers & Parse Trees
 
