@@ -1013,9 +1013,11 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** Timers
 
-**** timer.el
+**** timer
 
      [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/timer.el][source]]
+
+     *standard* (bundled with every Emacs install)
 
      Default timer lib.
 
