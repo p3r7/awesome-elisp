@@ -898,11 +898,29 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** HTTP client
 
+    Emacs comes already with an HTTP client, =url.el=, written in pure elisp ([[https://github.com/emacs-mirror/emacs/blob/master/lisp/url/url.el][source]]), wich has a few limitations.
+    It exposes functions =url-retrieve-synchronously= and =url-retrieve= (async).
+
+
 **** request
 
      [[https://github.com/tkf/emacs-request][source & doc]]
 
-     Supports asynchronicity w/ via bindings with =deferred=.
+     Supports a bunch of options exposed clearly with keyword arguments.
+
+     If found on the system, uses the /cURL/ binary instead of =url.el=.
+     Can be customized with =request-backend=.
+
+     Advanced asynchronicity via bindings with =deferred=.
+
+
+**** mb-url
+
+     [[https://github.com/dochang/mb-url][source & doc]]
+
+     Stands for "Multiple Backends for URL package".
+
+     Provides API-compatible replacements to =url-retrieve= and =url-retrieve-synchronously= using /cURL/ and /HTTPie/.
 
 
 **** apiwrap
