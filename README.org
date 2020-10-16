@@ -33,6 +33,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#parsers--parse-trees][Parsers & Parse Trees]]
     - [[#xmlhtml][XML/HTML]]
     - [[#org-mode-outlines][Org-mode outlines]]
+    - [[#color-codes][Color Codes]]
   - [[#concurrency--asynchronicity][Concurrency / Asynchronicity]]
     - [[#timers][Timers]]
     - [[#promises][Promises]]
