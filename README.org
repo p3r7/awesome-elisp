@@ -968,6 +968,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** Color Codes
 
+**** color
+
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/color.el][source]]
+
+     *standard* (bundled with every Emacs install)
+
+
 **** yk-color
 
      [[https://github.com/yurikhan/yk-color][source]]
