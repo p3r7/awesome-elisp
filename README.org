@@ -113,11 +113,11 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     Not super up to date but generally well put together.
 
-    One of the first resources on the web introducing elisp in a consice and and comprehensible way.
+    One of the first resources on the web introducing elisp in a concise and comprehensible way.
 
     Please note that the more complex examples follow a coding style regarded as not so great: big monolithic functions instead of multiple small functional ones.
 
-    To Xah's defense, some packages now considered standard are also writen this way (we're looking at you =ediff=).
+    To Xah's defense, some packages now considered standard are also written this way (we're looking at you =ediff=).
 
 
 *** ElispCheatSheet
