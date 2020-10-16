@@ -38,6 +38,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#async-elisp-function-calls][Async elisp function calls]]
     - [[#async-sub-processes][Async sub-processes]]
     - [[#async-interpreter-command-sub-processes][Async interpreter command sub-processes]]
+  - [[#filesystem-interactions][Filesystem Interactions]]
   - [[#networking][Networking]]
     - [[#http][HTTP]]
   - [[#gui][GUI]]
@@ -770,6 +771,17 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      =friendly-shell-command= provides =friendly-shell-command-async=, a wrapper around =async-shell-command= with easier access to advanced behaviours thanks to optional keyword arguments.
 
      It notably eases associating a callback to the end of the execution.
+
+
+** Filesystem Interactions
+
+*** f
+
+    [[https://github.com/rejeep/f.el][source & doc]]
+
+    *informal standard* (not bundled with Emacs, but used everywhere)
+
+    Modern API for working with files and directories.
 
 
 ** Networking
