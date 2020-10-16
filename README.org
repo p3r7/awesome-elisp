@@ -30,6 +30,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#tables][Tables]]
     - [[#queues][Queues]]
     - [[#trees][Trees]]
+    - [[#parsers--parse-trees][Parsers & Parse Trees]]
     - [[#xmlhtml][XML/HTML]]
     - [[#org-mode-outlines][Org-mode outlines]]
   - [[#concurrency--asynchronicity][Concurrency / Asynchronicity]]
@@ -559,11 +560,23 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Allows defining and traversing trees.
 
 
+
+*** Parsers & Parse Trees
+
+    Those libraries allow parsing a document in a format / language and converting it to an tree, called an an [[https://en.wikipedia.org/wiki/Abstract_syntax_tree][AST]].
+
+
+**** parse-it
+
+     [[https://github.com/jcs-elpa/parse-it][source & doc]]
+
+     Regexp-based parser, supporting a bunch of languages.
+
+
 **** tree-sitter
 
      [[https://github.com/ubolonton/emacs-tree-sitter/][source & doc]], [[https://www.reddit.com/r/emacs/comments/chnxzm/dynamic_module_binding_for_treesitter_an/][reddit post]]
 
-     Designed for parsing code into an [[https://en.wikipedia.org/wiki/Abstract_syntax_tree][AST]].
      Implemented as a module, binding with the [[https://tree-sitter.github.io/tree-sitter/][tree-sitter]] parser (written in Rust).
 
 
@@ -574,6 +587,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Provides APIs to build and manipulate NFA (/Nondeterministic Finite Automaton/), i.e. a state machine / decision tree.
 
      It was built manily with regexp parsing in mind.
+
 
 
 *** XML/HTML
