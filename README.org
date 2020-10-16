@@ -1087,7 +1087,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Multithreading through sub-processes with over-the-wire payload capabilities.
 
-     Achieves true parallel processing by spawning a child Emacs sub-process.
+     Achieves true parallel processing by spawning a child Emacs sub-process for each thread.
 
 
 **** aio
