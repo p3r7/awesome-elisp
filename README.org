@@ -44,7 +44,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#overlays][Overlays]]
     - [[#charts--diagrams][Charts & diagrams]]
 - [[#development-tools][Development tools]]
-  - [[#debugging][Debugging]]
+  - [[#interactive-development--debugging][Interactive Development & Debugging]]
   - [[#documentation][Documentation]]
   - [[#code-navigation][Code Navigation]]
   - [[#validation][Validation]]
@@ -820,7 +820,43 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 * Development tools
 
-** Debugging
+  By default, Emacs is already pretty well set up for elisp development.
+
+  But some features can be hard to learn and some stuff can be improved with additinal packages.
+
+  See also those talks [[https://github.com/p3r7/awesome-elisp#john-wiegley-jwiegley][John Wiegley]] gave about hist setup for elisp development:
+  - [[https://www.youtube.com/watch?v=QFClYrhV1z4][Emacs Lisp Development - @ Emacs Conference 2013]]
+  - [[https://sachachua.com/blog/2015/04/2015-04-08-emacs-lisp-development-tips-with-john-wiegley/][Emacs Lisp Development Tips - Sacha Chua Emacs Chat 2015-04-08]].
+
+
+** Interactive Development & Debugging
+
+   Emacs is built with interactive development in mind.
+
+   You could spend days developing elisp code without ever having to restart Emacs.
+
+   Standard /commands/ used are:
+   - =eval-last-sexp= (=C-x C-e=)
+   - =eval-defun= (=C-M-x=)
+   - =eval-buffer=
+   - =eval-region=
+
+   The =*scratch*= buffer also provides a temporary zone to try and test ideas.
+   In it can be used =eval-print-last-sexp= (=C-j=) which acts like =eval-last-sexp= but also prints the result after the /s-exp/ in the buffer.
+
+   For logging, function =message= allows printing into the =*Messages*= buffer.
+
+   For debugging, the most basic command is =toggle-debug-on-error= to get a stacktrace.
+
+
+**** IELM
+
+     *standard* (bundled with every Emacs install)
+
+     Stands for Inferior Emacs Lisp Mode.
+
+     Provides a [[https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop][REPL]] for evaluating elisp code.
+
 
 **** edebug
 
@@ -1051,7 +1087,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    Contributed to elisp development with:
    - =async.el=
-   - talks on how to setup emacs to ease elisp development:
+   - talks on how to setup Emacs to ease elisp development:
      - [[https://www.youtube.com/watch?v=QFClYrhV1z4][Emacs Lisp Development - @ Emacs Conference 2013]]
      - [[https://sachachua.com/blog/2015/04/2015-04-08-emacs-lisp-development-tips-with-john-wiegley/][Emacs Lisp Development Tips - Sacha Chua Emacs Chat 2015-04-08]].
 
