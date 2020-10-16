@@ -40,7 +40,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#async-interpreter-command-sub-processes][Async interpreter command sub-processes]]
   - [[#filesystem-interactions][Filesystem Interactions]]
   - [[#networking][Networking]]
-    - [[#http][HTTP]]
+    - [[#http-client][HTTP client]]
+    - [[#http-server][HTTP server]]
   - [[#gui][GUI]]
     - [[#popups][Popups]]
     - [[#overlays][Overlays]]
@@ -817,9 +818,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 ** Networking
 
-*** HTTP
+*** HTTP client
 
-**** request.el
+**** request
 
      [[https://github.com/tkf/emacs-request][source & doc]]
 
@@ -838,6 +839,22 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      [[https://github.com/twlz0ne/with-proxy.el][source & doc]]
 
      Wrapper for let-binding HTTP proxies.
+
+
+*** HTTP server
+
+**** simple-httpd
+
+     [[https://github.com/skeeto/emacs-web-server][source & doc]]
+
+     A web server writen in pure elisp.
+
+
+**** porthole
+
+     [[https://github.com/jcaw/porthole][source & doc]]
+
+     Start [[https://en.wikipedia.org/wiki/Remote_procedure_call][RPC]] servers under Emacs. These allow executing elisp remotely through HTTP.
 
 
 ** GUI
@@ -1144,11 +1161,11 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    Known for:
    - [[https://github.com/skeeto/elfeed][elfeed]], the popular Emacs RSS reader
-   - [[https://github.com/skeeto/emacs-web-server][simple-httpd]], a web server in pure elisp
    - [[https://github.com/skeeto/skewer-mode][skewer-mode]], interactive web development with auto-reload on edit
 
    Contributed to elisp development with:
    - his blog, /nullprogram.com/
+   - [[https://github.com/skeeto/emacs-web-server][simple-httpd]]
    - =aio=
    - =week-ref=
 
