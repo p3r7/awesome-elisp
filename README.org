@@ -20,8 +20,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#advanced][Advanced]]
   - [[#cookbooks][Cookbooks]]
 - [[#libraries][Libraries]]
-  - [[#core--general-purpose][Core / general purpose]]
-  - [[#data-structures][Data structures]]
+  - [[#core--general-purpose][Core / General Purpose]]
+  - [[#data-structures][Data Structures]]
     - [[#strings][Strings]]
     - [[#sequences][Sequences]]
     - [[#maps][Maps]]
@@ -44,7 +44,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#popups][Popups]]
     - [[#overlays][Overlays]]
     - [[#charts--diagrams][Charts & diagrams]]
-- [[#development-tools][Development tools]]
+- [[#development-tools][Development Tools]]
   - [[#interactive-development--debugging][Interactive Development & Debugging]]
   - [[#documentation][Documentation]]
   - [[#code-navigation][Code Navigation]]
@@ -182,7 +182,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   Some libraries might be listed several times, as they fit in several categories (e.g. =subr-x=, =dash=).
 
 
-** Core / general purpose
+** Core / General Purpose
 
 **** cl-lib
 
@@ -253,7 +253,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Weak reference offer better performance but can be garbage collected.
 
 
-** Data structures
+** Data Structures
 
 *** Strings
 
@@ -825,7 +825,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      *standard* (bundled with every Emacs install)
 
 
-* Development tools
+* Development Tools
 
   By default, Emacs is already pretty well set up for elisp development.
 
