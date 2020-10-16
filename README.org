@@ -844,9 +844,14 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    The =*scratch*= buffer also provides a temporary zone to try and test ideas.
    In it can be used =eval-print-last-sexp= (=C-j=) which acts like =eval-last-sexp= but also prints the result after the /s-exp/ in the buffer.
 
-   For logging, function =message= allows printing into the =*Messages*= buffer.
+   =eval-expression= (=M-:=) allows quickly evaluating a /s-exp/ from anywhere by entering it in the /minibuffer/.
+
+   For logging, function =(message "<text>")= allows printing into the =*Messages*= buffer.
 
    For debugging, the most basic command is =toggle-debug-on-error= to get a stacktrace.
+
+   See also:
+   - [[https://www.masteringemacs.org/article/evaluating-elisp-emacs][Mastering Emacs - Evaluating Elisp in Emacs]]
 
 
 **** IELM
@@ -883,6 +888,27 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Expand nested macros one by one.
 
      Way better than using default =macroexpand=.
+
+
+**** eval-expr
+
+     [[https://github.com/jwiegley/eval-expr][source]]
+
+     Provides =eval-expr=, an enhanced =eval-expression= command.
+
+     Some highlights:
+     - automatic display of output in temp buffer if too big
+     - allows pretty printing of results (with =pp=)
+     - invalid /s-expr/ don't have to be retyped on 2nd try
+
+
+**** eval-sexp-fu
+
+     [[https://github.com/emacsmirror/eval-sexp-fu][source]]
+
+     Visual improvment.
+
+     Flashes the sexps during the evaluation.
 
 
 ** Documentation
