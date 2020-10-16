@@ -144,6 +144,15 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Lots of good insights, but its structure is kinda off-putting.
 
 
+*** Emacs Lisp Programming Thoughts
+
+    [[https://www.nongnu.org/emacs-tiny-tools/elisp-coding/][read online]]
+
+    Pretty old but has very good insights, guidelines and real-world examples.
+
+    Byte compiler section is outdated but general coding style recommendations and sections about macros and profiling are still relevant to this day.
+
+
 ** Cookbooks
 
 *** elisp-demos
