@@ -23,6 +23,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#interactive-development--debugging][Interactive Development & Debugging]]
   - [[#documentation][Documentation]]
   - [[#code-navigation][Code Navigation]]
+  - [[#testing][Testing]]
   - [[#validation][Validation]]
   - [[#syntax-highlighting][Syntax highlighting]]
   - [[#pretty-printing][Pretty printing]]
@@ -336,6 +337,21 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Also handles macros, functions defined through macros and let-bound variables.
 
 
+** Testing
+
+   For simulating interactive user input, consider using libraries such as [[#with-simulated-input][with-simulated-input]] (launch /commands/) and [[#dokey][dokey]] (simulated keyboard shortcut presses).
+
+**** ERT
+
+     [[https://www.gnu.org/software/emacs/manual/html_node/ert/index.html][doc]]
+
+     *standard* (bundled with every Emacs install)
+
+     Stands for /"Emacs Lisp Regression Testing"/.
+
+     Featureful and easy to use.
+
+
 ** Validation
 
 **** melpazoid
@@ -478,9 +494,16 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      *informal standard* (not bundled with Emacs, but used everywhere)
 
-     Simulate interactive user interactions.
+     Simulate user interactions (i.e. launch /commands/).
 
      Mostly usefull for writing tests.
+
+
+**** dokey
+
+     [[https://github.com/ernstvanderlinden/emacs-dokey][source & doc]]
+
+     Trigger keyboard events.
 
 
 **** signal
