@@ -45,6 +45,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#charts--diagrams][Charts & diagrams]]
 - [[#development-tools][Development tools]]
   - [[#debugging][Debugging]]
+  - [[#documentation][Documentation]]
+  - [[#code-navigation][Code Navigation]]
   - [[#validation][Validation]]
   - [[#syntax-highlighting][Syntax highlighting]]
   - [[#pretty-printing][Pretty printing]]
@@ -845,6 +847,73 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Expand nested macros one by one.
 
      Way better than using default =macroexpand=.
+
+
+** Documentation
+
+   To get the documentation of a symbol, you could use one of the built-in:
+   - =describe-symbol=: get documentation of symbol
+   - =describe-function=: get documentation of function
+   - =describe-variable=: get documentation of variable
+   - =describe-key=: get documentation of /command/ associated with keybinding
+
+   These would spawn a =*Help*= buffer. Hence documentation in Emacs is often reffered to as the /help/.
+
+   Some packages improve on these.
+
+
+*** helpful
+
+    [[https://github.com/Wilfred/helpful][source & doc]]
+
+    Provides more contextual information.
+
+    | helpful command     | default command     | comment                                                            |
+    |---------------------+---------------------+--------------------------------------------------------------------|
+    | =helpful-at-point=  | =describe-symbol=   |                                                                    |
+    | ==helpful-callable= | no equivalent       | like =helpful-function= but also works on macros and special forms |
+    | =helpful-function=  | =describe-function= |                                                                    |
+    | =helpful-macro=     | no equivalent       |                                                                    |
+    | =helpful-variable=  | =describe-variable= |                                                                    |
+    | =helpful-key=       | =describe-key=      |                                                                    |
+
+
+*** which-key
+
+    [[https://github.com/justbur/emacs-which-key][source & doc]]
+
+    =which-key= is like an always-on =describe-key=.
+
+    It displays automatically all the possible keybindings following a key prefix.
+
+
+** Code Navigation
+
+   To jump to the definition of a symbol Emacs provides =xref-find-definitions=. In practice it works with nicely with functions but is kind of hit-or-miss with variables.
+
+   In addition, the following more specialised functions exist:
+   - =find-function=: go to the definition of function
+   - =find-variable=: go to the definition of function
+   - =find-library=: go to the definition of /feature/ (i.e. module, package)
+
+   Better options exists so that you don't have to remember all of these.
+
+   To get the documentation of a symbol, you can use one of the default
+
+   Honorable mention: [[https://github.com/purcell/elisp-slime-nav][elisp-slime-nav]], that can be seen as an ancestor to =elisp-def=.
+
+
+*** elisp-def
+
+    [[https://github.com/Wilfred/elisp-def][source & doc]]
+
+    Provides =elisp-def= that allows jumping to the definition of function / variable / feature.
+
+    Like a better =xref-find-definitions=.
+
+    Is able to distinguish between functions / variables / features depending on the context.
+
+    Also handles macros, functions defined through macros and let-bound variables.
 
 
 ** Validation
