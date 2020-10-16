@@ -505,6 +505,15 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Extension to tabulated-list, adding possibility to mark and filter items.
 
 
+**** navigel
+
+     [[https://github.com/DamienCassou/navigel][source]]
+
+     Facilitate the creation of =tabulated-list=-based UIs.
+
+     Also relies on =tablist=.
+
+
 **** cell
 
      [[http://xelf.me/cell.html][doc]], [[https://gitlab.com/dto/mosaic-el/blob/master/cell.el][source]]
