@@ -519,6 +519,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Provides FIFO / FILO queue APIs.
 
 
+**** fifo-class
+
+     [[https://github.com/mola-T/fifo-class][source & doc]]
+
+     An EIEIO abstract class class to provide FIFO methods to /[[https://www.gnu.org/software/emacs/manual/html_node/eieio/Slot-Options.html][slots]]/.
+
+
 *** Trees
 
 **** heap
@@ -694,6 +701,15 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Offers bindings w/ =dired=, =bytecomp= and =smtp-mail=.
 
 
+**** timp
+
+     [[https://github.com/mola-T/timp][source & doc]]
+
+     Multithreading through sub-processes with over-the-wire payload capabilities.
+
+     Achieves true parallel processing by spawning a child Emacs sub-process.
+
+
 **** aio
 
      [[https://github.com/skeeto/emacs-aio][source & doc]], [[https://nullprogram.com/blog/2019/03/10/][blog post]]
@@ -705,7 +721,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Internal representation relies on its own promise implementation and [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Generators.html][generators]].
 
 
-**** async-await.el
+**** async-await
 
      [[https://github.com/chuntaro/emacs-async-await][source & doc]]
 
