@@ -26,9 +26,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#code-navigation][Code Navigation]]
   - [[#testing][Testing]]
   - [[#validation][Validation]]
+  - [[#building][Building]]
   - [[#syntax-highlighting][Syntax highlighting]]
   - [[#pretty-printing][Pretty printing]]
-  - [[#building][Building]]
 - [[#libraries][Libraries]]
   - [[#core--general-purpose][Core / General Purpose]]
   - [[#data-structures][Data Structures]]
@@ -399,14 +399,117 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 ** Validation
 
+   Emacs provides various functions to validate an elisp file / project:
+   - =byte-compile-file=: validate the file compiles cleanly
+   - =checkdoc=: validate the documentation
+   - =check-declare-file= / =check-declare-directory=: validate the declaration of symbols
+   - =package-lint-current-buffer=: validate format for submitting as a package
+
+   It's tedious to run manually each and every of those commands. Thankfully projects aim at making this process easier.
+
+   For maximum efficiency, they can be integrated into a [[https://en.wikipedia.org/wiki/Continuous_integration][CI]] chain (/GitHub actions/ or /Travis/).
+
+
 **** melpazoid
 
-     https://github.com/riscy/melpazoid
+     [[https://github.com/riscy/melpazoid][source & doc]]
+
+     In addition to standard validation, it adds a license checker and some [[https://github.com/riscy/melpazoid/blob/master/melpazoid/melpazoid.el][additional checks]].
+
+     Created by MELPA member [[https://github.com/riscy][@riscy]] to validate submissions.
+
+     Does not run tests.
+
+     Provides recipes for integration with /GitHub actions/ or /Travis/.
+
+
+**** makem.sh
+
+     [[https://github.com/alphapapa/makem.sh][source & doc]]
+
+     Very straightforward way to validate an Emacs package folder / repository.
+
+     Provides a makefile with different targets to run.
+
+     Implemented in bash with a makefile wrapper.
+
+     Performs linting (=make lint=), tests (=make test=) or everything (=make all=).
+
+     In addition to standard checks, also validates indentation.
+
+     Supports both ERT and buttercup tests.
+
+     One drawback is that this makem.sh sources have to be dropped in each of your package source repository.
+
+     Provides recipes for integration with /GitHub actions/.
+
+
+**** makel
+
+     [[https://gitea.petton.fr/DamienCassou/makel][source & doc]]
+
+     Provides a makefile with different targets to run.
+
+     Implemented completely as a makefile.
+
+     Requires a bit of configuration for each package.
+
+     One drawback is that this makel sources have to be dropped in each of your package source repository.
+
+     No CI integration recipes.
 
 
 **** elisp-lint
 
-     https://github.com/gonewest818/elisp-lint
+     [[https://github.com/gonewest818/elisp-lint][elisp-lint]]
+
+     Performs standard validation of specified file. Also checks for indentation.
+
+     No CI integration recipes.
+
+
+** Building
+
+   Those tools, in addition to what those in the [[#validation][Validation]] section provide, are full-fledged build-definition tools, allowing to make complex CI/CD chains.
+
+   They require a fair amount of configuration and are not for the faint of heart.
+
+   They only seem necessary when building larger packages of with exotic dependencies.
+
+
+**** Eldev
+
+     [[https://github.com/doublep/eldev][source & doc]]
+
+     Stands for /"Elisp Development Tool"/.
+
+     Certainly the most modern of the lot.
+
+     100% written in elisp.
+
+     One small drawback is that it does not run in a dedicated isolated Emacs process.
+
+
+**** cask
+
+    [[https://cask.readthedocs.io/en/latest/][doc]], [[https://github.com/cask/cask][source]]
+
+    Pretty advanced and hard to get into.
+
+    Implemented in python.
+
+    Runs in a dedicated isolated Emacs process
+
+
+**** emake
+
+     [[https://github.com/vermiculus/emake.el][source & doc]]
+
+     The most simple to use from this list.
+
+     Implemented in elisp with a makefile wrapper.
+
+     Easier to integrate with CI tools such as /Travis/.
 
 
 ** Syntax highlighting
@@ -452,18 +555,6 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      [[https://github.com/conao3/ppp.el][source & doc]]
 
      Advanced pretty-printing utils.
-
-
-** Building
-
-**** cask
-
-     https://github.com/cask/cask
-
-
-**** eldev
-
-     https://github.com/doublep/eldev
 
 
 * Libraries
@@ -1315,6 +1406,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    Contributed to elisp development with:
    - [[https://github.com/alphapapa/emacs-package-dev-handbook][The Emacs Package Developer’s Handbook]]
+   - =makem.sh=
    - =ts=
    - =org-ql=
 
