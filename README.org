@@ -49,7 +49,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#promises][Promises]]
     - [[#async-elisp-function-calls][Async elisp function calls]]
     - [[#async-sub-processes][Async sub-processes]]
-    - [[#async-interpreter-command-sub-processes][Async interpreter command sub-processes]]
+    - [[#async-interpreter-commands][Async interpreter commands]]
   - [[#buffer-manipulation][Buffer Manipulation]]
   - [[#filesystem-interactions][Filesystem Interactions]]
   - [[#networking][Networking]]
@@ -1271,7 +1271,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      It relies on =make-pipe-process= for the future-based implementation and =make-process= for the callback one.
 
 
-*** Async interpreter command sub-processes
+*** Async interpreter commands
 
     Emacs provides a layer on top of =make-process= for spawning commands from a shell interpreter (i.e. =bash= or =zsh=).
 
