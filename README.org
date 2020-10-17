@@ -210,7 +210,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     [[https://spin.atomicobject.com/2016/05/27/write-emacs-package/][read online]]
 
-    Real world experience of a user writing and submittinghis first package.
+    Real world experience of a user writing and submitting his first package.
 
 *** MELPA recommandations
 
