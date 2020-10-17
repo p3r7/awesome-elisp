@@ -396,6 +396,21 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Featureful and easy to use.
 
+     Suitable for [[https://en.wikipedia.org/wiki/Unit_testing][unit tests]].
+
+
+**** Buttercup
+
+     [[https://github.com/jorgenschaefer/emacs-buttercup][source & doc]]
+
+     /Behavior-Driven Emacs Lisp Testing/
+
+     Especially suitable for [[https://en.wikipedia.org/wiki/Integration_testing][integration tests]].
+
+     Allows defining test suites (i.e. goups of related tests) with a shared context (through /set-up/ and /tear-down/ phases).
+
+     Also provides mocking capabilities.
+
 
 ** Validation
 
