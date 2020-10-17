@@ -60,6 +60,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#overlays][Overlays]]
     - [[#charts--diagrams][Charts & diagrams]]
 - [[#heroes][Heroes]]
+- [[#contributing][Contributing]]
 - [[#license][License]]
 #+END_QUOTE
 
@@ -1533,6 +1534,49 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    A controversial figure in the Emacs community, Xah nethertheless created the first online digestible resource for learning elisp.
 
    He without a doubt is [[http://ergoemacs.org/emacs/_p/KickbanXahLeeFromEmacsChannel.htm][a big troll]] but his contribution to the Emacs world is unquestionable and as such he deserves his place in this list.
+
+
+* Contributing
+
+  Contributions and suggestions are always welcome!
+
+  The [[https://github.com/p3r7][original author]] made this document available as a gift to the community as he felt something like it was missing.
+
+  The idea is to have this evolve into a community effort, the initial version is only a baseline.
+
+
+** Guidelines
+
+*** PR and issues
+
+    Open one issue of PR / subject matter.
+
+    Don't go submit a gazillion unrelated changes that would conflict with other's submitted PRs..
+
+
+*** Opinions
+
+    Try to not be too opinionated.
+
+    Some solutions are objectively better in some regards than others and that can be stated but don't go launch a flame war.
+
+    Descriptions of libraries and tools expressed in this document are always subject to change. If a description feels too negative, don't hesitate to open a issue to discuss it.
+
+
+*** Order of tools & libraries
+
+    Try to put the most "standard" entries first.
+
+    By standard we mean, in order: embedded in Emacs, most sane or used by the most people / projects.
+
+
+*** Order of categories
+
+    Don't submit a PR single-handedly deciding to reorganize the whole document structure.
+
+    Open an issue and provoke conversation.
+
+    What can feel natural to you can be counter-intuitive to others.
 
 
 * License
