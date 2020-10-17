@@ -1540,16 +1540,16 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
   Contributions and suggestions are always welcome!
 
-  The [[https://github.com/p3r7][original author]] made this document available as a gift to the community as he felt something like it was missing.
+  The [[https://github.com/p3r7][original author]] made this document available as he felt something like it was missing.
 
-  The idea is to have this evolve into a community effort, the initial version is only a baseline.
+  The idea is to have this evolve into a community effort, the initial version being only a baseline.
 
 
 ** Guidelines
 
 *** PR and issues
 
-    Open one issue of PR / subject matter.
+    Open one issue or PR / subject matter.
 
     Don't go submit a gazillion unrelated changes that would conflict with other's submitted PRs..
 
