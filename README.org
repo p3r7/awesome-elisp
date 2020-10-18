@@ -21,6 +21,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#advanced][Advanced]]
   - [[#cookbooks][Cookbooks]]
   - [[#on-package-authoring][On Package Authoring]]
+  - [[#contributing-to-emacs][Contributing to Emacs]]
 - [[#development-tools][Development Tools]]
   - [[#interactive-development--debugging][Interactive Development & Debugging]]
   - [[#documentation][Documentation]]
