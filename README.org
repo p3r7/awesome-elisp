@@ -15,7 +15,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 * Table of Contents                                                     :TOC_5:QUOTE:
 #+BEGIN_QUOTE
-- [[#what is-elisp][What is Elisp?]]
+- [[#what-is-elisp][What is Elisp?]]
 - [[#resources][Resources]]
   - [[#entry-level][Entry-level]]
   - [[#advanced][Advanced]]
