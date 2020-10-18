@@ -512,7 +512,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    They require a fair amount of configuration and are not for the faint of heart.
 
-   They only seem necessary when building larger packages of with exotic dependencies.
+   They only seem necessary when building larger packages with exotic dependencies.
 
 
 **** Eldev
