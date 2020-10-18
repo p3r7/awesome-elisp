@@ -21,6 +21,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#advanced][Advanced]]
   - [[#cookbooks][Cookbooks]]
   - [[#on-package-authoring][On Package Authoring]]
+  - [[#contributing-to-emacs][Contributing to Emacs]]
 - [[#development-tools][Development Tools]]
   - [[#interactive-development--debugging][Interactive Development & Debugging]]
   - [[#documentation][Documentation]]
@@ -244,6 +245,16 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     Don't worry, for your first submissions, they will be very comprehensive and will help you fixing what's wrong.
 
+
+** Contributing to Emacs
+
+   The [[https://www.gnu.org/software/emacs/CONTRIBUTE][CONTRIBUTE]] file is the official document describing the process.
+   Additional development tips and coding conventions can be found in the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Tips.html#Tips][Elisp Manual]].
+
+   =M-x view-emacs-todo= shows a lists of TODO items you might want to work on.
+   You can also browse the bug archive using =M-x debbugs-gnu= using the [[https://elpa.gnu.org/packages/debbugs.html][debbugs]] package.
+
+   [[https://archive.casouri.cat/note/2020/contributing-to-emacs/][Contributing to Emacs]] gives some helpful background information and overview about the contribution workflow for newcomers.
 
 * Development Tools
 
