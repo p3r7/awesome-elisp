@@ -568,6 +568,12 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Killer feature is having different faces for /special/ vars (global) VS /normal/ ones (local).
 
 
+*** highlight-function-calls
+
+   [[https://github.com/alphapapa/highlight-function-calls][source]]
+
+   Useful to indicate calls of functions.
+
 *** cl-lib-highlight
 
     [[https://github.com/skeeto/cl-lib-highlight][source & doc]]
@@ -576,6 +582,24 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     Also highlights deprecated =cl= symbols with a different face. Useful when reading legacy code.
 
+
+*** paren-face
+
+   [[https://github.com/tarsius/paren-face][source]]
+
+   Make parentheses less visible by dimming them.
+
+*** page-break-lines
+
+   [[https://github.com/purcell/page-break-lines][source]]
+
+   Display form feed characters which are traditionally used to separate code sections as horizontal lines.
+
+*** easy-escape
+
+   [[https://github.com/cpitclaudel/easy-escape][source]]
+
+   Make regular expression strings more readable.
 
 ** Pretty printing
 
