@@ -556,8 +556,11 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    All those listed bellow are complementary.
 
-   Honorable mention: [[https://github.com/Fanael/highlight-defined][highlight-defined]] which is ok but superseded by =lisp-extra-font-lock= functionalities.
+   Honorable mention:
 
+    - [[https://github.com/Fanael/highlight-defined][highlight-defined]] which is ok but superseded by =lisp-extra-font-lock= functionalities.
+    - [[https://github.com/tarsius/paren-face][paren-face]] can be used to dim parentheses which some might find useful when dealing with Elisp.
+    - [[https://github.com/purcell/page-break-lines][page-break-lines]] can be used for nicer display of form feed characters which are traditionally used to separate code sections in Elisp.
 
 *** lisp-extra-font-lock
 
@@ -581,19 +584,6 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Provides additonal / alternative font-locking for =cl-lib= symbols, to make them stand out in your code.
 
     Also highlights deprecated =cl= symbols with a different face. Useful when reading legacy code.
-
-
-*** paren-face
-
-   [[https://github.com/tarsius/paren-face][source]]
-
-   Make parentheses less visible by dimming them.
-
-*** page-break-lines
-
-   [[https://github.com/purcell/page-break-lines][source]]
-
-   Display form feed characters which are traditionally used to separate code sections as horizontal lines.
 
 *** easy-escape
 
