@@ -4,7 +4,7 @@
 
 #+HTML:</div>
 
-Welcome to /Awesome Elisp/, a list of resources linked to Emacs LISP (elisp) development.
+Welcome to /Awesome Elisp/, a list of resources linked to Emacs LISP (Elisp) development.
 
 It's aim is to not be a simple index but a /compendium/: resources are not only listed but also commented.
 
@@ -48,7 +48,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#concurrency--asynchronicity][Concurrency / Asynchronicity]]
     - [[#timers][Timers]]
     - [[#promises][Promises]]
-    - [[#async-elisp-function-calls][Async elisp function calls]]
+    - [[#async-elisp-function-calls][Async Elisp function calls]]
     - [[#async-sub-processes][Async sub-processes]]
     - [[#async-interpreter-commands][Async interpreter commands]]
   - [[#buffer-manipulation][Buffer Manipulation]]
@@ -136,7 +136,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     Not super up to date but generally well put together.
 
-    One of the first resources on the web introducing elisp in a concise and comprehensible way.
+    One of the first resources on the web introducing Elisp in a concise and comprehensible way.
 
     Please note that the more complex examples follow a coding style regarded as not so great: big monolithic functions instead of multiple small functional ones.
 
@@ -160,7 +160,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Also comes bundled with Emacs.
     Just =C-h i= (or =M-x info=) and open =Elisp=.
 
-    Comprehensive guide of core elisp APIs.
+    Comprehensive guide of core Elisp APIs.
 
     Generally well written but needs you to understand its logic and be familiar with Emacs terminology.
 
@@ -169,7 +169,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     [[https://github.com/bbatsov/emacs-lisp-style-guide][read online]]
 
-    Provides solid guidelines on the dos and don'ts for quality elisp code.
+    Provides solid guidelines on the dos and don'ts for quality Elisp code.
 
 
 *** The Emacs Package Developer’s Handbook
@@ -247,11 +247,11 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 * Development Tools
 
-  By default, Emacs is already pretty well set up for elisp development.
+  By default, Emacs is already pretty well set up for Elisp development.
 
   But some features can be hard to learn and some stuff can be improved with additinal packages.
 
-  See also those talks [[https://github.com/p3r7/awesome-elisp#john-wiegley-jwiegley][John Wiegley]] gave about hist setup for elisp development:
+  See also those talks [[https://github.com/p3r7/awesome-elisp#john-wiegley-jwiegley][John Wiegley]] gave about hist setup for Elisp development:
   - [[https://www.youtube.com/watch?v=QFClYrhV1z4][Emacs Lisp Development - @ Emacs Conference 2013]]
   - [[https://sachachua.com/blog/2015/04/2015-04-08-emacs-lisp-development-tips-with-john-wiegley/][Emacs Lisp Development Tips - Sacha Chua Emacs Chat 2015-04-08]].
 
@@ -260,7 +260,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    Emacs is built with interactive development in mind.
 
-   You could spend days developing elisp code without ever having to restart Emacs.
+   You could spend days developing Elisp code without ever having to restart Emacs.
 
    Standard /commands/ used are:
    - =eval-last-sexp= (=C-x C-e=)
@@ -287,7 +287,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Stands for Inferior Emacs Lisp Mode.
 
-     Provides a [[https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop][REPL]] for evaluating elisp code.
+     Provides a [[https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop][REPL]] for evaluating Elisp code.
 
 
 **** edebug
@@ -296,7 +296,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      *standard* (bundled with every Emacs install)
 
-     edebug is the interactive elisp debugger.
+     edebug is the interactive Elisp debugger.
 
      The documentation is a bit rough to get started.
      I recommend reading this series of posts:
@@ -437,7 +437,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 ** Validation
 
-   Emacs provides various functions to validate an elisp file / project:
+   Emacs provides various functions to validate an Elisp file / project:
    - =byte-compile-file=: validate the file compiles cleanly
    - =checkdoc=: validate the documentation
    - =check-declare-file= / =check-declare-directory=: validate the declaration of symbols
@@ -523,7 +523,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Certainly the most modern of the lot.
 
-     100% written in elisp.
+     100% written in Elisp.
 
      One small drawback is that it does not run in a dedicated isolated Emacs process.
 
@@ -545,7 +545,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      The most simple to use from this list.
 
-     Implemented in elisp with a makefile wrapper.
+     Implemented in Elisp with a makefile wrapper.
 
      Easier to integrate with CI tools such as /Travis/.
 
@@ -612,7 +612,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      *standard* (bundled with every Emacs install)
 
-     Lib extending elisp with functionalities inherited from Common Lisp.
+     Lib extending Elisp with functionalities inherited from Common Lisp.
 
      Just do a =(require 'cl-lib)= to use it.
 
@@ -623,7 +623,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      *standard* (bundled with every Emacs install)
 
-     Intended as an extension to [[https://github.com/emacs-mirror/emacs/blob/master/lisp/subr.el][subr.el]], the core library of basic functions written in elisp.
+     Intended as an extension to [[https://github.com/emacs-mirror/emacs/blob/master/lisp/subr.el][subr.el]], the core library of basic functions written in Elisp.
 
      Provides:
      - threading macros (/a la/ Clojure, =thread-first= and =thread-last=)
@@ -730,7 +730,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      *standard* (bundled with every Emacs install)
 
-     Macro for helping writing elisp regexp.
+     Macro for helping writing Elisp regexp.
 
 
 *** Sequences
@@ -774,7 +774,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     (Hash)maps are a special type of sequences that allow representing a list of key / value pairs.
     In other languages they can also be called associative arrays or dictionaries.
 
-    In elisp, a map can be represented as:
+    In Elisp, a map can be represented as:
     - an [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Association-Lists.html][alist]] (association list, preserving element order)
     - a [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Property-Lists.html][plist]] (property list, more human-readable)
     - an [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Hash-Tables.html][hash-table]]
@@ -811,7 +811,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      supports: alists, plists and hash-tables.
 
-     Shared API for all 3 elisp map objects.
+     Shared API for all 3 Elisp map objects.
      Weirdly enough, plists are called "arrays" in its source/inline docs.
 
      No documentation other than what is inlined in source.
@@ -892,7 +892,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Stands for /Enhanced Implementation of Emacs Interpreted Objects/.
 
-     Brings an OOP layer to elisp, based upon the /Common Lisp Object System/ (CLOS).
+     Brings an OOP layer to Elisp, based upon the /Common Lisp Object System/ (CLOS).
 
      Provides the =defclass= macro.
 
@@ -1126,7 +1126,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 ** Concurrency / Asynchronicity
 
-   Concurrency in elisp / Emacs is a hot topic.
+   Concurrency in Elisp / Emacs is a hot topic.
 
    Due to its single-threaded nature, we can't do parallel processing unless using some dirty tricks (see [[#async][async]]).
 
@@ -1183,7 +1183,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Mostly an async/await lib but implements its own promise system internally.
 
 
-*** Async elisp function calls
+*** Async Elisp function calls
 
 **** deferred
 
@@ -1250,7 +1250,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** Async sub-processes
 
-    These libs only allow to run asynchronously command processes (as opposed to elisp function calls).
+    These libs only allow to run asynchronously command processes (as opposed to Elisp function calls).
 
     It can be done in standard with low-level function =make-process= or derivatives =start-process=, =make-pipe-process= and =start-process-shell-command=.
 
@@ -1267,7 +1267,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Not super-actively maintained, but featureful.
 
-     Also allows handling async elisp function calls and HTTP calls with [[https://github.com/tkf/emacs-request][request.el bindings]].
+     Also allows handling async Elisp function calls and HTTP calls with [[https://github.com/tkf/emacs-request][request.el bindings]].
 
 
 **** bpr
@@ -1344,7 +1344,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** HTTP client
 
-    Emacs comes already with an HTTP client, =url.el=, written in pure elisp ([[https://github.com/emacs-mirror/emacs/blob/master/lisp/url/url.el][source]]), wich has a few limitations.
+    Emacs comes already with an HTTP client, =url.el=, written in pure Elisp ([[https://github.com/emacs-mirror/emacs/blob/master/lisp/url/url.el][source]]), wich has a few limitations.
     It exposes functions =url-retrieve-synchronously= and =url-retrieve= (async).
 
 
@@ -1389,14 +1389,14 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/skeeto/emacs-web-server][source & doc]]
 
-     A web server written in pure elisp.
+     A web server written in pure Elisp.
 
 
 **** porthole
 
      [[https://github.com/jcaw/porthole][source & doc]]
 
-     Start [[https://en.wikipedia.org/wiki/Remote_procedure_call][RPC]] servers under Emacs. These allow executing elisp remotely through HTTP.
+     Start [[https://en.wikipedia.org/wiki/Remote_procedure_call][RPC]] servers under Emacs. These allow executing Elisp remotely through HTTP.
 
 
 ** GUI
@@ -1442,7 +1442,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    [[https://github.com/alphapapa][github]]
 
-   Contributed to elisp development with:
+   Contributed to Elisp development with:
    - [[https://github.com/alphapapa/emacs-package-dev-handbook][The Emacs Package Developer’s Handbook]]
    - =makem.sh=
    - =ts=
@@ -1457,7 +1457,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    - [[https://github.com/bbatsov/projectile][projectile]]: the best project management package for Emacs
    - [[https://cider.mx/][CIDER]]: the interactive Clojure development environment for Emacs
 
-   Contributed to elisp development with:
+   Contributed to Elisp development with:
    - [[https://github.com/bbatsov/emacs-lisp-style-guide][The Emacs Lisp Style Guide]]
 
 
@@ -1465,7 +1465,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    [[https://github.com/caiorss][github]]
 
-   Contributed to elisp development with:
+   Contributed to Elisp development with:
    - his book [[http://caiorss.github.io/Emacs-Elisp-Programming/][Emacs In a Box]]
 
 
@@ -1477,7 +1477,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    - [[https://github.com/skeeto/elfeed][elfeed]], the popular Emacs RSS reader
    - [[https://github.com/skeeto/skewer-mode][skewer-mode]], interactive web development with auto-reload on edit
 
-   Contributed to elisp development with:
+   Contributed to Elisp development with:
    - his blog, /nullprogram.com/
    - [[https://github.com/skeeto/emacs-web-server][simple-httpd]]
    - =aio=
@@ -1492,9 +1492,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    - being the head of the Emacs project maintainers
    - authoring =use-pacakge=
 
-   Contributed to elisp development with:
+   Contributed to Elisp development with:
    - =async.el=
-   - talks on how to setup Emacs to ease elisp development:
+   - talks on how to setup Emacs to ease Elisp development:
      - [[https://www.youtube.com/watch?v=QFClYrhV1z4][Emacs Lisp Development - @ Emacs Conference 2013]]
      - [[https://sachachua.com/blog/2015/04/2015-04-08-emacs-lisp-development-tips-with-john-wiegley/][Emacs Lisp Development Tips - Sacha Chua Emacs Chat 2015-04-08]].
 
@@ -1507,7 +1507,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    - authoring [[https://github.com/magit/magit][magit]]
    - lots of high quality smaller packages ([[https://github.com/tarsius/orglink][orglink]], [[https://github.com/tarsius/keycast][keycast]]...)
 
-   Contributed to elisp development with:
+   Contributed to Elisp development with:
    - [[https://github.com/magit/transient][transient]]
 
 
@@ -1515,7 +1515,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    [[https://github.com/magnars][github]], [[http://twitter.com/magnars][twitter]]
 
-   Contributed to elisp development with:
+   Contributed to Elisp development with:
    - [[https://github.com/magnars/s.el][s]] (strings)
    - [[https://github.com/magnars/dash.el][dash]] (lists)
 
@@ -1527,7 +1527,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    Known for:
    - creating the popular [[https://github.com/NicolasPetton/Indium][Indium]] interactive Javascript development environment
 
-   Contributed to elisp development with:
+   Contributed to Elisp development with:
    - creating the now standard =seq.el= and =map.el=
    - =stream.el=
 
@@ -1546,14 +1546,14 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    Known for:
    - [[http://www.dr-qubit.org/undo-tree/undo-tree.el][undo-tree]]
 
-   Contributed to elisp development with [[http://www.dr-qubit.org/emacs_data-structures.html][his implementation of basic and more complex data structures]]: =queue=, =heap=, =avl-tree=, =trie=, =dict-tree=, =tNFA=.
+   Contributed to Elisp development with [[http://www.dr-qubit.org/emacs_data-structures.html][his implementation of basic and more complex data structures]]: =queue=, =heap=, =avl-tree=, =trie=, =dict-tree=, =tNFA=.
 
 
 ** Xah Lee
 
    [[http://ergoemacs.org/emacs/emacs.html][website]], [[https://www.patreon.com/xahlee][open to sponsoring]]
 
-   A controversial figure in the Emacs community, Xah nethertheless created the first online digestible resource for learning elisp.
+   A controversial figure in the Emacs community, Xah nethertheless created the first online digestible resource for learning Elisp.
 
    He without a doubt is [[http://ergoemacs.org/emacs/_p/KickbanXahLeeFromEmacsChannel.htm][a big troll]] but his contribution to the Emacs world is unquestionable and as such he deserves his place in this list.
 
