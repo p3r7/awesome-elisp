@@ -28,7 +28,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#testing][Testing]]
   - [[#validation][Validation]]
   - [[#building][Building]]
-  - [[#syntax-highlighting][Syntax highlighting]]
+  - [[#syntax-highlighting-and-visual-enhancements][Syntax highlighting and visual enhancements]]
   - [[#pretty-printing][Pretty printing]]
 - [[#libraries][Libraries]]
   - [[#core--general-purpose][Core / General Purpose]]
@@ -550,9 +550,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Easier to integrate with CI tools such as /Travis/.
 
 
-** Syntax highlighting
+** Syntax highlighting and visual enhancements
 
-   Several packages allow to improve default syntax highlighting (/font locking/ in Emacs lingo).
+   Several packages provide visual improvements and extend default syntax highlighting (/font locking/ in Emacs lingo).
 
    All those listed bellow are complementary.
 
