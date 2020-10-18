@@ -199,7 +199,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Very good and beginner-friendly.
 
     Almost complete list of single-liner examples of standard function.
-    Also packs examples fro =dash= and =s=.
+    Also packs examples for =dash= and =s=.
 
 
 *** Emacs In A Box - Elisp Snippets
