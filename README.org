@@ -29,7 +29,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#testing][Testing]]
   - [[#validation][Validation]]
   - [[#building][Building]]
-  - [[#syntax-highlighting][Syntax highlighting]]
+  - [[#syntax-highlighting-and-visual-enhancements][Syntax highlighting and visual enhancements]]
   - [[#pretty-printing][Pretty printing]]
 - [[#libraries][Libraries]]
   - [[#core--general-purpose][Core / General Purpose]]
@@ -561,14 +561,17 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Easier to integrate with CI tools such as /Travis/.
 
 
-** Syntax highlighting
+** Syntax highlighting and visual enhancements
 
-   Several packages allow to improve default syntax highlighting (/font locking/ in Emacs lingo).
+   Several packages provide visual improvements and extend default syntax highlighting (/font locking/ in Emacs lingo).
 
    All those listed bellow are complementary.
 
-   Honorable mention: [[https://github.com/Fanael/highlight-defined][highlight-defined]] which is ok but superseded by =lisp-extra-font-lock= functionalities.
+   Honorable mention:
 
+    - [[https://github.com/Fanael/highlight-defined][highlight-defined]] which is ok but superseded by =lisp-extra-font-lock= functionalities.
+    - [[https://github.com/tarsius/paren-face][paren-face]] can be used to dim parentheses which some might find useful when dealing with Elisp.
+    - [[https://github.com/purcell/page-break-lines][page-break-lines]] can be used for nicer display of form feed characters which are traditionally used to separate code sections in Elisp.
 
 *** lisp-extra-font-lock
 
@@ -579,6 +582,12 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Killer feature is having different faces for /special/ vars (global) VS /normal/ ones (local).
 
 
+*** highlight-function-calls
+
+   [[https://github.com/alphapapa/highlight-function-calls][source]]
+
+   Useful to indicate calls of functions.
+
 *** cl-lib-highlight
 
     [[https://github.com/skeeto/cl-lib-highlight][source & doc]]
@@ -587,6 +596,11 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     Also highlights deprecated =cl= symbols with a different face. Useful when reading legacy code.
 
+*** easy-escape
+
+   [[https://github.com/cpitclaudel/easy-escape][source]]
+
+   Make regular expression strings more readable.
 
 ** Pretty printing
 
