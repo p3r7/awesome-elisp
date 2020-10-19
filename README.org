@@ -538,7 +538,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/emacscollective/auto-compile][source]]
 
-     Compiles current file on save and can display compile errors/warnings in the mode-line.
+     Compiles current file on save and display compile errors/warnings in the mode-line.
 
 
 ** Building
