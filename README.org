@@ -598,11 +598,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    All those listed bellow are complementary.
 
-   Honorable mention:
+   Honorable mentions:
+    - [[https://github.com/Fanael/highlight-defined][highlight-defined]] which is superseded by =lisp-extra-font-lock= functionalities
 
-    - [[https://github.com/Fanael/highlight-defined][highlight-defined]] which is ok but superseded by =lisp-extra-font-lock= functionalities.
-    - [[https://github.com/tarsius/paren-face][paren-face]] can be used to dim parentheses which some might find useful when dealing with Elisp.
-    - [[https://github.com/purcell/page-break-lines][page-break-lines]] can be used for nicer display of form feed characters which are traditionally used to separate code sections in Elisp.
+   Not Elisp-specific but commonly used in the context of Elisp development:
+    - traditionally, /form feed/ characters (=^L=) are used in Elisp source as a section delimiters. Either [[https://github.com/purcell/page-break-lines][page-break-lines]] or [[https://depp.brause.cc/form-feed/][form-feed]] can be used to display them as intended.
+    - for those that barely parentheses, [[https://github.com/tarsius/paren-face][paren-face]] can be used to dim them in Lisp-based modes
+    - for those that love parentheses, [[https://github.com/Fanael/rainbow-delimiters][rainbow-delimiters]] allows displaying them in different colors depending on their nesting depth
 
 *** lisp-extra-font-lock
 
