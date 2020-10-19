@@ -818,7 +818,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     tl;dr:
     - planning on doing lots of inserts and a few lookups (or mostly on recent elements), use an alist
     - planning on having a big number of elements and lookup speed is critical, use an hash-map
-    - every other case: use a plist
+    - every other case, use a plist
 
     Older Emacs packages tend to rely mostly on alists, sometimes for no good reason.
 
@@ -966,7 +966,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      *informal standard* (not bundled with Emacs, but used everywhere)
 
-     Extension to tabulated-list, adding possibility to mark and filter items.
+     Extension to =tabulated-list=, adding possibility to mark and filter items.
 
 
 **** navigel
