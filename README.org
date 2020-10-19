@@ -351,7 +351,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Flashes the sexps during the evaluation.
 
 
-** Documentation
+** Documentation and Introspection
 
    To get the documentation of a symbol, you could use one of the built-in:
    - =describe-symbol=: get documentation of symbol
@@ -359,7 +359,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    - =describe-variable=: get documentation of variable
    - =describe-key=: get documentation of /command/ associated with keybinding
 
-   These would spawn a =*Help*= buffer. Hence documentation in Emacs is often reffered to as the /help/.
+   These would spawn a =*Help*= buffer. Hence documentation in Emacs is often referred to as the /help/.
+   For searching through symbols Emacs also comes with various =apropos-*= commands which populate a buffer with your search results.
 
    Some packages improve on these.
 
@@ -380,6 +381,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     | =helpful-key=       | =describe-key=      |                                                                    |
 
 
+*** elisp-demos
+
+    [[https://github.com/xuchunyang/elisp-demos][source]]
+
+    Provides usage examples in the =*Help*= buffer.
+
+
 *** which-key
 
     [[https://github.com/justbur/emacs-which-key][source & doc]]
@@ -387,6 +395,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     =which-key= is like an always-on =describe-key=.
 
     It displays automatically all the possible keybindings following a key prefix.
+
+
+*** suggest
+
+    [[https://github.com/Wilfred/suggest.el][source]]
+
+    Discover elisp functions by specifying input and the desired output.
 
 
 ** Code Navigation
