@@ -235,6 +235,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     Real world experience of a user writing and submitting his first package.
 
+
 *** MELPA recommandations
 
     [[https://github.com/melpa/melpa/blob/master/CONTRIBUTING.org#making-your-package-ready-for-inclusion][read online]]
@@ -255,6 +256,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    You can also browse the bug archive using =M-x debbugs-gnu= using the [[https://elpa.gnu.org/packages/debbugs.html][debbugs]] package.
 
    [[https://archive.casouri.cat/note/2020/contributing-to-emacs/][Contributing to Emacs]] gives some helpful background information and overview about the contribution workflow for newcomers.
+
 
 * Development Tools
 
