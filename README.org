@@ -1159,7 +1159,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    But that doesn't prevent us from doing concurrent processing, with say /timers/.
 
-   Emacs recently extended this support with [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Generators.html][generators]] (since 25.1) [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Threads.html][native threads]] (not what you might be thinking of, since 26.1).
+   Emacs recently extended this support with [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Generators.html][generators]] (since 25.1) and [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Threads.html][native threads]] (not what you might be thinking of, since 26.1).
 
    For more info on those subject, read:
    - [[https://www.emacswiki.org/emacs/NoThreading][emacswiki/No Threading]]
