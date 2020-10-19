@@ -1625,7 +1625,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 ** Guidelines
 
-*** PR and issues
+*** PR and Issues
 
     Open one issue or PR / subject matter.
 
@@ -1652,7 +1652,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** Relevant Content: Libraries
 
-    In [[#libraries][Libraries]], only list package that were created to be used as libraries and generic enough to target broad range of applications.
+    In [[#libraries][Libraries]], only list packages that were created to be used as libraries and generic enough to target broad range of applications.
 
     E.g. HTTP client libs such as =request= have their place, wrappers targeting a specific API (such as =ghub=) don't.
 
@@ -1668,14 +1668,14 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     This description should be short and ideally not exceed a few lines.
 
 
-*** Order of tools & libraries
+*** Order of Tools & Libraries
 
     Try to put the most "standard" entries first.
 
     By standard we mean, in order: embedded in Emacs, most sane or used by the most people / projects.
 
 
-*** Order of categories
+*** Order of Categories
 
     Don't submit a PR single-handedly deciding to reorganize the whole document structure.
 
