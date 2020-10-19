@@ -351,6 +351,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Flashes the sexps during the evaluation.
 
 
+**** eros
+
+     [[https://github.com/xiongtx/eros][source]]
+
+     Show evaluation results inline.
+
+
 ** Documentation and Introspection
 
    To get the documentation of a symbol, you could use one of the built-in:
