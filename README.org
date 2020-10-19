@@ -1654,7 +1654,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     In [[#libraries][Libraries]], only list packages that were created to be used as libraries and generic enough to target broad range of applications.
 
-    E.g. HTTP client libs such as =request= have their place, wrappers targeting a specific API (such as =ghub=) don't.
+    E.g. HTTP client libs such as =request= have their place, wrappers targeting a specific API (such as =ghub= or =pocket-lib=) don't.
 
 
 *** Comments
