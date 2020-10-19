@@ -1651,6 +1651,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     In this spirit, no block quotes, no code snippets and no in-depth explanation of concepts should appear here.
 
+    This is no cookbook, no manual, no article.
+
     Section can have small introduction to contextualize things (e.g. built-in libs) but should remain succinct, instead favoring links to external articles.
 
     The introduction of the [[#concurrency--asynchronicity][Concurrency / Asynchronicity]] is a good example of concisely presenting the necessary information and linking to external resources.
