@@ -179,7 +179,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     List bunch of tools and libraries for helping package developers.
     Also provides various snippets and best practices.
-    Lots of good insights, but its structure is kinda off-putting.
+    Lots of good insights.
 
 
 *** Emacs Lisp Programming Thoughts
