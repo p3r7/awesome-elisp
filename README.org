@@ -24,7 +24,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#contributing-to-emacs][Contributing to Emacs]]
 - [[#development-tools][Development Tools]]
   - [[#interactive-development--debugging][Interactive Development & Debugging]]
-  - [[#documentation][Documentation]]
+  - [[#documentation--introspection][Documentation and Introspection]]
   - [[#code-navigation][Code Navigation]]
   - [[#testing][Testing]]
   - [[#validation][Validation]]
