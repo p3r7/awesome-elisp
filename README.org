@@ -534,6 +534,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      No CI integration recipes.
 
 
+**** auto-compile
+
+     [[https://github.com/emacscollective/auto-compile][source]]
+
+     Compiles current file on save and can display compile errors/warnings in the mode-line.
+
+
 ** Building
 
    Those tools, in addition to what those in the [[#validation][Validation]] section provide, are full-fledged build-definition tools, allowing to make complex CI/CD chains.
