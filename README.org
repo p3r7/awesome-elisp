@@ -1065,7 +1065,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** tree-sitter
 
-     [[https://github.com/ubolonton/emacs-tree-sitter/][source & doc]], [[https://www.reddit.com/r/emacs/comments/chnxzm/dynamic_module_binding_for_treesitter_an/][reddit post]]
+     [[https://ubolonton.github.io/emacs-tree-sitter/][doc]], [[https://github.com/ubolonton/emacs-tree-sitter/][source]], [[https://www.reddit.com/r/emacs/comments/chnxzm/dynamic_module_binding_for_treesitter_an/][reddit post]]
 
      Implemented as a module, binding with the [[https://tree-sitter.github.io/tree-sitter/][tree-sitter]] parser (written in Rust).
 
