@@ -24,13 +24,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#contributing-to-emacs][Contributing to Emacs]]
 - [[#development-tools][Development Tools]]
   - [[#interactive-development--debugging][Interactive Development & Debugging]]
-  - [[#documentation][Documentation]]
+  - [[#documentation--introspection][Documentation & Introspection]]
   - [[#code-navigation][Code Navigation]]
   - [[#testing][Testing]]
   - [[#validation][Validation]]
   - [[#building][Building]]
-  - [[#syntax-highlighting-and-visual-enhancements][Syntax highlighting and visual enhancements]]
-  - [[#pretty-printing][Pretty printing]]
+  - [[#syntax-highlighting--visual-enhancements][Syntax Highlighting & Visual Enhancements]]
+  - [[#pretty-printing][Pretty Printing]]
 - [[#libraries][Libraries]]
   - [[#core--general-purpose][Core / General Purpose]]
   - [[#data-structures][Data Structures]]
@@ -358,7 +358,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Show evaluation results inline.
 
 
-** Documentation and Introspection
+** Documentation & Introspection
 
    To get the documentation of a symbol, you could use one of the built-in:
    - =describe-symbol=: get documentation of symbol
@@ -541,6 +541,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      No CI integration recipes.
 
 
+**** auto-compile
+
+     [[https://github.com/emacscollective/auto-compile][source]]
+
+     Compiles current file on save and display compile errors/warnings in the mode-line.
+
+
 ** Building
 
    Those tools, in addition to what those in the [[#validation][Validation]] section provide, are full-fledged build-definition tools, allowing to make complex CI/CD chains.
@@ -585,7 +592,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Easier to integrate with CI tools such as /Travis/.
 
 
-** Syntax highlighting and visual enhancements
+** Syntax Highlighting & Visual Enhancements
 
    Several packages provide visual improvements and extend default syntax highlighting (/font locking/ in Emacs lingo).
 
@@ -626,7 +633,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    Make regular expression strings more readable.
 
-** Pretty printing
+** Pretty Printing
 
 **** pp
 
