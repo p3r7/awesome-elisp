@@ -1643,20 +1643,35 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Descriptions of libraries and tools expressed in this document are always subject to change. If a description feels too negative, don't hesitate to open a issue to discuss it.
 
 
-*** Relevant Content: Development Tools
+*** Scope
 
-    In [[#development-tools][Development Tools]], only list tools and package that are specific to Elisp development.
+    The aim of this document is to (loosely) follow the style of other [[https://github.com/sindresorhus/awesome][awesome lists]].
 
-    It's very tempting to list stuff such as =projectile= or =treemacs= but those package apply not only to Elisp development and should be listed.
+    Content should be concise and always follow the same format.
 
-    Don't create a sub-section tools that have modern counterpart and are deprecated / no more maintained. You could eventually mention them like it's done for =highlight-defined= in [[#syntax-highlighting--visual-enhancements][Syntax Highlighting & Visual Enhancements]].
+    In this spirit, no block quotes, no code snippets and no in-depth explanation of concepts should appear here.
+
+    Section can have small introduction to contextualize things (e.g. built-in libs) but should remain succinct, instead favoring links to external articles.
+
+    The introduction of the [[#concurrency--asynchronicity][Concurrency / Asynchronicity]] is a good example of concisely presenting the necessary information and linking to external resources.
+
+    On the contrary, the [[#maps][Maps]] section goes into too much details and should instead link to an article.
 
 
-*** Relevant Content: Libraries
+**** Relevant Content: Development Tools
 
-    In [[#libraries][Libraries]], only list packages that were created to be used as libraries and generic enough to target broad range of applications.
+     In [[#development-tools][Development Tools]], only list tools and package that are specific to Elisp development.
 
-    E.g. HTTP client libs such as =request= have their place, wrappers targeting a specific API (such as =ghub= or =pocket-lib=) don't.
+     It's very tempting to list stuff such as =projectile= or =treemacs= but those package apply not only to Elisp development and should be listed.
+
+     Don't create a sub-section tools that have modern counterpart and are deprecated / no more maintained. You could eventually mention them like it's done for =highlight-defined= in [[#syntax-highlighting--visual-enhancements][Syntax Highlighting & Visual Enhancements]].
+
+
+**** Relevant Content: Libraries
+
+     In [[#libraries][Libraries]], only list packages that were created to be used as libraries and generic enough to target broad range of applications.
+
+     E.g. HTTP client libs such as =request= have their place, wrappers targeting a specific API (such as =ghub= or =pocket-lib=) don't.
 
 
 *** Comments
