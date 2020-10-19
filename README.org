@@ -1634,6 +1634,33 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Descriptions of libraries and tools expressed in this document are always subject to change. If a description feels too negative, don't hesitate to open a issue to discuss it.
 
 
+*** Relevant Content: Development Tools
+
+    In [[#development-tools][Development Tools]], only list tools and package that are specific to Elisp development.
+
+    It's very tempting to list stuff such as =projectile= or =treemacs= but those package apply not only to Elisp development and should be listed in .
+
+    Don't create a sub-section tools that have modern counterpart and are deprecated / no more maintained. You could list in
+
+
+*** Relevant Content: Libraries
+
+    In [[#libraries][Libraries]], only list package that were created to be used as libraries and generic enough to target broad range of applications.
+
+    E.g. HTTP client libs such as =request= have their place, wrappers targeting a specific API (such as =ghub=) don't.
+
+
+*** Comments
+
+    Each linked resource / tool / library should be commented.
+
+    This comment is a short intro and analysis and must not be copy-pasted directly from the linked resource page.
+
+    Instead it should provide insights as to how it compares to other links in a similar category: what are the differences, advantages, drawbacks.
+
+    This description should be short and ideally not exceed a few lines.
+
+
 *** Order of tools & libraries
 
     Try to put the most "standard" entries first.
