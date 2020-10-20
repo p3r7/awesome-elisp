@@ -25,7 +25,11 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 - [[#development-tools][Development Tools]]
   - [[#interactive-development--debugging][Interactive Development & Debugging]]
   - [[#documentation--introspection][Documentation & Introspection]]
-  - [[#code-navigation][Code Navigation]]
+  - [[#code-editing][Code Editing]]
+    - [[#jump-to-definition][Jump to definition]]
+    - [[#search-and-replace][Search and Replace]]
+    - [[#refactor-and-editing][Refactor and Editing]]
+    - [[#formatting][Formatting]]
   - [[#testing][Testing]]
   - [[#profiling][Profiling]]
   - [[#validation][Validation]]
@@ -425,7 +429,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Discover elisp functions by specifying input and the desired output.
 
 
-** Code Navigation
+** Code Editing
+
+*** Jump to definition
 
    To jump to the definition of a symbol Emacs provides =xref-find-definitions=. In practice it works with nicely with functions but is kind of hit-or-miss with variables.
 
@@ -436,12 +442,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    Better options exists so that you don't have to remember all of these.
 
-   To get the documentation of a symbol, you can use one of the default
-
    Honorable mention: [[https://github.com/purcell/elisp-slime-nav][elisp-slime-nav]], that can be seen as an ancestor to =elisp-def=.
 
-
-*** elisp-def
+**** elisp-def
 
     [[https://github.com/Wilfred/elisp-def][source & doc]]
 
@@ -452,6 +455,79 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Is able to distinguish between functions / variables / features depending on the context.
 
     Also handles macros, functions defined through macros and let-bound variables.
+
+    If you want to jump to symbols in files which aren't loaded in your Emacs you can fallback to the more general [[https://github.com/jacktasia/dumb-jump][dumb-jump]] package.
+
+
+*** Search and Replace
+
+    In Emacs regular expressions can make use of syntax information provided by the major-mode. This allows for complex symbol searches with =isearch= and =occur=.
+    To search and jump to toplevel definitions of a buffer you can use the built-in =imenu=. The [[https://github.com/vspinu/imenu-anywhere][imenu-anywhere]] package allows to extend the scope to buffers of the same project or mode.
+    It's also worth mentioning the built-in =outline-mode= here which can be used to structure and navigate files by sections. 
+
+**** elisp-refs
+
+     [[https://github.com/Wilfred/elisp-refs][source]]
+
+     Semantic code search for Elisp which parses the code instead of doing dump text searches.
+
+
+**** el-search
+
+     [[https://elpa.gnu.org/packages/el-search.html][source]]
+
+     Lets you execute search and replace operations on symbolic expressions. For example you can search for things like defvars which don't specify an init value using the pattern `(defvar ,_)`.
+
+
+*** Refactor and Editing
+
+**** elisp-depmap
+
+     [[https://github.com/mtekman/elisp-depmap.el][source]]
+
+     Aids the refactoring process by presenting a graphical visualization of project dependencies.
+
+
+**** emacs-refactor
+
+     [[https://github.com/Wilfred/emacs-refactor][source]]
+
+     Contains various refactoring commands for Elisp.
+
+
+**** lispy
+
+     [[https://github.com/abo-abo/lispy][source]]
+
+     Contains refactoring commands and invents its own editing language for editing Lisp code in general.
+
+
+**** speed-of-thought-lisp
+
+     [[https://github.com/Malabarba/speed-of-thought-lisp][source]] provides smart way to make use of abbreviations in  Elisp.
+
+
+**** elisp-docstring
+
+     [[https://github.com/Fuco1/elisp-docstring-mode][source]]
+
+     Simiplifies editing of docstrings. Handles escaping and unexcaping of quotes automatically.
+
+
+*** Formatting
+
+**** elfmt
+
+     [[https://github.com/riscy/elfmt][source]]
+
+     Focuses on placement of lists and tries to break lines at =fill-column=
+
+
+**** aggressive-indent-mode
+
+     [[https://github.com/Malabarba/aggressive-indent-mode][source]]
+
+     Autoformats as you type.
 
 
 ** Testing
