@@ -488,7 +488,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    You can profile interactive usage using =profiler-start=, =profiler-stop= and inspect the results with =profiler-report=.
    This can help figuring out the reason for speed problems during interaction.
 
-   To test individual forms Emacs comes with the =benchmark= library. The [[https://github.com/alphapapa/emacs-package-dev-handbook#profiling--optimization][package-dev-handbook]] contains various helpers and additional information for benchmarking.
+   To test individual forms Emacs comes with the =benchmark= library. The [[https://github.com/alphapapa/emacs-package-dev-handbook#profiling--optimization][The Emacs Package Developer’s Handbook]] contains various helpers and additional information for benchmarking.
 
 
 ** Validation
