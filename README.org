@@ -498,6 +498,54 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Allows editing docstrings in a temporary buffer with enriched syntax highlighting and automated special character escaping.
 
 
+*** Editing S-exps
+
+    Elisp is a Lisp and Lisps are written using a structure of nested lists called [[https://en.wikipedia.org/wiki/S-expression][S-expressions]].
+
+    Mastering how to navigate and manipulate this structure with ease is essential.
+
+    By default Emacs doesn't offer much apart from =forward-list= / =backward-list= and =forward-sexp= / =backward-sexp=.
+
+    Luckily, powerful minor-modes are available to give you the power you deserve.
+
+
+**** lispy
+
+     [[https://github.com/abo-abo/lispy][source & doc]], [[http://oremacs.com/lispy/][cheat sheet]], [[https://www.youtube.com/user/abo5abo/videos][video demos]]
+
+     Easiest to learn yet most powerful solution in that list.
+
+     Like =paxedit=, /commands/ are context-aware.
+
+     The killing feature is that shortcuts are single characters and not key combinations.
+
+     The trick is that commands get triggered only when the point is at a delimiter (e.g. a parenthesis) or the region is active.
+
+     Provides a powerful key combination system and refactoring commands.
+
+
+**** paxedit
+
+     [[https://github.com/promethial/paxedit][source & doc]]
+
+     Heavily inspired by =paredit=.
+
+     The major difference with the latter is that /commands/ are context-aware, they behave differently depending on what the cursor is hovering on.
+
+     The direct consequence is that fewer /commands/ / shortcuts needs to be learned to perform the same amount of things.
+
+
+**** paredit
+
+     [[http://danmidwood.com/content/2014/11/21/animated-paredit.html][tutorial]], [[https://github.com/emacsmirror/paredit][source]]
+
+     The first powerful S-exp editing mode for Emacs.
+
+     Learning curve is a bit steep.
+
+     Still actively maintained and very popular.
+
+
 *** Refactoring
 
 **** elisp-depmap
@@ -513,12 +561,6 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Contains various refactoring commands for Elisp.
 
-
-**** lispy
-
-     [[https://github.com/abo-abo/lispy][source]]
-
-     Contains refactoring commands and invents its own editing language for editing Lisp code in general.
 
 
 *** Formatting
