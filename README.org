@@ -522,7 +522,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      The trick is that commands get triggered only when the point is at a delimiter (e.g. a parenthesis) or the region is active.
 
-     Provides a powerful key combination system and refactoring commands.
+     Provides a powerful /command/ combination system and refactoring commands.
 
 
 **** paxedit
