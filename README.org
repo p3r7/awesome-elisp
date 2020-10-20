@@ -29,6 +29,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#jump-to-definition][Jump to definition]]
     - [[#search--replace][Search & Replace]]
     - [[#editing][Editing]]
+    - [[#editing-s-exps][Editing S-exps]]
     - [[#refactoring][Refactoring]]
     - [[#formatting][Formatting]]
   - [[#testing][Testing]]
