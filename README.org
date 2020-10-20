@@ -443,6 +443,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    Better options exists so that you don't have to remember all of these.
 
    Honorable mention: [[https://github.com/purcell/elisp-slime-nav][elisp-slime-nav]], that can be seen as an ancestor to =elisp-def=.
+   If you want to jump to symbols in files which aren't loaded in your Emacs you can fallback to the more general [[https://github.com/jacktasia/dumb-jump][dumb-jump]] package.
 
 **** elisp-def
 
@@ -455,8 +456,6 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Is able to distinguish between functions / variables / features depending on the context.
 
     Also handles macros, functions defined through macros and let-bound variables.
-
-    If you want to jump to symbols in files which aren't loaded in your Emacs you can fallback to the more general [[https://github.com/jacktasia/dumb-jump][dumb-jump]] package.
 
 
 *** Search and Replace
