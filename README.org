@@ -28,7 +28,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#code-editing][Code Editing]]
     - [[#jump-to-definition][Jump to definition]]
     - [[#search--replace][Search & Replace]]
-    - [[#refactor--editing][Refactor & Editing]]
+    - [[#editing][Editing]]
+    - [[#refactoring][Refactoring]]
     - [[#formatting][Formatting]]
   - [[#testing][Testing]]
   - [[#profiling][Profiling]]
@@ -477,7 +478,21 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Lets you execute search and replace operations on symbolic expressions. For example you can search for things like defvars which don't specify an init value using the pattern `(defvar ,_)`.
 
 
-*** Refactor & Editing
+*** Editing
+
+**** speed-of-thought-lisp
+
+     [[https://github.com/Malabarba/speed-of-thought-lisp][source]] provides smart way to make use of abbreviations in  Elisp.
+
+
+**** elisp-docstring
+
+     [[https://github.com/Fuco1/elisp-docstring-mode][source]]
+
+     Allows editing docstrings in a temporary buffer with enriched syntax highlighting and automated special character escaping.
+
+
+*** Refactoring
 
 **** elisp-depmap
 
@@ -498,18 +513,6 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      [[https://github.com/abo-abo/lispy][source]]
 
      Contains refactoring commands and invents its own editing language for editing Lisp code in general.
-
-
-**** speed-of-thought-lisp
-
-     [[https://github.com/Malabarba/speed-of-thought-lisp][source]] provides smart way to make use of abbreviations in  Elisp.
-
-
-**** elisp-docstring
-
-     [[https://github.com/Fuco1/elisp-docstring-mode][source]]
-
-     Simiplifies editing of docstrings. Handles escaping and unexcaping of quotes automatically.
 
 
 *** Formatting
