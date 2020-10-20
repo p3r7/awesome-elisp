@@ -298,7 +298,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** IELM
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Stands for Inferior Emacs Lisp Mode.
 
@@ -309,7 +309,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/edebug.el][source]], [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Edebug.html][doc]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      edebug is the interactive Elisp debugger.
 
@@ -325,7 +325,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/trace.el][source]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Provides a simple facility to output a trace of function calls into a buffer (=*trace-buffer*=).
 
@@ -461,7 +461,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://www.gnu.org/software/emacs/manual/html_node/ert/index.html][doc]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Stands for /"Emacs Lisp Regression Testing"/.
 
@@ -695,7 +695,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/pp.el][source]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Standard Emacs pretty-printing util.
 
@@ -722,7 +722,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** cl-lib
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Lib extending Elisp with functionalities inherited from Common Lisp.
 
@@ -733,7 +733,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/subr-x.el][source]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Intended as an extension to [[https://github.com/emacs-mirror/emacs/blob/master/lisp/subr.el][subr.el]], the core library of basic functions written in Elisp.
 
@@ -748,7 +748,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/magnars/dash.el][source & doc]]
 
-     _informal standard_ (not bundled with Emacs, but used everywhere)
+     /informal standard/ (not bundled with Emacs, but used everywhere)
 
      Even though this lib revolves primarily around list manipulation, it also offers for general purpose utils.
 
@@ -778,7 +778,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/DarwinAwardWinner/with-simulated-input][source & doc]]
 
-     _informal standard_ (not bundled with Emacs, but used everywhere)
+     /informal standard/ (not bundled with Emacs, but used everywhere)
 
      Simulate user interactions (i.e. launch /commands/).
 
@@ -822,7 +822,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/subr-x.el][source]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Provide the following helpers: =string-empty-p=, =string-blank-p=, =string-join=, =string-trim=, =string-trim-left=, =string-trim-right=, =string-remove-prefix= and =string-remove-suffix=.
 
@@ -831,7 +831,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/magnars/s.el][source & doc]]
 
-     _informal standard_ (not bundled with Emacs, but used everywhere)
+     /informal standard/ (not bundled with Emacs, but used everywhere)
 
      Advanced yet easy to use string manipulation helpers.
 
@@ -840,7 +840,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://francismurillo.github.io/2017-03-30-Exploring-Emacs-rx-Macro/][tutorial]], [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/rx.el][source]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Macro for helping writing Elisp regexp.
 
@@ -862,14 +862,14 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/seq.el][source]], [[https://github.com/NicolasPetton/seq.el][doc]]
 
-     _standard_ (bundled with every Emacs install, since version 25)
+     /standard/ (bundled with every Emacs install, since version 25)
 
 
 **** dash
 
      [[https://github.com/magnars/dash.el][source & doc]]
 
-     _informal standard_ (not bundled with Emacs, but used everywhere)
+     /informal standard/ (not bundled with Emacs, but used everywhere)
 
      Advanced yet easy to use list manipulation helpers.
      Lots of them also have alternative anaphoric forms.
@@ -930,7 +930,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/map.el][source]]
 
-     _standard_ (bundled with every Emacs install, since version 25)
+     /standard/ (bundled with every Emacs install, since version 25)
 
      supports: alists, plists and hash-tables.
 
@@ -944,7 +944,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/troyp/asoc.el][source & doc]]
 
-     _informal standard_ (not bundled with Emacs, but used everywhere)
+     /informal standard/ (not bundled with Emacs, but used everywhere)
 
      supports: only alists.
 
@@ -955,7 +955,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/Wilfred/ht.el][source & doc]]
 
-     _informal standard_ (not bundled with Emacs, but used everywhere)
+     /informal standard/ (not bundled with Emacs, but used everywhere)
 
      supports: only hash-tables, but allow converting from/to alists and plists.
 
@@ -996,7 +996,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://www.gnu.org/software/emacs/manual/html_node/cl/Structures.html][API documentation]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      One part of =cl-lib= is APIs to define and manipulate C-like data structures, strongly typed.
 
@@ -1011,7 +1011,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://www.gnu.org/software/emacs/manual/html_mono/eieio.html][doc]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Stands for /Enhanced Implementation of Emacs Interpreted Objects/.
 
@@ -1028,7 +1028,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/alphapapa/ts.el][source & doc]]
 
-     _informal standard_ (not bundled with Emacs, but used everywhere)
+     /informal standard/ (not bundled with Emacs, but used everywhere)
 
      Advanced yet easy to use datetiem / timestamp library.
 
@@ -1051,7 +1051,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** tabulated-list
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Library for defining, manipulating and displaying tables.
 
@@ -1060,7 +1060,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/politza/tablist][source & doc]]
 
-     _informal standard_ (not bundled with Emacs, but used everywhere)
+     /informal standard/ (not bundled with Emacs, but used everywhere)
 
      Extension to =tabulated-list=, adding possibility to mark and filter items.
 
@@ -1094,7 +1094,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[http://www.dr-qubit.org/predictive/queue.el][source]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Provides FIFO / FILO queue APIs.
 
@@ -1115,7 +1115,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/ring.el][source]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Provides APIs to create and manipulate a ring data structure.
 
@@ -1135,7 +1135,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[http://www.dr-qubit.org/predictive/avl-tree.el][source]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Provides APIs to build and manipulate a self-balancing binary tree.
 
@@ -1209,7 +1209,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** dom
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      DOM manipulation and searching functions.
 
@@ -1253,7 +1253,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/emacs-mirror/emacs/blob/master/lisp/color.el][source]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
 
 **** yk-color
@@ -1285,7 +1285,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/timer.el][source]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Default timer lib.
 
@@ -1303,7 +1303,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/thunk.el][source]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
      Provides an API for creating and dereferencing / evaluating /delays/.
 
@@ -1339,7 +1339,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/jwiegley/emacs-async][source & doc]]
 
-     _informal standard_ (not bundled with Emacs, but used everywhere)
+     /informal standard/ (not bundled with Emacs, but used everywhere)
 
      Achieves true parallel processing by spawning a child Emacs sub-process.
      As such, necessary context needs to be passed w/ =async-inject-variables=.
@@ -1474,7 +1474,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     [[https://github.com/rejeep/f.el][source & doc]]
 
-    _informal standard_ (not bundled with Emacs, but used everywhere)
+    /informal standard/ (not bundled with Emacs, but used everywhere)
 
     Modern API for working with files and directories.
 
@@ -1572,7 +1572,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://francismurillo.github.io/2017-04-15-Exploring-Emacs-chart-Library/][tutorial]]
 
-     _standard_ (bundled with every Emacs install)
+     /standard/ (bundled with every Emacs install)
 
 
 * Heroes
