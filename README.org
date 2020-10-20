@@ -661,17 +661,19 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** highlight-function-calls
 
-   [[https://github.com/alphapapa/highlight-function-calls][source]]
+   [[https://github.com/alphapapa/highlight-function-calls][source & doc]]
 
-   Useful to indicate calls of functions.
+   Make functions calls stand out with a specific face.
+
 
 *** cl-lib-highlight
 
     [[https://github.com/skeeto/cl-lib-highlight][source & doc]]
 
-    Provides additonal / alternative font-locking for =cl-lib= symbols, to make them stand out in your code.
+    Provides additional / alternative font-locking for =cl-lib= symbols, to make them stand out in your code.
 
     Also highlights deprecated =cl= symbols with a different face. Useful when reading legacy code.
+
 
 *** easy-escape
 
