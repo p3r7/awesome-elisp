@@ -42,6 +42,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#date--time][Date & Time]]
     - [[#tables][Tables]]
     - [[#queues][Queues]]
+    - [[#rings][Rings]]
     - [[#trees][Trees]]
     - [[#parsers--parse-trees][Parsers & Parse Trees]]
     - [[#xmlhtml][XML/HTML]]
@@ -1071,6 +1072,22 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      [[https://github.com/mola-T/fifo-class][source & doc]]
 
      An EIEIO abstract class class to provide FIFO methods to /[[https://www.gnu.org/software/emacs/manual/html_node/eieio/Slot-Options.html][slots]]/.
+
+
+*** Rings
+
+    Even though =ring= is the standard implementation, some core libs use their own internal implementation (e.g. the [[https://www.gnu.org/software/emacs/manual/html_node/eintr/ring-file.html][kill-ring]]).
+
+
+**** ring
+
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/ring.el][source]]
+
+     *standard* (bundled with every Emacs install)
+
+     Provides APIs to create and manipulate a ring data structure.
+
+     Used by: =ERC=
 
 
 *** Trees
