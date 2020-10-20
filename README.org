@@ -321,6 +321,17 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      You can also read the dedicated [[https://www.gnu.org/software/emacs/manual/html_node/eintr/Debugging.html][chapter in book An Introduction to Programming in Emacs Lisp]].
 
 
+**** trace
+
+     [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/trace.el][source]]
+
+     *standard* (bundled with every Emacs install)
+
+     Provides a simple facility to output a trace of function calls into a buffer (=*trace-buffer*=).
+
+     Tracing is switched on / off with /commands/ =trace-function=, =untrace-function= and =untrace-all=.
+
+
 **** macrostep
 
      [[https://github.com/joddie/macrostep][source & doc]]
