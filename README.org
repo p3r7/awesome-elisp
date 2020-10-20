@@ -829,11 +829,22 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** rx
 
-     [[https://francismurillo.github.io/2017-03-30-Exploring-Emacs-rx-Macro/][tutorial]]
+     [[https://francismurillo.github.io/2017-03-30-Exploring-Emacs-rx-Macro/][tutorial]], [[https://github.com/emacs-mirror/emacs/blob/master/lisp/emacs-lisp/rx.el][source]]
 
      *standard* (bundled with every Emacs install)
 
      Macro for helping writing Elisp regexp.
+
+
+**** xr
+
+     [[https://github.com/mattiase/xr][source & doc]]
+
+     Convert regexp to their more human-readable =rx= macro form.
+
+     Also provides regexp linting, detecting mistakes and bad practices.
+
+     Relies on its own internal [[#parsers--parse-trees][parser]].
 
 
 *** Sequences
