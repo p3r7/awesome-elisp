@@ -541,6 +541,20 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      No CI integration recipes.
 
 
+**** elisp-check
+
+     [[https://github.com/leotaku/elisp-check][source]]
+
+     A zero config github action to validate packages.
+
+
+**** auto-compile
+
+     [[https://github.com/emacscollective/auto-compile][source]]
+
+     Compiles current file on save and display compile errors/warnings in the mode-line.
+
+
 **** elisp-lint
 
      [[https://github.com/gonewest818/elisp-lint][elisp-lint]]
@@ -550,11 +564,18 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      No CI integration recipes.
 
 
-**** auto-compile
+**** elsa
 
-     [[https://github.com/emacscollective/auto-compile][source]]
+     [[https://github.com/emacs-elsa/Elsa][source]]
 
-     Compiles current file on save and display compile errors/warnings in the mode-line.
+     Elisp code analyzer providing helpful hints.
+
+
+**** package-lint
+
+     [[https://github.com/purcell/package-lint][source]]
+
+     Lints Elisp files for requirements of packages. Can be integrated with flycheck (a general linter framework) by installing [[https://github.com/purcell/flycheck-package][flyspell-package]].
 
 
 ** Building
