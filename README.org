@@ -1479,7 +1479,14 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/skeeto/emacs-web-server][source & doc]]
 
-     A web server written in pure Elisp.
+     A web server written in pure Elisp, serving HTTP.
+
+
+**** web-server
+
+     [[https://github.com/eschulte/emacs-web-server][source & doc]]
+
+     A web server written in pure Elisp, serving HTTP APIs bound to Elisp functions (/handlers/).
 
 
 **** porthole
@@ -1487,6 +1494,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      [[https://github.com/jcaw/porthole][source & doc]]
 
      Start [[https://en.wikipedia.org/wiki/Remote_procedure_call][RPC]] servers under Emacs. These allow executing Elisp remotely through HTTP.
+
+     Relies on =web-server=.
 
 
 ** GUI
