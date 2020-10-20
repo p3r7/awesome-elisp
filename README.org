@@ -27,6 +27,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#documentation--introspection][Documentation & Introspection]]
   - [[#code-navigation][Code Navigation]]
   - [[#testing][Testing]]
+  - [[#profiling][Profiling]]
   - [[#validation][Validation]]
   - [[#building][Building]]
   - [[#syntax-highlighting--visual-enhancements][Syntax Highlighting & Visual Enhancements]]
@@ -468,6 +469,14 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Allows defining test suites (i.e. goups of related tests) with a shared context (through /set-up/ and /tear-down/ phases).
 
      Also provides mocking capabilities.
+
+
+** Profiling
+
+   You can profile interactive usage using =profiler-start=, =profiler-stop= and inspect the results with =profiler-report=.
+   This can help figuring out the reason for speed problems during interaction.
+
+   To test individual forms Emacs comes with the =benchmark= library. The [[https://github.com/alphapapa/emacs-package-dev-handbook#profiling--optimization][package-dev-handbook]] contains various helpers and additional information for benchmarking.
 
 
 ** Validation
