@@ -460,7 +460,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** Search and Replace
 
-    In Emacs regular expressions can make use of syntax information provided by the major-mode. This allows for complex symbol searches with =isearch= and =occur=.
+    In Emacs regular expressions can make use of syntax information provided by the major-mode. This means that to some extend semantic searches are possible with =isearch= and =occur=.
     To search and jump to toplevel definitions of a buffer you can use the built-in =imenu=. The [[https://github.com/vspinu/imenu-anywhere][imenu-anywhere]] package allows to extend the scope to buffers of the same project or mode.
 
 **** elisp-refs
