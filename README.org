@@ -480,7 +480,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** Editing
 
-    Honorable mention: [[https://github.com/joaotavora/yasnippet][YASnippet]], similar to =speed-of-thought-lisp= but less context-aware and requiring a specific key combination to trigger.
+    Honorable mention:
+    - [[https://github.com/joaotavora/yasnippet][YASnippet]], generic (not Elisp-specific) equivalent to =speed-of-thought-lisp= but less context-aware and requiring a specific key combination to trigger. Can be used complementarily.
+
 
 **** speed-of-thought-lisp
 
