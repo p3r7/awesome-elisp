@@ -551,14 +551,14 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** elisp-depmap
 
-     [[https://github.com/mtekman/elisp-depmap.el][source]]
+     [[https://github.com/mtekman/elisp-depmap.el][source & doc]]
 
      Aids the refactoring process by presenting a graphical visualization of project dependencies.
 
 
 **** emacs-refactor
 
-     [[https://github.com/Wilfred/emacs-refactor][source]]
+     [[https://github.com/Wilfred/emacs-refactor][source & doc]]
 
      Contains various refactoring commands for Elisp.
 
