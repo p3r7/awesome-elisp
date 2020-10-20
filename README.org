@@ -480,9 +480,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** Editing
 
+    Honorable mention: [[https://github.com/joaotavora/yasnippet][YASnippet]], similar to =speed-of-thought-lisp= but less context-aware and requiring a specific key combination to trigger.
+
 **** speed-of-thought-lisp
 
-     [[https://github.com/Malabarba/speed-of-thought-lisp][source]] provides smart way to make use of abbreviations in  Elisp.
+     [[https://github.com/Malabarba/speed-of-thought-lisp][source]]
+
+     Allows writting Elisp blazingly fast with the use of context-aware abbreviations triggered after =<SPACE>= keypress.
 
 
 **** elisp-docstring
