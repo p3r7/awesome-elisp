@@ -677,9 +677,16 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** easy-escape
 
-   [[https://github.com/cpitclaudel/easy-escape][source]]
+   [[https://github.com/cpitclaudel/easy-escape][source & doc]]
 
    Make regular expression strings more readable.
+
+
+*** nameless
+
+    [[https://github.com/Malabarba/Nameless][source & doc]]
+
+    Hide prefix in symbols of a package.
 
 
 ** Pretty Printing
