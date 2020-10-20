@@ -515,18 +515,18 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** Formatting
 
-**** elfmt
-
-     [[https://github.com/riscy/elfmt][source]]
-
-     Focuses on placement of lists and tries to break lines at =fill-column=
-
-
 **** aggressive-indent-mode
 
      [[https://github.com/Malabarba/aggressive-indent-mode][source]]
 
      Autoformats as you type.
+
+
+**** elfmt
+
+     [[https://github.com/riscy/elfmt][source]]
+
+     Focuses on placement of lists and tries to break lines at =fill-column=
 
 
 ** Testing
