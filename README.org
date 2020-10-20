@@ -59,6 +59,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#networking][Networking]]
     - [[#http-client][HTTP client]]
     - [[#http-server][HTTP server]]
+  - [[#database-access][Database Access]]
   - [[#gui][GUI]]
     - [[#popups][Popups]]
     - [[#overlays][Overlays]]
@@ -1547,6 +1548,28 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Relies on =web-server=.
 
 
+** Database Access
+
+*** SQL
+
+**** emacsql
+
+     [[https://github.com/skeeto/emacsql][source & doc]]
+
+     High-level client to SQLite, PostgreSQL & MySQL.
+
+     Queries and schema definitions are written in specific tree-based DSLs, allowing easy programmatic manipulation.
+
+
+**** closql
+
+     [[https://github.com/emacscollective/closql][source]]
+
+     [[https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping][ORM]] providing mapping between [[#eieio][EIEIO]] and SQLite tables.
+
+     Relies on =emacsql=.
+
+
 ** GUI
 
 *** Popups
@@ -1627,8 +1650,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    Contributed to Elisp development with:
    - his blog, /nullprogram.com/
-   - [[https://github.com/skeeto/emacs-web-server][simple-httpd]]
    - =aio=
+   - =emacsql= /
+   - =simple-httpd=
    - =week-ref=
 
 
@@ -1657,6 +1681,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    Contributed to Elisp development with:
    - [[https://github.com/magit/transient][transient]]
+   - =closql=
 
 
 ** Magnar Sveen (@magnars)
