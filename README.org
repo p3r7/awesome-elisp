@@ -517,7 +517,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Performs linting (=make lint=), tests (=make test=) or everything (=make all=).
 
-     In addition to standard checks, also validates indentation.
+     In addition to standard checks, also validates indentation and optionally [[#elsa][elsa]] checks.
 
      Supports both ERT and buttercup tests.
 
@@ -568,7 +568,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/emacs-elsa/Elsa][source]]
 
-     Elisp code analyzer providing helpful hints.
+     Static Elisp code analyzer providing helpful hints.
+
+     Can be launched directly from [[#makem.sh][makem.sh]].
 
 
 **** package-lint
