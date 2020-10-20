@@ -525,9 +525,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** aggressive-indent-mode
 
-     [[https://github.com/Malabarba/aggressive-indent-mode][source]]
+     [[https://github.com/Malabarba/aggressive-indent-mode][source & doc]]
 
-     Autoformats as you type.
+     Auto-indents code as you type.
 
 
 **** elfmt
