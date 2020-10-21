@@ -496,7 +496,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/Fuco1/elisp-docstring-mode][source]]
 
-     Allows editing docstrings in a temporary buffer with enriched syntax highlighting and automated special character escaping.
+     Enriched syntax highlighting for docstring contents. Together with [[https://github.com/magnars/string-edit.el][string-edit]] you can edit docstrings in a temporary buffer and get automated special character escaping.
 
 
 *** Editing S-exps
