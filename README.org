@@ -583,6 +583,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 ** Testing
 
    For simulating interactive user input, consider using libraries such as [[#with-simulated-input][with-simulated-input]] (launch /commands/) and [[#dokey][dokey]] (simulated keyboard shortcut presses).
+   To test behavior and interactive usage in a clean and temporary environment [[https://github.com/alphapapa/emacs-sandbox.sh][emacs-sandbox.sh]] is useful.
+
 
 **** ERT
 
