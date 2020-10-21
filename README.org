@@ -853,7 +853,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      /standard/ (bundled with every Emacs install)
 
-     Lib extending Elisp with functionalities inherited from Common Lisp.
+     Lib extending Elisp with functionalities inherited from Common Lisp. Replaces the deprecated =cl= package which did not use name prefixes. To help with updating the code from =cl= to =cl-lib= there is [[https://github.com/purcell/cl-libify][cl-libify]].
 
      Just do a =(require 'cl-lib)= to use it.
 
