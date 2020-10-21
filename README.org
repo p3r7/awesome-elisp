@@ -1599,7 +1599,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** m-buffer
 
-     [[https://github.com/phillord/m-buffer-el][source]]
+     [[http://phillord.github.io/m-buffer-el/][doc]], [[https://github.com/phillord/m-buffer-el][source]]
 
      List-oriented functions for accessing and manipulating the contents of Emacs buffers.
 
