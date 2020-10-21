@@ -1597,6 +1597,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Utilities for helping with manipulating a buffer's [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Text-Properties.html][text properties]].
 
 
+**** m-buffer
+
+     [[https://github.com/phillord/m-buffer-el][source]]
+
+     List-oriented functions for accessing and manipulating the contents of Emacs buffers.
+
+
 ** Filesystem Interactions
 
 *** f
