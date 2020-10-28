@@ -336,6 +336,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Provides a simple facility to output a trace of function calls into a buffer (=*trace-buffer*=).
 
+     Please note that this trace is very basic and has no performance data. For more advanced tracing see [[#profiling][Profiling]].
+
      Tracing is switched on / off with /commands/ =trace-function=, =untrace-function= and =untrace-all=.
 
 
@@ -614,10 +616,28 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 ** Profiling
 
-   You can profile interactive usage using =profiler-start=, =profiler-stop= and inspect the results with =profiler-report=.
-   This can help figuring out the reason for speed problems during interaction.
+   Emacs provides 2 Elips profilers:
+   - =profiler.el=: profile a whole call stack, easier to use
+   - =elp.el=: profile only selected functions
 
-   To test individual forms Emacs comes with the =benchmark= library. The [[https://github.com/alphapapa/emacs-package-dev-handbook#profiling--optimization][The Emacs Package Developer’s Handbook]] contains various helpers and additional information for benchmarking.
+   Both are briefly mentioned in the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Profiling.html][profiling section]] of the /Emacs Lisp Reference Manual/.
+
+   Either one is of a great help to debug slow Elisp code, most noticeable during user interactions (Emacs seems to freeze).
+
+   =profiler.el= is easilly toggled using =profiler-start=, =profiler-stop=. To obtain a result report call =profiler-report=.
+
+   =elp.el= can target individual functions with =elp-instrument-function= or a whole package with =elp-instrument-package=.
+
+   To profile individual forms Emacs also comes with the =benchmark= library. The /Emacs Package Developer’s Handbook/ has a [[https://github.com/alphapapa/emacs-package-dev-handbook#profiling--optimization][whole section]] dedicated to this with thorough examples and helper macros.
+
+
+*** etrace
+
+    [[https://github.com/aspiers/etrace][source & doc]]
+
+    Wrapper around =elp.el= outputing a report in the /Chromium Catapult Trace Event Format/.
+
+    This allows opening them in external applications to explore them as /flame graphs/.
 
 
 ** Validation
