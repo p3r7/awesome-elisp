@@ -624,7 +624,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    Either one is of a great help to debug slow Elisp code, most noticeable during user interactions (Emacs seems to freeze).
 
-   =profiler.el= is easilly toggled using =profiler-start=, =profiler-stop=. To obtain a result report call =profiler-report=.
+   =profiler.el= is easily toggled using =profiler-start=, =profiler-stop=. To obtain a result report call =profiler-report=.
 
    =elp.el= can target individual functions with =elp-instrument-function= or a whole package with =elp-instrument-package=.
 
@@ -635,7 +635,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     [[https://github.com/aspiers/etrace][source & doc]]
 
-    Wrapper around =elp.el= outputing a report in the /Chromium Catapult Trace Event Format/.
+    Wrapper around =elp.el= outputting a report in the /Chromium Catapult Trace Event Format/.
 
     This allows opening them in external applications to explore them as /flame graphs/.
 
