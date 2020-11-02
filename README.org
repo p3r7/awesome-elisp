@@ -956,6 +956,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Weak reference offer better performance but can be garbage collected.
 
 
+**** predd
+
+     [[https://github.com/skeeto/predd][source & doc]], [[https://nullprogram.com/blog/2013/12/18/][blog post]]
+
+     Provides Clojure-style /multimethods/ (multiple dispatch over an ad hoc type hierarchy).
+
+
 **** fn
 
      [[https://github.com/troyp/fn.el][source & doc]]
