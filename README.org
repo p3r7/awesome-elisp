@@ -323,7 +323,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      The documentation is a bit rough to get started.
      I recommend reading this series of posts:
      - [[https://endlessparentheses.com/debugging-emacs-lisp-part-1-earn-your-independence.html][Endless Parentheses - Debugging Elisp Part 1: Earn your independence]]
-     - [[https://endlessparentheses.com/debugging-emacs-lisp-part-1-earn-your-independence.html][Endless Parentheses - Debugging Elisp Part 2: Advanced topics]]
+     - [[https://endlessparentheses.com/debugging-elisp-part-2-advanced-topics.html][Endless Parentheses - Debugging Elisp Part 2: Advanced topics]]
 
      You can also read the dedicated [[https://www.gnu.org/software/emacs/manual/html_node/eintr/Debugging.html][chapter in book An Introduction to Programming in Emacs Lisp]].
 
