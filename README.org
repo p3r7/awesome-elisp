@@ -1048,6 +1048,15 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Stored elements must be ordered sequences, i.e. strings (most common use-case), lists or vectors.
 
 
+**** lister
+
+     [[https://github.com/publicimageltd/lister][source & doc]]
+
+     Provides =lister-mode=, major mode for building and manipulating list-based user-interfaces.
+
+     Inspired by =tablist= (for tables) and =hierarchy= (for trees).
+
+
 *** Maps
 
     (Hash)maps are a special type of sequences that allow representing a list of key / value pairs.
@@ -1309,7 +1318,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/DamienCassou/hierarchy][source & doc]], [[https://emacs.cafe/emacs/guest-post/2017/06/26/hierarchy.html][blog post]]
 
-     Allows defining trees as well as displaying them.
+     Allows defining trees as well as building user interfaces displaying them.
 
 
 **** treepy
