@@ -1380,7 +1380,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 *** Org-mode outlines
 
     =org-mode= outlines can be considered both a file format and a tree format.
-    =org-element.el= implements the parser used by =org-mode= to convert a text buffer into a tree structure (/parse-tree/).
+    =org-element.el= ([[https://orgmode.org/worg/dev/org-element-api.html][doc]]) implements the parser used by =org-mode= to convert a text buffer into a tree structure (/parse-tree/).
 
 
 **** org-ml
@@ -1395,6 +1395,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      [[https://github.com/alphapapa/org-ql][source & doc]]
 
      Query language ([[https://en.wikipedia.org/wiki/Domain-specific_language][DSL]]) for parsing, searching and filtering an org outline.
+
 
 **** org-ba
 
