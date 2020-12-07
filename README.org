@@ -1230,11 +1230,20 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Also relies on =tablist=.
 
 
+**** gridlock
+
+     [[https://github.com/articuluxe/gridlock][source & doc]]
+
+     Provides =gridlock-mode=, major mode for building and manipulating spreadsheet-based user-interfaces
+
+     Also provides =gridlock-csv-mode= and =gridlock-fix-mode= minor modes, backporting the API to CSV and FIX files.
+
+
 **** cell
 
      [[http://xelf.me/cell.html][doc]], [[https://gitlab.com/dto/mosaic-el/blob/master/cell.el][source]]
 
-     Provides =cell-mode=, major mode for building spreadsheet-based user-interfaces.
+     Provides =cell-mode=, major mode for building and manipulating spreadsheet-based user-interfaces.
 
 
 **** ctable
