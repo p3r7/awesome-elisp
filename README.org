@@ -4,7 +4,7 @@
 
 #+HTML:</div>
 
-Welcome to /Awesome Elisp/, a list of resources linked to Emacs LISP (Elisp) development.
+Welcome to /Awesome Elisp/, a list of resources linked to Emacs Lisp (Elisp) development.
 
 It's aim is to not be a simple index but a /compendium/: resources are not only listed but also commented.
 
