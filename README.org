@@ -1889,9 +1889,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    [[http://ergoemacs.org/emacs/emacs.html][website]], [[https://www.patreon.com/xahlee][open to sponsoring]]
 
-   A controversial figure in the Emacs community, Xah nethertheless created the first online digestible resource for learning Elisp.
+   A controversial figure in the Emacs community (he is [[http://ergoemacs.org/emacs/_p/KickbanXahLeeFromEmacsChannel.htm][notorious for trolling]]), Xah nethertheless created the first online digestible resource for learning Elisp.
 
-   He without a doubt is [[http://ergoemacs.org/emacs/_p/KickbanXahLeeFromEmacsChannel.htm][a big troll]] but his contribution to the Emacs world is unquestionable and as such he deserves his place in this list.
+   His contribution to the Emacs world is unquestionable and as such he deserves his place in this list.
 
 
 * Contributing
