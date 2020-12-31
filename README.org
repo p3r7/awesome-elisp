@@ -1431,6 +1431,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      /standard/ (bundled with every Emacs install)
 
 
+**** color-tools
+
+     [[https://github.com/neeasade/color-tools.el][source & doc]], [[https://notes.neeasade.net/color-spaces.html][blog post]]
+
+     Color codes manipulation, with support for various color spaces.
+
+
 **** yk-color
 
      [[https://github.com/yurikhan/yk-color][source]]
