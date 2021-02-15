@@ -1816,7 +1816,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      It implements its own protocol (over TCP) and support both synchronous & asynchronous execution (via bindings with =deferred=).
 
-     Commands are explicitly defined (akin to /routes/ in an HTTP API).
+     Commands are explicitly defined (akin to handlers bound to /routes/ in an HTTP API).
 
      Messages are encoded as Lisp / S-exprs, which makes it more challenging to implement client libraries in non-Lisp languages.
 
