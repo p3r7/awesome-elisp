@@ -1840,7 +1840,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** frog-menu
 
-     https://github.com/clemera/frog-menu
+     [[https://github.com/clemera/frog-menu][source & doc]]
+
+     User selection menu in the form of a popup.
 
 
 *** Overlays
