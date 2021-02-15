@@ -1548,6 +1548,18 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Also allows handling async (sub-)processes and HTTP calls with [[https://github.com/tkf/emacs-request][request.el bindings]].
 
 
+**** concurrent
+
+     [[https://github.com/kiwanami/emacs-deferred/blob/master/concurrent.el][source]], [[https://github.com/kiwanami/emacs-deferred/blob/master/README-concurrent.markdown][doc]]
+
+     Higher-level wrapper around =deferred=.
+
+     Provides various syntaxes inspired by those of other programming languages, such as:
+     - Clojure / Java / Lua's coroutines (=threads=)
+     - Python's asyncio coroutines (=generators=)
+     - Clojure's [[https://github.com/clojure/core.async][core.async]] pipelines (=signals= / =channels=).
+
+
 **** async
 
      [[https://github.com/jwiegley/emacs-async][source & doc]]
