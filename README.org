@@ -1298,6 +1298,11 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** Trees
 
+    Escaped and nested S-exps is the most straightforward way to encode a tree in (E)lisp.
+
+    Some libraries deliver higherèlevel data structure with manipulation functions for improved performance and convenience.
+
+
 **** heap
 
      [[http://www.dr-qubit.org/predictive/heap.el][source]]
@@ -1335,6 +1340,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Self-balancing interval trees.
 
      Implementation of Chris Okasaki's algorithm from [[https://dl.acm.org/citation.cfm?id=968578.968583&coll=DL&dl=GUIDE]["Red-black trees in a functional setting", JFP'99]].
+
+
+**** pair-tree
+
+     [[https://github.com/zainab-ali/pair-tree.el][source & doc]]
+
+     Visualize and explore nested S-exps as a tree.
 
 
 *** Parsers & Parse Trees
