@@ -56,7 +56,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#color-codes][Color Codes]]
   - [[#concurrency--asynchronicity][Concurrency / Asynchronicity]]
     - [[#timers][Timers]]
-    - [[#promises][Promises]]
+    - [[#promises--delays][Promises & Delays]]
     - [[#async-elisp-function-calls][Async Elisp function calls]]
     - [[#async-sub-processes][Async sub-processes]]
     - [[#async-interpreter-commands][Async interpreter commands]]
