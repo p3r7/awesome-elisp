@@ -1935,7 +1935,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    Contributed to Elisp development with:
    - his blog, /nullprogram.com/
    - =aio=
-   - =emacsql= /
+   - =emacsql=
    - =simple-httpd=
    - =week-ref=
 
