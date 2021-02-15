@@ -1773,7 +1773,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Commands are direct Elisp code to be executed. They can (by default) only be called synchronously.
 
-     Messages are encoded in JSON.
+     Messages are encoded in JSON (following the [[https://www.jsonrpc.org/specification][JSON-RPC 2.0 Specification]]) which makes it support client libraries of almost any language.
 
      Relies on =web-server=.
 
@@ -1784,11 +1784,11 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Start a RPC client & server under Emacs.
 
-     It implements its own protocol (over TCP) and support both synchronous & asynchronous execution.
+     It implements its own protocol (over TCP) and support both synchronous & asynchronous execution (via bindings with =deferred=).
 
      Commands are explicitly defined (akin to /routes/ in an HTTP API).
 
-     Messages are encoded as Lisp / S-exprs, which makes it more challenging to implement client libraries in other languages.
+     Messages are encoded as Lisp / S-exprs, which makes it more challenging to implement client libraries in non-Lisp languages.
 
 
 ** Database Access
