@@ -1758,13 +1758,37 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      A web server written in pure Elisp, serving HTTP APIs bound to Elisp functions (/handlers/).
 
 
+*** RPC server
+
+    A [[https://en.wikipedia.org/wiki/Remote_procedure_call][Remote Procedure Call]] server allows Emacs to receive commands from a remote process through a messaging system.
+
+    It's a common strategy of [[https://en.wikipedia.org/wiki/Inter-process_communication][inter-process communication]] (IPC).
+
+
 **** porthole
 
      [[https://github.com/jcaw/porthole][source & doc]]
 
-     Start [[https://en.wikipedia.org/wiki/Remote_procedure_call][RPC]] servers under Emacs. These allow executing Elisp remotely through HTTP.
+     Start a HTTP-based RPC server under Emacs.
+
+     Commands are direct Elisp code to be executed. They can (by default) only be called synchronously.
+
+     Messages are encoded in JSON.
 
      Relies on =web-server=.
+
+
+**** EPC
+
+     [[https://github.com/kiwanami/emacs-epc][source & doc]]
+
+     Start a RPC client & server under Emacs.
+
+     It implements its own protocol (over TCP) and support both synchronous & asynchronous execution.
+
+     Commands are explicitly defined (akin to /routes/ in an HTTP API).
+
+     Messages are encoded as Lisp / S-exprs, which makes it more challenging to implement client libraries in other languages.
 
 
 ** Database Access
