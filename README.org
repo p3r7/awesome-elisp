@@ -1789,6 +1789,15 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Relies on =emacsql=.
 
 
+**** edbi
+
+     [[https://github.com/kiwanami/emacs-edbi][source & doc]]
+
+     Client to SQL dialects, using [[https://dbi.perl.org/][Perl's Database Interface]] (/DBI/) as a connection interface.
+
+     In addition to programmatic querying capabilities, provides several major modes for user interactions with database instances.
+
+
 ** GUI
 
 *** Popups
