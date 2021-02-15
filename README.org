@@ -186,9 +186,26 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     [[https://alphapapa.github.io/emacs-package-dev-handbook/][read online]], [[https://github.com/alphapapa/emacs-package-dev-handbook][source]]
 
+    [[#alphapapa][@alphapapa]]'s organized notes about Elisp development.
+
     List bunch of tools and libraries for helping package developers.
+
     Also provides various snippets and best practices.
+
     Lots of good insights.
+
+
+*** nullprogram.com
+
+    [[#chris-wellons-skeeto][Chris Wellons (@skeeto)]]'s blog, especially the posts tagged [[https://nullprogram.com/tags/elisp/][#elisp]].
+
+    A few highlights:
+
+    - [[https://nullprogram.com/blog/2018/02/14/][Options for Structured Data in Emacs Lisp]]
+    - [[https://nullprogram.com/blog/2010/07/26/][Elisp Memoize]]
+    - [[https://nullprogram.com/blog/2017/10/27/][Make Flet Great Again]]
+    - [[https://nullprogram.com/blog/2013/01/22/][The Limits of Emacs Advice]]
+    - [[https://nullprogram.com/blog/2017/01/30/][How to Write Fast(er) Emacs Lisp]]
 
 
 *** Emacs Lisp Programming Thoughts
@@ -198,7 +215,6 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Pretty old but has very good insights, guidelines and real-world examples.
 
     Byte compiler section is outdated but general coding style recommendations and sections about macros and profiling are still relevant to this day.
-
 
 ** Cookbooks
 
