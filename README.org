@@ -590,7 +590,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** ERT
 
-     [[https://www.gnu.org/software/emacs/manual/html_node/ert/index.html][doc]]
+     [[https://www.gnu.org/software/emacs/manual/html_node/ert/index.html][doc]], [[https://nullprogram.com/blog/2012/08/15/][blog post on nullprogram.com]]
 
      /standard/ (bundled with every Emacs install)
 
@@ -598,7 +598,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Featureful and easy to use.
 
-     Suitable for [[https://en.wikipedia.org/wiki/Unit_testing][unit tests]].
+     Suitable for [[https://en.wikipedia.org/wiki/Unit_testing][unit tests]] with /mocking/.
 
 
 **** Buttercup
