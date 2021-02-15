@@ -1422,6 +1422,25 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      More user-friendly APIs for writting code for interacting with org documents.
 
 
+
+*** Faces
+
+    /Faces/ are a group of attributes controlling the formatting of text in Emacs.
+
+    It's akin to CSS for HTML or styling [[https://en.wikipedia.org/wiki/ANSI_escape_code][ANSI escape sequences]] for terminal text.
+
+    You can read more about /faces/ in the [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Faces.html][Emacs manual]] or the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Faces.html][Emacs Lisp Reference Manual]].
+
+
+**** engrave-faces
+
+     [[https://github.com/tecosaur/engrave-faces][source & doc]]
+
+     Convert faces to other formats.
+
+     Currently, only LaTeX is supported.
+
+
 *** Color Codes
 
 **** color
