@@ -117,6 +117,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     Very complete and gentle introduction.
 
+    Written by [[#caio-rordrigues-caiorss][Caio Rordrigues (@caiorss)]].
 
 *** (Almost) All You Need to Know About Variables
 
@@ -158,6 +159,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     [[https://alhassy.github.io/ElispCheatSheet/][read online]], [[https://github.com/alhassy/ElispCheatSheet][source]]
 
     Focused around data structures.
+
     Author's Common Lisp background can be felt.
 
 
