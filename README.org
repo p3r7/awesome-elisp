@@ -1618,7 +1618,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Simple implementation of Async/Await, based on the TypeScript syntax.
 
-     Relies on =promise.el= and [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Generators.html][generators]]..
+     Relies on =promise.el= and [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Generators.html][generators]].
 
 
 **** lcr
@@ -2030,7 +2030,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     Open one issue or PR / subject matter.
 
-    Don't go submit a gazillion unrelated changes that would conflict with other's submitted PRs..
+    Don't go submit a gazillion unrelated changes that would conflict with other's submitted PRs.
 
 
 *** Opinions
