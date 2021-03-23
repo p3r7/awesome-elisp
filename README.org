@@ -2040,7 +2040,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     Some solutions are objectively better in some regards than others and that can be stated but don't go launch a flame war.
 
-    Descriptions of libraries and tools expressed in this document are always subject to change. If a description feels too negative, don't hesitate to open a issue to discuss it.
+    Descriptions of libraries and tools expressed in this document are always subject to change. If a description feels too negative, don't hesitate to open an issue to discuss it.
 
 
 *** Scope
@@ -2066,12 +2066,12 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      It's very tempting to list stuff such as =projectile= or =treemacs= but those package apply not only to Elisp development and should be listed.
 
-     Don't create a sub-section tools that have modern counterpart and are deprecated / no more maintained. You could eventually mention them like it's done for =highlight-defined= in [[#syntax-highlighting--visual-enhancements][Syntax Highlighting & Visual Enhancements]].
+     Don't create a sub-section for tools that have modern counterpart and are deprecated / no more maintained. You could eventually mention them like it's done for =highlight-defined= in [[#syntax-highlighting--visual-enhancements][Syntax Highlighting & Visual Enhancements]].
 
 
 **** Relevant Content: Libraries
 
-     In [[#libraries][Libraries]], only list packages that were created to be used as libraries and generic enough to target broad range of applications.
+     In [[#libraries][Libraries]], only list packages that were created to be used as libraries and generic enough to target a broad range of applications.
 
      E.g. HTTP client libs such as =request= have their place, wrappers targeting a specific API (such as =ghub= or =pocket-lib=) don't.
 
