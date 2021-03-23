@@ -65,6 +65,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   - [[#networking][Networking]]
     - [[#http-client][HTTP client]]
     - [[#http-server][HTTP server]]
+    - [[#rpc-server][RPC server]]
   - [[#database-access][Database Access]]
   - [[#gui][GUI]]
     - [[#popups][Popups]]
