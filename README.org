@@ -66,6 +66,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#http-client][HTTP client]]
     - [[#http-server][HTTP server]]
     - [[#rpc-server][RPC server]]
+    - [[#d-bus][D-Bus]]
   - [[#database-access][Database Access]]
   - [[#gui][GUI]]
     - [[#popups][Popups]]
@@ -1827,6 +1828,29 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Commands are explicitly defined (akin to handlers bound to /routes/ in an HTTP API).
 
      Messages are encoded as Lisp / S-exprs, which makes it more challenging to implement client libraries in non-Lisp languages.
+
+
+*** D-Bus
+
+    D-Bus is the most popular [[https://en.wikipedia.org/wiki/Inter-process_communication][inter-process communication]] (IPC) protocol under Linux.
+
+    Emacs supports it by default.
+
+
+**** dbus
+
+     [[https://www.gnu.org/software/emacs/manual/html_mono/dbus.html][doc]], [[https://github.com/emacs-mirror/emacs/blob/master/lisp/net/dbus.el][source]]
+
+     /standard/ (bundled with every Emacs install)
+
+     Very boilerplate-y to use.
+
+
+**** debase
+
+     [[https://github.com/ieure/debase][source & doc]]
+
+     EIEIO abstractions over =dbus= for writting easier interaction code.
 
 
 ** Database Access
