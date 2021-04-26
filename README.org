@@ -1759,6 +1759,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Provides API-compatible replacements to =url-retrieve= and =url-retrieve-synchronously= using /cURL/ and /HTTPie/.
 
 
+**** websocket
+
+     [[https://github.com/ahyatt/emacs-websocket][source]]
+
+     Websocket (peristent HTTP connection) client for Emacs.
+
+
 **** apiwrap
 
      [[https://github.com/vermiculus/apiwrap.el][source & doc]]
