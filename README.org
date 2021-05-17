@@ -961,6 +961,17 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Trigger keyboard events.
 
 
+**** contract
+
+     [[https://github.com/langston-barrett/contract.el][source & doc]]
+
+     Provides data strcuture defintions as contracts (essentially interface description).
+
+     Port of [[https://docs.racket-lang.org/reference/contracts.html][Racket's contract]] to Elisp.
+
+     Akin to [[https://clojure.org/about/spec][Clojure's spec]].
+
+
 **** signal
 
      [[https://github.com/Mola-T/signal][source & doc]]
