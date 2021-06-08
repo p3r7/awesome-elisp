@@ -634,6 +634,15 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Also provides mocking capabilities.
 
 
+**** director
+
+     [[https://github.com/bard/emacs-director][source & doc]]
+
+     Program sequence of user interactions. Useful for end-to-end testing.
+
+     Inspired by Selenium Webdriver.
+
+
 ** Profiling
 
    Emacs provides 2 Elips profilers:
