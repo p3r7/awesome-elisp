@@ -1755,7 +1755,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** HTTP client
 
-    Emacs comes already with an HTTP client, =url.el=, written in pure Elisp ([[https://github.com/emacs-mirror/emacs/blob/master/lisp/url/url.el][source]]), wich has a few limitations.
+    Emacs comes already with an HTTP client, =url.el=, written in pure Elisp ([[https://github.com/emacs-mirror/emacs/blob/master/lisp/url/url.el][source]]), which has a few limitations.
     It exposes functions =url-retrieve-synchronously= and =url-retrieve= (async).
 
 
