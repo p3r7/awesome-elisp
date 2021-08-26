@@ -1373,6 +1373,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Allows defining and traversing trees.
 
 
+**** taxy
+
+     [[https://github.com/alphapapa/taxy.el][source & doc]]
+
+     Allows defining hierarchical taxonomies, i.e. trees w/ automatic classification based on (nested) rules.
+
+
 **** rbit
 
      [[http://elpa.gnu.org/packages/rbit.html][source]]
