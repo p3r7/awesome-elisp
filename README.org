@@ -2122,7 +2122,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      In [[#development-tools][Development Tools]], only list tools and package that are specific to Elisp development.
 
-     It's very tempting to list stuff such as =projectile= or =treemacs= but those package apply not only to Elisp development and should not be listed.
+     It's very tempting to list stuff such as =projectile= or =treemacs= but those packages apply not only to Elisp development and should not be listed.
 
      Don't create a sub-section for tools that have modern counterpart and are deprecated / no more maintained. You could eventually mention them like it's done for =highlight-defined= in [[#syntax-highlighting--visual-enhancements][Syntax Highlighting & Visual Enhancements]].
 
