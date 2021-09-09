@@ -1456,8 +1456,16 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** Org-mode outlines
 
-    =org-mode= outlines can be considered both a file format and a tree format.
-    =org-element.el= ([[https://orgmode.org/worg/dev/org-element-api.html][doc]]) implements the parser used by =org-mode= to convert a text buffer into a tree structure (/parse-tree/).
+    =org-mode= outlines ([[https://orgmode.org/worg/dev/org-syntax.html][spec]]) can be considered both a file format and a tree format.
+
+
+**** org-element
+
+    [[https://code.orgmode.org/bzg/org-mode/src/master/lisp/org-element.el][source]], [[https://orgmode.org/worg/dev/org-element-api.html][doc]], [[http://ergoemacs.org/emacs/elisp_parse_org_mode.html][tutorial on ergoemacs]]
+
+    /standard/ (bundled with every Emacs install)
+
+    =org-mode='s internal parser, used to convert a text buffer into a tree structure (/parse-tree/).
 
 
 **** org-ml
@@ -1479,7 +1487,6 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      [[https://github.com/Fuco1/orgba][source & doc]]
 
      More user-friendly APIs for writting code for interacting with org documents.
-
 
 
 *** Faces
