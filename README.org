@@ -1414,6 +1414,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Implemented as a module, binding with the [[https://tree-sitter.github.io/tree-sitter/][tree-sitter]] parser (written in Rust).
 
+     For a concrete use-case, have a look at [[https://github.com/ethan-leba/tree-edit][tree-edit]].
+
 
 **** tNFA
 
