@@ -1336,6 +1336,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Used by: =ERC=
 
 
+**** dynaring
+
+     [[https://github.com/countvajhula/dynaring][source]]
+
+     Similar to =ring=, but w/ a dynamic size.
+
+
 *** Trees
 
     Escaped and nested S-exps is the most straightforward way to encode a tree in (E)lisp.
