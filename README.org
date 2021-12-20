@@ -504,7 +504,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 *** Editing
 
     Honorable mentions:
-    - [[https://github.com/joaotavora/yasnippet][YASnippet]]: generic (not Elisp-specific) powerful abreviation-based snippet expander.  Even though it could be used in the place of =speed-of-thought-lisp=, it is less context-aware and requiring a specific key combination to trigger. It offers other features, though, and can be used complementarily.
+    - [[https://github.com/joaotavora/yasnippet][YASnippet]]: generic (not Elisp-specific) powerful abreviation-based snippet expander.  Even though it could be used in the place of =speed-of-thought-lisp=, it is less context-aware and requires a specific key combination to trigger. It offers other features, though, and can be used complementarily.
 
 
 **** speed-of-thought-lisp
