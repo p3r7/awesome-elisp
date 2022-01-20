@@ -1436,6 +1436,15 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      For a concrete use-case, have a look at [[https://github.com/ethan-leba/tree-edit][tree-edit]].
 
 
+**** moldable-emacs
+
+     [[https://github.com/ag91/moldable-emacs][source & doc]], [[Moldable Emacs, a step towards sustainable software][presentation @ EmacsConf21]]
+
+     Powerful parser and transformer library, relying on the concept of composable functional *molds*.
+
+     Also support asynchronous processing (relying on [[#async][async]]).
+
+
 **** tNFA
 
      [[http://www.dr-qubit.org/predictive/tNFA.el][source]]
