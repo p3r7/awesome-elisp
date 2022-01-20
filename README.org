@@ -1737,7 +1737,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      =friendly-shell-command= provides =friendly-shell-command-async=, a wrapper around =async-shell-command= with easier access to advanced behaviours thanks to optional keyword arguments.
 
-     It notably eases associating a callback to the end of the execution.
+     It notably eases associating a callback to the end of the execution, running on remote hosts and launching with alternative interpreters.
 
 
 ** Buffer Manipulation
