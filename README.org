@@ -1735,7 +1735,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://gitlab.com/niklaseklund/dtache][source & doc]]
 
-     Provides =dtache-shell-command=, a drop-in replacement for =async-shell-command= that allows command execution to persist even after the Emacs process exists.
+     Provides =dtache-shell-command=, a drop-in replacement for =async-shell-command= that allows command execution to persist even after the Emacs process exits.
 
      Also works on remote hosts.
 
