@@ -295,7 +295,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
   See also those talks [[https://github.com/p3r7/awesome-elisp#john-wiegley-jwiegley][John Wiegley]] gave about hist setup for Elisp development:
   - [[https://www.youtube.com/watch?v=QFClYrhV1z4][Emacs Lisp Development - @ Emacs Conference 2013]]
-  - [[https://sachachua.com/blog/2015/04/2015-04-08-emacs-lisp-development-tips-with-john-wiegley/][Emacs Lisp Development Tips - Sacha Chua Emacs Chat 2015-04-08]].
+  - [[https://sachachua.com/blog/2015/04/2015-04-08-emacs-lisp-development-tips-with-john-wiegley/][Emacs Lisp Development Tips - Sacha Chua Emacs Chat 2015-04-08]]
 
 
 ** Interactive Development & Debugging
@@ -633,6 +633,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Also provides mocking capabilities.
 
+     For a complete example of integration w/ =undercover= and =coverage=:
+     - [[https://sachachua.com/blog/2022/01/coverage-reporting-in-emacs-with-buttercup-undercover-coverage-and-a-makefile/][Sacha Chua - Coverage reporting in Emacs with Buttercup, Undercover, Coverage, and a Makefile]]
+
 
 **** director
 
@@ -641,6 +644,15 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Program sequence of user interactions. Useful for end-to-end testing.
 
      Inspired by Selenium Webdriver.
+
+
+**** undercover
+
+     [[https://github.com/undercover-el/undercover.el][source & doc]]
+
+     Track test coverage and integrate w/ coverage reporting solutions.
+
+     For in-Emacs reporting, use the [[https://github.com/trezona-lecomte/coverage][coverage]] package.
 
 
 ** Profiling
