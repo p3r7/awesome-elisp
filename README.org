@@ -1731,6 +1731,17 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Some advanced behaviours are hard to program, that's why wrapper libraries can help you.
 
 
+**** dtache
+
+     [[https://gitlab.com/niklaseklund/dtache][source & doc]]
+
+     Provides =dtache-shell-command=, a drop-in replacement for =async-shell-command= that allows command execution to persist even after the Emacs process exists.
+
+     Also works on remote hosts.
+
+     Relies on [[https://github.com/crigler/dtach][dtach]] to create a persistent session.
+
+
 **** friendly-shell-command
 
      [[https://github.com/p3r7/friendly-shell][source & doc]]
