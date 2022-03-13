@@ -1435,6 +1435,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      For a concrete use-case, have a look at [[https://github.com/ethan-leba/tree-edit][tree-edit]].
 
+     For a better sitter grammar for elisp (distinguishing between var, functions and macros), use [[https://github.com/Wilfred/tree-sitter-elisp][tree-sitter-elisp]].
+
 
 **** moldable-emacs
 
