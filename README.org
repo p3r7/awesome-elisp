@@ -1140,7 +1140,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Thankfully, some libraries provide an abstraction layer that allows having a single API for multiple data structures.
 
     I would recommend sticking with the default =map.el= library, unless you really enjoy the Clojure syntax in which case =a.el= is also a nice choice.
-    If you know for sure that you want to stick with an alist or a hash-table,  =asoc.el= and =ht= are high quality choice.
+    If you know for sure that you want to stick with an alist or a hash-table,  =asoc.el= and =ht= are high quality choices.
 
 
 **** map
