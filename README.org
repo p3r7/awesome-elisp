@@ -1151,8 +1151,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      supports: alists, plists and hash-tables.
 
-     Shared API for all 3 Elisp map objects.
-     Weirdly enough, plists are called "arrays" in its source/inline docs.
+     Shared API for all 3 Elisp map objects (+ [arrays](https://www.gnu.org/software/emacs/manual/html_node/elisp/Arrays.html)).
 
      No documentation other than what is inlined in source.
 
