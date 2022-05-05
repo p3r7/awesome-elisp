@@ -1962,6 +1962,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 ** GUI
 
+   Honorable mention: [[https://github.com/sabof/magic-buffer][magic-buffer]], an executable cookbook on how to use & abuse Emacs' buffer display engine.
+
+
 *** Popups
 
 **** frog-menu
