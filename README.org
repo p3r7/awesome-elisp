@@ -986,7 +986,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[https://github.com/langston-barrett/contract.el][source & doc]]
 
-     Provides data strcuture defintions as contracts (essentially interface description).
+     Provides data structure defintions as contracts (essentially interface description).
 
      Port of [[https://docs.racket-lang.org/reference/contracts.html][Racket's contract]] to Elisp.
 
