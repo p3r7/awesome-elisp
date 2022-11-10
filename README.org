@@ -1933,6 +1933,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** SQL
 
+**** sqlite
+
+     /standard/ (bundled with every Emacs install since version 29.0)
+
+     Recent Emacs now embbeds a native SQLite3 database & the accompagnying client.
+
+
 **** emacsql
 
      [[https://github.com/skeeto/emacsql][source & doc]]
@@ -1958,6 +1965,13 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Client to SQL dialects, using [[https://dbi.perl.org/][Perl's Database Interface]] (/DBI/) as a connection interface.
 
      In addition to programmatic querying capabilities, provides several major modes for user interactions with database instances.
+
+
+**** triples
+
+     [[https://github.com/ahyatt/triples][source & doc]]
+
+     Abstraction on top of SQL clients (either =emacsql= or =sqlite=) to represent & store a graph database.
 
 
 ** GUI
