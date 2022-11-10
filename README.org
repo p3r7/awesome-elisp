@@ -1624,9 +1624,11 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** deferred
 
+     /informal standard/ (not bundled with Emacs, but used everywhere)
+
      [[https://github.com/kiwanami/emacs-deferred][source & doc]]
 
-     Not super-actively maintained, but featureful.
+     Not super-actively maintained, but quite stable and featureful.
 
      Achieves concurrency through the use of timers.
 
