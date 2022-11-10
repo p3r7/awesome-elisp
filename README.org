@@ -1253,7 +1253,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      [[./rsc/icon/informal-standard.png]]
 
-     Advanced yet easy to use datetiem / timestamp library.
+     Advanced yet easy to use datetime / timestamp library.
 
 
 **** datetime
