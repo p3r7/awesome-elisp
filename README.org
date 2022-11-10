@@ -1817,14 +1817,31 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** request
 
-     [[https://github.com/tkf/emacs-request][source & doc]]
+     /informal standard/ (not bundled with Emacs, but used everywhere)
 
-     Supports a bunch of options exposed clearly with keyword arguments.
+     [[https://github.com/tkf/emacs-request][source & doc]]
 
      If found on the system, uses the /cURL/ binary instead of =url.el=.
      Can be customized with =request-backend=.
 
+     Supports a bunch of options exposed clearly with keyword arguments.
+
      Advanced asynchronicity via bindings with =deferred=.
+
+
+**** plz
+
+     [[https://github.com/alphapapa/plz.el][source & doc]]
+
+     Uses the /cURL/ binary (=curl=) instead of =url.el=.
+
+     Supports a bunch of options exposed clearly with keyword arguments.
+
+     Supports both synchronous & asynchronous calls, as well as queuing.
+
+     When doing async request, the returned handler is a =curl= process object.
+
+     Strong contender for a lightweight alternative to =request=.
 
 
 **** mb-url
@@ -1837,6 +1854,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 
 **** websocket
+
+     /informal standard/ (not bundled with Emacs, but used everywhere)
 
      [[https://github.com/ahyatt/emacs-websocket][source]]
 
@@ -2037,6 +2056,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
    - [[https://github.com/alphapapa/emacs-package-dev-handbook][The Emacs Package Developer’s Handbook]]
    - =makem.sh=
    - =ts=
+   - =plz=
    - =org-ql=
 
 
