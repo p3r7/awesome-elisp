@@ -907,6 +907,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
   Some libraries might be listed several times, as they fit in several categories (e.g. =subr-x=, =dash=).
 
+  | [[./rsc/icon/standard.png]]          | /standard/ (bundled with every Emacs install)                                 |
+  | [[./rsc/icon/informal-standard.png]] | /informal standard/ (not bundled with Emacs, but used in many major packages) |
+
 
 ** Core / General Purpose
 
@@ -2260,6 +2263,8 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     What can feel natural to you can be counter-intuitive to others.
 
 
-* License
+* License & Acknowledgments
 
 [[https://creativecommons.org/publicdomain/zero/1.0/][https://licensebuttons.net/p/zero/1.0/88x31.png]]
+
+Ribbon icons courtesy of [[https://icons8.com][icons8]].
