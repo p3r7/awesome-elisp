@@ -16,6 +16,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 * Table of Contents                                                     :TOC_5:QUOTE:
 #+BEGIN_QUOTE
 - [[#what-is-elisp][What is Elisp?]]
+- [[#iconography][Iconography]]
 - [[#resources][Resources]]
   - [[#entry-level][Entry-level]]
   - [[#advanced][Advanced]]
@@ -78,10 +79,6 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 #+END_QUOTE
 
 
-  | [[./rsc/icon/standard.png]]          | /standard/ (bundled with every Emacs install)                                 |
-  | [[./rsc/icon/informal-standard.png]] | /informal standard/ (not bundled with Emacs, but used in many major packages) |
-
-
 * What is Elisp?
 
   Elisp is short for /Emacs Lisp/, a dialect of [[https://en.wikipedia.org/wiki/Lisp_programming_language][Lisp]] specific to Emacs.
@@ -101,6 +98,12 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
   Learning Elisp will up your Emacs game tremendously, unlocking its full potential by writing functionalities either for your personal needs or to share with the world.
 
   As an added bonus, it's great fun.
+
+
+* Iconography
+
+  | [[./rsc/icon/standard.png]]          | /standard/ (bundled with every Emacs install)                                 |
+  | [[./rsc/icon/informal-standard.png]] | /informal standard/ (not bundled with Emacs, but used in many major packages) |
 
 
 * Resources
