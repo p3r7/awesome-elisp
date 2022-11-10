@@ -1933,6 +1933,17 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 *** SQL
 
+**** sql
+
+     /standard/ (bundled with every Emacs install)
+
+     [[https://repo.or.cz/w/emacs.git/blob/HEAD:/lisp/progmodes/sql.el][source]], [[https://www.emacswiki.org/emacs/SqlMode][emacswiki]]
+
+     Not a client /per se/.
+
+     Provides =sql-mode=, a comint-based REPL wrapper supporting various CLI client interpreters.
+
+
 **** sqlite
 
      /standard/ (bundled with every Emacs install since version 29.0)
