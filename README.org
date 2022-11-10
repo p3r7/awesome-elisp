@@ -1158,7 +1158,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      supports: alists, plists and hash-tables.
 
-     Shared API for all 3 Elisp map objects (+ [arrays](https://www.gnu.org/software/emacs/manual/html_node/elisp/Arrays.html)).
+     Shared API for all 3 Elisp map objects (+ [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Arrays.html][arrays]]).
 
      No documentation other than what is inlined in source.
 
