@@ -1631,9 +1631,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** deferred
 
-     [[./rsc/icon/informal-standard.png]]
-
      [[https://github.com/kiwanami/emacs-deferred][source & doc]]
+
+     [[./rsc/icon/informal-standard.png]]
 
      Not super-actively maintained, but quite stable and featureful.
 
@@ -1826,9 +1826,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** request
 
-     [[./rsc/icon/informal-standard.png]]
-
      [[https://github.com/tkf/emacs-request][source & doc]]
+
+     [[./rsc/icon/informal-standard.png]]
 
      If found on the system, uses the /cURL/ binary instead of =url.el=.
      Can be customized with =request-backend=.
@@ -1864,9 +1864,9 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
 **** websocket
 
-     [[./rsc/icon/informal-standard.png]]
-
      [[https://github.com/ahyatt/emacs-websocket][source]]
+
+     [[./rsc/icon/informal-standard.png]]
 
      Websocket (peristent HTTP connection) client for Emacs.
 
