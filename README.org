@@ -1021,6 +1021,12 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Provides Clojure-style /multimethods/ (multiple dispatch over an ad hoc type hierarchy).
 
+**** cats
+
+     [[https://github.com/Fuco1/emacs-cats][source & doc]]
+
+     Provices Haskell-inspired Category Theory abstractions.
+
 
 **** fn
 
