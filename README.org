@@ -2117,7 +2117,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    Known for:
    - being the head of the Emacs project maintainers
-   - authoring =use-pacakge=
+   - authoring =use-package=
 
    Contributed to Elisp development with:
    - =async.el=
