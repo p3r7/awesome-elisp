@@ -554,6 +554,14 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
      Provides a powerful /command/ combination system and refactoring commands.
 
 
+**** symex
+
+     [[https://github.com/drym-org/symex.el][source & doc]]
+
+     Builds on =paredit=, =lispy= and =evil-cleverparens= to provide a consistent vim-style modal way of editing trees.
+
+     Offers a hydra interface to aid learning, and an =evil= state (also works in vanilla emacs).
+
 **** paxedit
 
      [[https://github.com/promethial/paxedit][source & doc]]
