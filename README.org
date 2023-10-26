@@ -840,6 +840,16 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
      Easier to integrate with CI tools such as /Travis/.
 
+**** Elisp Repo Kit
+
+     [[https://github.com/positron-solutions/elisp-repo-kit][elisp-repo-kit]]
+
+     Create new fully-featured Github repositories with minimal effort, including doc generation and CI.
+
+     Integrates common development & distribution workflows such as testing & package reloading.
+
+     Designed to work out of the box but also appropriate for complex 3rd party and non-Elisp module integrations.
+
 
 ** Syntax Highlighting & Visual Enhancements
 
