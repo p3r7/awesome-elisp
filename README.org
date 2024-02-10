@@ -830,7 +830,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Runs in a dedicated isolated Emacs process
 
 
-**** eask
+**** Eask
 
     [[https://emacs-eask.github.io/][doc]], [[https://github.com/emacs-eask/cli][source]]
 
