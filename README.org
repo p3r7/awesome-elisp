@@ -75,7 +75,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     - [[#charts--diagrams][Charts & diagrams]]
 - [[#heroes][Heroes]]
 - [[#contributing][Contributing]]
-- [[#license][License]]
+- [[#license--acknowledgments][License & Acknowledgments]]
 #+END_QUOTE
 
 
