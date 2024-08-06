@@ -1604,7 +1604,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
    For more info on those subject, read:
    - [[https://www.emacswiki.org/emacs/NoThreading][emacswiki/No Threading]]
-   - [[https://www.emacswiki.org/emacs/NoThreading][emacswiki/Concurrent Emacs]]
+   - [[https://www.emacswiki.org/emacs/ConcurrentEmacs][emacswiki/Concurrent Emacs]]
    - blog post from @skeeto: [[https://nullprogram.com/blog/2018/05/31/][Emacs 26 Brings Generators and Threads]]
 
 
