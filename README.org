@@ -227,6 +227,7 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
 
     Byte compiler section is outdated but general coding style recommendations and sections about macros and profiling are still relevant to this day.
 
+
 ** Cookbooks
 
 *** elisp-demos
