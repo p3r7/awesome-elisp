@@ -832,6 +832,17 @@ For a more general index related to all-things Emacs, use [[https://github.com/e
     Runs in a dedicated isolated Emacs process
 
 
+**** Eask
+
+    [[https://emacs-eask.github.io/][doc]], [[https://github.com/emacs-eask/cli][source]]
+
+    Successor to [[https://github.com/cask/cask][cask]].
+
+    Implemented in JavaScript (Node.js).
+
+    Take a look at the [[https://emacs-eask.github.io/Getting-Started/Introduction/#-comparisons][comparison]] to see how eask differs from other tools
+
+
 **** emake
 
      [[https://github.com/vermiculus/emake.el][source & doc]]
